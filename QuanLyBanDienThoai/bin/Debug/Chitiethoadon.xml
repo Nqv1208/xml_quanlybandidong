@@ -1,0 +1,10 @@
+<ChiTietHoaDons>
+    <ChiTietHoaDon>
+        <MaCTHD>CTHD001</MaCTHD>
+        <MaHD>HD001</MaHD>
+        <MaSP>SP001</MaSP>
+        <SoLuong>1</SoLuong>
+        <DonGia>25000000</DonGia>
+        <ThanhTien>25000000</ThanhTien>
+    </ChiTietHoaDon>
+</ChiTietHoaDons>

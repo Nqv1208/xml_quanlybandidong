@@ -1,0 +1,15 @@
+<NhanViens>
+    <NhanVien>
+        <MaNV>NV001</MaNV>
+        <TenNV>Nguyễn Văn A</TenNV>
+        <ChucVu>Quản trị</ChucVu>
+        <SoDienThoai>0909123456</SoDienThoai>
+    </NhanVien>
+
+    <NhanVien>
+        <MaNV>NV002</MaNV>
+        <TenNV>Trần Thị B</TenNV>
+        <ChucVu>Nhân viên bán hàng</ChucVu>
+        <SoDienThoai>0909345678</SoDienThoai>
+    </NhanVien>
+</NhanViens>
