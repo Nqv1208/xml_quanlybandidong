@@ -1,0 +1,10 @@
+# Ignore thư mục bin và obj
+QuanLyBanDienThoai/bin/
+QuanLyBanDienThoai/obj/
+
+# Không ignore file XML trong Debug
+!QuanLyBanDienThoai/bin/Debug/
+!QuanLyBanDienThoai/bin/Debug/*.xml
+
+# Ignore thư mục .vs
+QuanLyBanDienThoai/.vs/
