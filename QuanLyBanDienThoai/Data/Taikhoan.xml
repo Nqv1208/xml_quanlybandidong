@@ -1,17 +1,21 @@
 <TaiKhoans>
-    <TaiKhoan>
-        <MaTK>TK001</MaTK>
-        <TenDangNhap>admin</TenDangNhap>
-        <MatKhau>admin</MatKhau>
-        <Quyen>Admin</Quyen>
-        <MaNV>NV001</MaNV>
-    </TaiKhoan>
+	<TaiKhoan>
+		<MaTK>TK001</MaTK>
+		<TenDangNhap>admin</TenDangNhap>
+		<MatKhau>admin</MatKhau>
+		<Quyen>Admin</Quyen>
+		<MaNV>NV001</MaNV>
+		<HoTen>Nguyễn Văn A</HoTen>
+		<Email>nguyenvana@example.com</Email>
+	</TaiKhoan>
 
-    <TaiKhoan>
-        <MaTK>TK002</MaTK>
-        <TenDangNhap>nhanvien</TenDangNhap>
-        <MatKhau>123456</MatKhau>
-        <Quyen>NhanVien</Quyen>
-        <MaNV>NV002</MaNV>
-    </TaiKhoan>
+	<TaiKhoan>
+		<MaTK>TK002</MaTK>
+		<TenDangNhap>nhanvien</TenDangNhap>
+		<MatKhau>123456</MatKhau>
+		<Quyen>NhanVien</Quyen>
+		<MaNV>NV002</MaNV>
+		<HoTen>Trần Thị B</HoTen>
+		<Email>tranthib@example.com</Email>
+	</TaiKhoan>
 </TaiKhoans>
