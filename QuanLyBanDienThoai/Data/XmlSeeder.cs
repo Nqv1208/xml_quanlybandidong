@@ -13,6 +13,12 @@ public static class XmlSeeder
     /// </summary>
     public static void SeedFromDatabase()
     {
+        SeedOne("Taikhoan.xml", "TaiKhoan",
+            "SELECT MaTk, TenDangNhap, MatKhau, Quyen, MaNV FROM TaiKhoan");
+
+        SeedOne("Nhanvien.xml", "NhanVien",
+            "SELECT MaNV, TenNV, ChucVu, SoDienThoai FROM NhanVien");
+
         SeedOne("Hangsanxuat.xml", "HangSanXuat",
             "SELECT MaHang, TenHang FROM HangSanXuat");
 
@@ -27,6 +33,15 @@ public static class XmlSeeder
 
         SeedOne("Chitietphieunhap.xml", "ChiTietPhieuNhap",
             "SELECT MaCTPN, MaPN, MaSP, SoLuong, DonGiaNhap, (SoLuong * DonGiaNhap) AS ThanhTien FROM ChiTietPhieuNhap");
+
+        SeedOne("Khachhang.xml", "KhachHang",
+            "SELECT MaKH, TenKH, SoDienThoai FROM KhachHang");
+
+        SeedOne("HoaDon.xml", "HoaDon",
+            "SELECT MaHD, MaKH, MaNV, NgayLap, TongTien FROM HoaDon");
+
+        SeedOne("Chitiethoadon.xml", "ChiTietHoaDon",
+            "SELECT MaCTHD, MaHD, MaSP, SoLuong, DonGia, ThanhTien FROM ChiTietHoaDon");
     }
 
     private static void SeedOne(string fileName, string tableName, string sql)
