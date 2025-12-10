@@ -119,12 +119,12 @@ namespace QuanLyBanDienThoai.GUI
             dgvNCC.Dock = DockStyle.Fill;
             dgvNCC.GridColor = Color.FromArgb(231, 229, 255);
             dgvNCC.Location = new Point(0, 40);
-            dgvNCC.Margin = new Padding(4, 4, 4, 4);
             dgvNCC.Name = "dgvNCC";
             dgvNCC.ReadOnly = true;
             dgvNCC.RowHeadersVisible = false;
             dgvNCC.RowHeadersWidth = 62;
-            dgvNCC.Size = new Size(970, 291);
+            dgvNCC.RowTemplate.Height = 33;
+            dgvNCC.Size = new Size(776, 225);
             dgvNCC.TabIndex = 0;
             dgvNCC.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvNCC.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -155,13 +155,13 @@ namespace QuanLyBanDienThoai.GUI
             txtMaNCC.CustomizableEdges = customizableEdges1;
             txtMaNCC.DefaultText = "";
             txtMaNCC.Font = new Font("Segoe UI", 9F);
-            txtMaNCC.Location = new Point(150, 46);
-            txtMaNCC.Margin = new Padding(5, 6, 5, 6);
+            txtMaNCC.Location = new Point(120, 45);
+            txtMaNCC.Margin = new Padding(4, 5, 4, 5);
             txtMaNCC.Name = "txtMaNCC";
             txtMaNCC.PlaceholderText = "";
             txtMaNCC.SelectedText = "";
             txtMaNCC.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtMaNCC.Size = new Size(235, 45);
+            txtMaNCC.Size = new Size(188, 36);
             txtMaNCC.TabIndex = 1;
             // 
             // txtTenNCC
@@ -170,13 +170,13 @@ namespace QuanLyBanDienThoai.GUI
             txtTenNCC.CustomizableEdges = customizableEdges3;
             txtTenNCC.DefaultText = "";
             txtTenNCC.Font = new Font("Segoe UI", 9F);
-            txtTenNCC.Location = new Point(150, 96);
-            txtTenNCC.Margin = new Padding(5, 6, 5, 6);
+            txtTenNCC.Location = new Point(120, 86);
+            txtTenNCC.Margin = new Padding(4, 5, 4, 5);
             txtTenNCC.Name = "txtTenNCC";
             txtTenNCC.PlaceholderText = "";
             txtTenNCC.SelectedText = "";
             txtTenNCC.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtTenNCC.Size = new Size(235, 45);
+            txtTenNCC.Size = new Size(188, 36);
             txtTenNCC.TabIndex = 3;
             // 
             // txtDiaChi
@@ -185,13 +185,13 @@ namespace QuanLyBanDienThoai.GUI
             txtDiaChi.CustomizableEdges = customizableEdges5;
             txtDiaChi.DefaultText = "";
             txtDiaChi.Font = new Font("Segoe UI", 9F);
-            txtDiaChi.Location = new Point(150, 146);
-            txtDiaChi.Margin = new Padding(5, 6, 5, 6);
+            txtDiaChi.Location = new Point(120, 132);
+            txtDiaChi.Margin = new Padding(4, 5, 4, 5);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.PlaceholderText = "";
             txtDiaChi.SelectedText = "";
             txtDiaChi.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtDiaChi.Size = new Size(235, 45);
+            txtDiaChi.Size = new Size(188, 36);
             txtDiaChi.TabIndex = 5;
             // 
             // txtSoDienThoai
@@ -200,13 +200,13 @@ namespace QuanLyBanDienThoai.GUI
             txtSoDienThoai.CustomizableEdges = customizableEdges7;
             txtSoDienThoai.DefaultText = "";
             txtSoDienThoai.Font = new Font("Segoe UI", 9F);
-            txtSoDienThoai.Location = new Point(603, 46);
-            txtSoDienThoai.Margin = new Padding(5, 6, 5, 6);
+            txtSoDienThoai.Location = new Point(482, 37);
+            txtSoDienThoai.Margin = new Padding(4, 5, 4, 5);
             txtSoDienThoai.Name = "txtSoDienThoai";
             txtSoDienThoai.PlaceholderText = "";
             txtSoDienThoai.SelectedText = "";
             txtSoDienThoai.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtSoDienThoai.Size = new Size(325, 45);
+            txtSoDienThoai.Size = new Size(260, 36);
             txtSoDienThoai.TabIndex = 7;
             // 
             // txtEmail
@@ -215,13 +215,13 @@ namespace QuanLyBanDienThoai.GUI
             txtEmail.CustomizableEdges = customizableEdges9;
             txtEmail.DefaultText = "";
             txtEmail.Font = new Font("Segoe UI", 9F);
-            txtEmail.Location = new Point(603, 96);
-            txtEmail.Margin = new Padding(5, 6, 5, 6);
+            txtEmail.Location = new Point(482, 77);
+            txtEmail.Margin = new Padding(4, 5, 4, 5);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtEmail.Size = new Size(325, 45);
+            txtEmail.Size = new Size(260, 36);
             txtEmail.TabIndex = 9;
             // 
             // txtTimKiem
@@ -230,13 +230,13 @@ namespace QuanLyBanDienThoai.GUI
             txtTimKiem.CustomizableEdges = customizableEdges11;
             txtTimKiem.DefaultText = "";
             txtTimKiem.Font = new Font("Segoe UI", 9F);
-            txtTimKiem.Location = new Point(150, 47);
-            txtTimKiem.Margin = new Padding(5, 6, 5, 6);
+            txtTimKiem.Location = new Point(120, 38);
+            txtTimKiem.Margin = new Padding(4, 5, 4, 5);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PlaceholderText = "";
             txtTimKiem.SelectedText = "";
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtTimKiem.Size = new Size(428, 45);
+            txtTimKiem.Size = new Size(342, 36);
             txtTimKiem.TabIndex = 1;
             // 
             // btnThem
@@ -246,11 +246,10 @@ namespace QuanLyBanDienThoai.GUI
             btnThem.FillColor = Color.FromArgb(46, 125, 50);
             btnThem.Font = new Font("Segoe UI", 9F);
             btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(443, 165);
-            btnThem.Margin = new Padding(4, 4, 4, 4);
+            btnThem.Location = new Point(354, 132);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnThem.Size = new Size(112, 45);
+            btnThem.Size = new Size(90, 36);
             btnThem.TabIndex = 10;
             btnThem.Text = "Thêm";
             btnThem.Click += btnThem_Click;
@@ -262,11 +261,10 @@ namespace QuanLyBanDienThoai.GUI
             btnSua.FillColor = Color.FromArgb(25, 118, 210);
             btnSua.Font = new Font("Segoe UI", 9F);
             btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(568, 165);
-            btnSua.Margin = new Padding(4, 4, 4, 4);
+            btnSua.Location = new Point(454, 132);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btnSua.Size = new Size(112, 45);
+            btnSua.Size = new Size(90, 36);
             btnSua.TabIndex = 11;
             btnSua.Text = "Sửa";
             btnSua.Click += btnSua_Click;
@@ -278,11 +276,10 @@ namespace QuanLyBanDienThoai.GUI
             btnXoa.FillColor = Color.FromArgb(211, 47, 47);
             btnXoa.Font = new Font("Segoe UI", 9F);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(693, 165);
-            btnXoa.Margin = new Padding(4, 4, 4, 4);
+            btnXoa.Location = new Point(554, 132);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnXoa.Size = new Size(112, 45);
+            btnXoa.Size = new Size(90, 36);
             btnXoa.TabIndex = 12;
             btnXoa.Text = "Xóa";
             btnXoa.Click += btnXoa_Click;
@@ -294,11 +291,10 @@ namespace QuanLyBanDienThoai.GUI
             btnLamMoi.FillColor = Color.FromArgb(103, 58, 183);
             btnLamMoi.Font = new Font("Segoe UI", 9F);
             btnLamMoi.ForeColor = Color.White;
-            btnLamMoi.Location = new Point(818, 165);
-            btnLamMoi.Margin = new Padding(4, 4, 4, 4);
+            btnLamMoi.Location = new Point(654, 132);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnLamMoi.Size = new Size(112, 45);
+            btnLamMoi.Size = new Size(90, 36);
             btnLamMoi.TabIndex = 13;
             btnLamMoi.Text = "Làm mới";
             btnLamMoi.Click += btnLamMoi_Click;
@@ -310,11 +306,10 @@ namespace QuanLyBanDienThoai.GUI
             btnTimKiem.FillColor = Color.FromArgb(103, 58, 183);
             btnTimKiem.Font = new Font("Segoe UI", 9F);
             btnTimKiem.ForeColor = Color.White;
-            btnTimKiem.Location = new Point(603, 47);
-            btnTimKiem.Margin = new Padding(4, 4, 4, 4);
+            btnTimKiem.Location = new Point(482, 38);
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnTimKiem.Size = new Size(125, 45);
+            btnTimKiem.Size = new Size(100, 36);
             btnTimKiem.TabIndex = 2;
             btnTimKiem.Text = "Tìm kiếm";
             btnTimKiem.Click += btnTimKiem_Click;
@@ -340,61 +335,55 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxInfo.CustomizableEdges = customizableEdges23;
             groupBoxInfo.Font = new Font("Segoe UI", 9F);
             groupBoxInfo.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxInfo.Location = new Point(15, 15);
-            groupBoxInfo.Margin = new Padding(4, 4, 4, 4);
+            groupBoxInfo.Location = new Point(12, 12);
             groupBoxInfo.Name = "groupBoxInfo";
             groupBoxInfo.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            groupBoxInfo.Size = new Size(970, 224);
+            groupBoxInfo.Size = new Size(776, 179);
             groupBoxInfo.TabIndex = 2;
-            groupBoxInfo.Text = "Thông tin nhà cung cấp";
+            groupBoxInfo.Text = "Thông tin sản phẩm";
             // 
             // lblMaNCC
             // 
             lblMaNCC.BackColor = Color.Transparent;
-            lblMaNCC.Location = new Point(25, 50);
-            lblMaNCC.Margin = new Padding(4, 4, 4, 4);
+            lblMaNCC.Location = new Point(20, 51);
             lblMaNCC.Name = "lblMaNCC";
-            lblMaNCC.Size = new Size(72, 27);
+            lblMaNCC.Size = new Size(60, 22);
             lblMaNCC.TabIndex = 0;
             lblMaNCC.Text = "Mã NCC:";
             // 
             // lblTenNCC
             // 
             lblTenNCC.BackColor = Color.Transparent;
-            lblTenNCC.Location = new Point(25, 100);
-            lblTenNCC.Margin = new Padding(4, 4, 4, 4);
+            lblTenNCC.Location = new Point(20, 100);
             lblTenNCC.Name = "lblTenNCC";
-            lblTenNCC.Size = new Size(75, 27);
+            lblTenNCC.Size = new Size(63, 22);
             lblTenNCC.TabIndex = 2;
             lblTenNCC.Text = "Tên NCC:";
             // 
             // lblDiaChi
             // 
             lblDiaChi.BackColor = Color.Transparent;
-            lblDiaChi.Location = new Point(25, 150);
-            lblDiaChi.Margin = new Padding(4, 4, 4, 4);
+            lblDiaChi.Location = new Point(21, 146);
             lblDiaChi.Name = "lblDiaChi";
-            lblDiaChi.Size = new Size(60, 27);
+            lblDiaChi.Size = new Size(52, 22);
             lblDiaChi.TabIndex = 4;
             lblDiaChi.Text = "Địa chỉ:";
             // 
             // lblSoDienThoai
             // 
             lblSoDienThoai.BackColor = Color.Transparent;
-            lblSoDienThoai.Location = new Point(453, 50);
-            lblSoDienThoai.Margin = new Padding(4, 4, 4, 4);
+            lblSoDienThoai.Location = new Point(362, 40);
             lblSoDienThoai.Name = "lblSoDienThoai";
-            lblSoDienThoai.Size = new Size(112, 27);
+            lblSoDienThoai.Size = new Size(94, 22);
             lblSoDienThoai.TabIndex = 6;
             lblSoDienThoai.Text = "Số điện thoại:";
             // 
             // lblEmail
             // 
             lblEmail.BackColor = Color.Transparent;
-            lblEmail.Location = new Point(453, 100);
-            lblEmail.Margin = new Padding(4, 4, 4, 4);
+            lblEmail.Location = new Point(362, 80);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(49, 27);
+            lblEmail.Size = new Size(43, 22);
             lblEmail.TabIndex = 8;
             lblEmail.Text = "Email:";
             // 
@@ -408,21 +397,19 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxSearch.CustomizableEdges = customizableEdges25;
             groupBoxSearch.Font = new Font("Segoe UI", 9F);
             groupBoxSearch.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxSearch.Location = new Point(15, 247);
-            groupBoxSearch.Margin = new Padding(4, 4, 4, 4);
+            groupBoxSearch.Location = new Point(12, 198);
             groupBoxSearch.Name = "groupBoxSearch";
             groupBoxSearch.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            groupBoxSearch.Size = new Size(970, 100);
+            groupBoxSearch.Size = new Size(776, 80);
             groupBoxSearch.TabIndex = 1;
             groupBoxSearch.Text = "Tìm kiếm";
             // 
             // lblTimKiem
             // 
             lblTimKiem.BackColor = Color.Transparent;
-            lblTimKiem.Location = new Point(26, 56);
-            lblTimKiem.Margin = new Padding(4, 4, 4, 4);
+            lblTimKiem.Location = new Point(21, 45);
             lblTimKiem.Name = "lblTimKiem";
-            lblTimKiem.Size = new Size(71, 27);
+            lblTimKiem.Size = new Size(59, 22);
             lblTimKiem.TabIndex = 0;
             lblTimKiem.Text = "Từ khóa:";
             // 
@@ -434,24 +421,22 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxGrid.CustomizableEdges = customizableEdges27;
             groupBoxGrid.Font = new Font("Segoe UI", 9F);
             groupBoxGrid.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxGrid.Location = new Point(15, 355);
-            groupBoxGrid.Margin = new Padding(4, 4, 4, 4);
+            groupBoxGrid.Location = new Point(12, 284);
             groupBoxGrid.Name = "groupBoxGrid";
             groupBoxGrid.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            groupBoxGrid.Size = new Size(970, 331);
+            groupBoxGrid.Size = new Size(776, 265);
             groupBoxGrid.TabIndex = 0;
             groupBoxGrid.Text = "Danh sách nhà cung cấp";
             // 
             // frmQuanLyNhaCungCap
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 701);
+            ClientSize = new Size(800, 561);
             Controls.Add(groupBoxGrid);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBoxInfo);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
             Name = "frmQuanLyNhaCungCap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản lý nhà cung cấp";
