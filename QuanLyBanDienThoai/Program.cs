@@ -1,3 +1,5 @@
+using QuanLyBanDienThoai.GUI;
+
 namespace QuanLyBanDienThoai
 {
     internal static class Program
@@ -11,7 +13,10 @@ namespace QuanLyBanDienThoai
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            // Seed XML từ database nếu file chưa tồn tại
+            Data.XmlSeeder.SeedFromDatabase();
+
+            Application.Run(new frmMain());
         }
     }
 }
