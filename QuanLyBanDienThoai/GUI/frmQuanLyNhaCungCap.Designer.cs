@@ -10,7 +10,6 @@ namespace QuanLyBanDienThoai.GUI
         private Guna2TextBox txtMaNCC;
         private Guna2TextBox txtTenNCC;
         private Guna2TextBox txtDiaChi;
-        private Guna2TextBox txtSoDienThoai;
         private Guna2TextBox txtEmail;
         private Guna2TextBox txtTimKiem;
         private Guna2Button btnThem;
@@ -62,19 +61,18 @@ namespace QuanLyBanDienThoai.GUI
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             dgvNCC = new Guna2DataGridView();
             txtMaNCC = new Guna2TextBox();
             txtTenNCC = new Guna2TextBox();
             txtDiaChi = new Guna2TextBox();
-            txtSoDienThoai = new Guna2TextBox();
             txtEmail = new Guna2TextBox();
             txtTimKiem = new Guna2TextBox();
             btnThem = new Guna2Button();
@@ -91,6 +89,7 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxSearch = new Guna2GroupBox();
             lblTimKiem = new Guna2HtmlLabel();
             groupBoxGrid = new Guna2GroupBox();
+            txtSoDienThoai = new Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvNCC).BeginInit();
             groupBoxInfo.SuspendLayout();
             groupBoxSearch.SuspendLayout();
@@ -111,7 +110,7 @@ namespace QuanLyBanDienThoai.GUI
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = SystemColors.Window;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(125, 137, 149);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
@@ -124,7 +123,7 @@ namespace QuanLyBanDienThoai.GUI
             dgvNCC.RowHeadersVisible = false;
             dgvNCC.RowHeadersWidth = 62;
             dgvNCC.RowTemplate.Height = 33;
-            dgvNCC.Size = new Size(776, 225);
+            dgvNCC.Size = new Size(776, 257);
             dgvNCC.TabIndex = 0;
             dgvNCC.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvNCC.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -194,25 +193,10 @@ namespace QuanLyBanDienThoai.GUI
             txtDiaChi.Size = new Size(188, 36);
             txtDiaChi.TabIndex = 5;
             // 
-            // txtSoDienThoai
-            // 
-            txtSoDienThoai.BorderRadius = 6;
-            txtSoDienThoai.CustomizableEdges = customizableEdges7;
-            txtSoDienThoai.DefaultText = "";
-            txtSoDienThoai.Font = new Font("Segoe UI", 9F);
-            txtSoDienThoai.Location = new Point(482, 37);
-            txtSoDienThoai.Margin = new Padding(4, 5, 4, 5);
-            txtSoDienThoai.Name = "txtSoDienThoai";
-            txtSoDienThoai.PlaceholderText = "";
-            txtSoDienThoai.SelectedText = "";
-            txtSoDienThoai.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtSoDienThoai.Size = new Size(260, 36);
-            txtSoDienThoai.TabIndex = 7;
-            // 
             // txtEmail
             // 
             txtEmail.BorderRadius = 6;
-            txtEmail.CustomizableEdges = customizableEdges9;
+            txtEmail.CustomizableEdges = customizableEdges7;
             txtEmail.DefaultText = "";
             txtEmail.Font = new Font("Segoe UI", 9F);
             txtEmail.Location = new Point(482, 77);
@@ -220,14 +204,14 @@ namespace QuanLyBanDienThoai.GUI
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
-            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtEmail.Size = new Size(260, 36);
             txtEmail.TabIndex = 9;
             // 
             // txtTimKiem
             // 
             txtTimKiem.BorderRadius = 6;
-            txtTimKiem.CustomizableEdges = customizableEdges11;
+            txtTimKiem.CustomizableEdges = customizableEdges9;
             txtTimKiem.DefaultText = "";
             txtTimKiem.Font = new Font("Segoe UI", 9F);
             txtTimKiem.Location = new Point(120, 38);
@@ -235,20 +219,20 @@ namespace QuanLyBanDienThoai.GUI
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PlaceholderText = "";
             txtTimKiem.SelectedText = "";
-            txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtTimKiem.Size = new Size(342, 36);
             txtTimKiem.TabIndex = 1;
             // 
             // btnThem
             // 
             btnThem.BorderRadius = 6;
-            btnThem.CustomizableEdges = customizableEdges13;
+            btnThem.CustomizableEdges = customizableEdges11;
             btnThem.FillColor = Color.FromArgb(46, 125, 50);
             btnThem.Font = new Font("Segoe UI", 9F);
             btnThem.ForeColor = Color.White;
             btnThem.Location = new Point(354, 132);
             btnThem.Name = "btnThem";
-            btnThem.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnThem.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnThem.Size = new Size(90, 36);
             btnThem.TabIndex = 10;
             btnThem.Text = "Thêm";
@@ -257,13 +241,13 @@ namespace QuanLyBanDienThoai.GUI
             // btnSua
             // 
             btnSua.BorderRadius = 6;
-            btnSua.CustomizableEdges = customizableEdges15;
+            btnSua.CustomizableEdges = customizableEdges13;
             btnSua.FillColor = Color.FromArgb(25, 118, 210);
             btnSua.Font = new Font("Segoe UI", 9F);
             btnSua.ForeColor = Color.White;
             btnSua.Location = new Point(454, 132);
             btnSua.Name = "btnSua";
-            btnSua.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnSua.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnSua.Size = new Size(90, 36);
             btnSua.TabIndex = 11;
             btnSua.Text = "Sửa";
@@ -272,13 +256,13 @@ namespace QuanLyBanDienThoai.GUI
             // btnXoa
             // 
             btnXoa.BorderRadius = 6;
-            btnXoa.CustomizableEdges = customizableEdges17;
+            btnXoa.CustomizableEdges = customizableEdges15;
             btnXoa.FillColor = Color.FromArgb(211, 47, 47);
             btnXoa.Font = new Font("Segoe UI", 9F);
             btnXoa.ForeColor = Color.White;
             btnXoa.Location = new Point(554, 132);
             btnXoa.Name = "btnXoa";
-            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnXoa.Size = new Size(90, 36);
             btnXoa.TabIndex = 12;
             btnXoa.Text = "Xóa";
@@ -287,13 +271,13 @@ namespace QuanLyBanDienThoai.GUI
             // btnLamMoi
             // 
             btnLamMoi.BorderRadius = 6;
-            btnLamMoi.CustomizableEdges = customizableEdges19;
+            btnLamMoi.CustomizableEdges = customizableEdges17;
             btnLamMoi.FillColor = Color.FromArgb(103, 58, 183);
             btnLamMoi.Font = new Font("Segoe UI", 9F);
             btnLamMoi.ForeColor = Color.White;
             btnLamMoi.Location = new Point(654, 132);
             btnLamMoi.Name = "btnLamMoi";
-            btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btnLamMoi.Size = new Size(90, 36);
             btnLamMoi.TabIndex = 13;
             btnLamMoi.Text = "Làm mới";
@@ -302,13 +286,13 @@ namespace QuanLyBanDienThoai.GUI
             // btnTimKiem
             // 
             btnTimKiem.BorderRadius = 6;
-            btnTimKiem.CustomizableEdges = customizableEdges21;
+            btnTimKiem.CustomizableEdges = customizableEdges19;
             btnTimKiem.FillColor = Color.FromArgb(103, 58, 183);
             btnTimKiem.Font = new Font("Segoe UI", 9F);
             btnTimKiem.ForeColor = Color.White;
             btnTimKiem.Location = new Point(482, 38);
             btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btnTimKiem.Size = new Size(100, 36);
             btnTimKiem.TabIndex = 2;
             btnTimKiem.Text = "Tìm kiếm";
@@ -424,15 +408,30 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxGrid.Location = new Point(12, 284);
             groupBoxGrid.Name = "groupBoxGrid";
             groupBoxGrid.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            groupBoxGrid.Size = new Size(776, 265);
+            groupBoxGrid.Size = new Size(776, 297);
             groupBoxGrid.TabIndex = 0;
             groupBoxGrid.Text = "Danh sách nhà cung cấp";
+            // 
+            // txtSoDienThoai
+            // 
+            txtSoDienThoai.BorderRadius = 6;
+            txtSoDienThoai.CustomizableEdges = customizableEdges21;
+            txtSoDienThoai.DefaultText = "";
+            txtSoDienThoai.Font = new Font("Segoe UI", 9F);
+            txtSoDienThoai.Location = new Point(482, 37);
+            txtSoDienThoai.Margin = new Padding(4, 5, 4, 5);
+            txtSoDienThoai.Name = "txtSoDienThoai";
+            txtSoDienThoai.PlaceholderText = "";
+            txtSoDienThoai.SelectedText = "";
+            txtSoDienThoai.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            txtSoDienThoai.Size = new Size(260, 36);
+            txtSoDienThoai.TabIndex = 7;
             // 
             // frmQuanLyNhaCungCap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 561);
+            ClientSize = new Size(800, 593);
             Controls.Add(groupBoxGrid);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBoxInfo);
@@ -448,6 +447,7 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxGrid.ResumeLayout(false);
             ResumeLayout(false);
         }
+        private Guna2TextBox txtSoDienThoai;
     }
 }
 

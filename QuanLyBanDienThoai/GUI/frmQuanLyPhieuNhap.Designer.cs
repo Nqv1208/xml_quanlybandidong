@@ -132,12 +132,12 @@ namespace QuanLyBanDienThoai.GUI
             dgvPhieuNhap.Dock = DockStyle.Fill;
             dgvPhieuNhap.GridColor = Color.FromArgb(231, 229, 255);
             dgvPhieuNhap.Location = new Point(0, 40);
-            dgvPhieuNhap.Margin = new Padding(4);
             dgvPhieuNhap.Name = "dgvPhieuNhap";
             dgvPhieuNhap.ReadOnly = true;
             dgvPhieuNhap.RowHeadersVisible = false;
             dgvPhieuNhap.RowHeadersWidth = 62;
-            dgvPhieuNhap.Size = new Size(970, 286);
+            dgvPhieuNhap.RowTemplate.Height = 33;
+            dgvPhieuNhap.Size = new Size(776, 221);
             dgvPhieuNhap.TabIndex = 0;
             dgvPhieuNhap.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvPhieuNhap.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -169,13 +169,13 @@ namespace QuanLyBanDienThoai.GUI
             txtMaPN.CustomizableEdges = customizableEdges1;
             txtMaPN.DefaultText = "";
             txtMaPN.Font = new Font("Segoe UI", 9F);
-            txtMaPN.Location = new Point(150, 46);
-            txtMaPN.Margin = new Padding(5, 6, 5, 6);
+            txtMaPN.Location = new Point(120, 37);
+            txtMaPN.Margin = new Padding(4, 5, 4, 5);
             txtMaPN.Name = "txtMaPN";
             txtMaPN.PlaceholderText = "";
             txtMaPN.SelectedText = "";
             txtMaPN.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtMaPN.Size = new Size(275, 45);
+            txtMaPN.Size = new Size(220, 36);
             txtMaPN.TabIndex = 1;
             // 
             // cboMaNCC
@@ -189,11 +189,10 @@ namespace QuanLyBanDienThoai.GUI
             cboMaNCC.Font = new Font("Segoe UI", 10F);
             cboMaNCC.ForeColor = Color.FromArgb(68, 88, 112);
             cboMaNCC.ItemHeight = 40;
-            cboMaNCC.Location = new Point(150, 101);
-            cboMaNCC.Margin = new Padding(4);
+            cboMaNCC.Location = new Point(120, 81);
             cboMaNCC.Name = "cboMaNCC";
             cboMaNCC.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            cboMaNCC.Size = new Size(275, 46);
+            cboMaNCC.Size = new Size(221, 46);
             cboMaNCC.TabIndex = 3;
             // 
             // txtMaNV
@@ -202,13 +201,13 @@ namespace QuanLyBanDienThoai.GUI
             txtMaNV.CustomizableEdges = customizableEdges5;
             txtMaNV.DefaultText = "";
             txtMaNV.Font = new Font("Segoe UI", 9F);
-            txtMaNV.Location = new Point(150, 157);
-            txtMaNV.Margin = new Padding(5, 6, 5, 6);
+            txtMaNV.Location = new Point(120, 126);
+            txtMaNV.Margin = new Padding(4, 5, 4, 5);
             txtMaNV.Name = "txtMaNV";
             txtMaNV.PlaceholderText = "";
             txtMaNV.SelectedText = "";
             txtMaNV.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtMaNV.Size = new Size(275, 45);
+            txtMaNV.Size = new Size(220, 36);
             txtMaNV.TabIndex = 5;
             // 
             // dtNgayNhap
@@ -220,13 +219,12 @@ namespace QuanLyBanDienThoai.GUI
             dtNgayNhap.FillColor = Color.FromArgb(236, 240, 241);
             dtNgayNhap.Font = new Font("Segoe UI", 9F);
             dtNgayNhap.Format = DateTimePickerFormat.Custom;
-            dtNgayNhap.Location = new Point(626, 46);
-            dtNgayNhap.Margin = new Padding(4);
+            dtNgayNhap.Location = new Point(501, 37);
             dtNgayNhap.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtNgayNhap.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtNgayNhap.Name = "dtNgayNhap";
             dtNgayNhap.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            dtNgayNhap.Size = new Size(312, 45);
+            dtNgayNhap.Size = new Size(250, 36);
             dtNgayNhap.TabIndex = 7;
             dtNgayNhap.Value = new DateTime(2025, 12, 8, 21, 20, 55, 602);
             // 
@@ -236,13 +234,13 @@ namespace QuanLyBanDienThoai.GUI
             txtTongTien.CustomizableEdges = customizableEdges9;
             txtTongTien.DefaultText = "";
             txtTongTien.Font = new Font("Segoe UI", 9F);
-            txtTongTien.Location = new Point(626, 101);
-            txtTongTien.Margin = new Padding(5, 6, 5, 6);
+            txtTongTien.Location = new Point(501, 81);
+            txtTongTien.Margin = new Padding(4, 5, 4, 5);
             txtTongTien.Name = "txtTongTien";
             txtTongTien.PlaceholderText = "";
             txtTongTien.SelectedText = "";
             txtTongTien.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtTongTien.Size = new Size(312, 45);
+            txtTongTien.Size = new Size(250, 36);
             txtTongTien.TabIndex = 9;
             // 
             // txtTimKiem
@@ -251,13 +249,13 @@ namespace QuanLyBanDienThoai.GUI
             txtTimKiem.CustomizableEdges = customizableEdges11;
             txtTimKiem.DefaultText = "";
             txtTimKiem.Font = new Font("Segoe UI", 9F);
-            txtTimKiem.Location = new Point(150, 54);
-            txtTimKiem.Margin = new Padding(5, 6, 5, 6);
+            txtTimKiem.Location = new Point(120, 43);
+            txtTimKiem.Margin = new Padding(4, 5, 4, 5);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PlaceholderText = "";
             txtTimKiem.SelectedText = "";
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtTimKiem.Size = new Size(275, 45);
+            txtTimKiem.Size = new Size(220, 36);
             txtTimKiem.TabIndex = 1;
             txtTimKiem.TextChanged += txtTimKiem_TextChanged;
             // 
@@ -268,11 +266,10 @@ namespace QuanLyBanDienThoai.GUI
             btnThem.FillColor = Color.FromArgb(46, 204, 113);
             btnThem.Font = new Font("Segoe UI", 9F);
             btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(500, 157);
-            btnThem.Margin = new Padding(4);
+            btnThem.Location = new Point(400, 126);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnThem.Size = new Size(100, 45);
+            btnThem.Size = new Size(80, 36);
             btnThem.TabIndex = 10;
             btnThem.Text = "Thêm";
             btnThem.Click += btnThem_Click;
@@ -284,11 +281,10 @@ namespace QuanLyBanDienThoai.GUI
             btnSua.FillColor = Color.FromArgb(52, 152, 219);
             btnSua.Font = new Font("Segoe UI", 9F);
             btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(608, 157);
-            btnSua.Margin = new Padding(4);
+            btnSua.Location = new Point(486, 126);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btnSua.Size = new Size(100, 45);
+            btnSua.Size = new Size(80, 36);
             btnSua.TabIndex = 11;
             btnSua.Text = "Sửa";
             btnSua.Click += btnSua_Click;
@@ -300,11 +296,10 @@ namespace QuanLyBanDienThoai.GUI
             btnXoa.FillColor = Color.FromArgb(211, 47, 47);
             btnXoa.Font = new Font("Segoe UI", 9F);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(716, 157);
-            btnXoa.Margin = new Padding(4);
+            btnXoa.Location = new Point(573, 126);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnXoa.Size = new Size(100, 45);
+            btnXoa.Size = new Size(80, 36);
             btnXoa.TabIndex = 12;
             btnXoa.Text = "Xóa";
             btnXoa.Click += btnXoa_Click;
@@ -316,11 +311,10 @@ namespace QuanLyBanDienThoai.GUI
             btnLamMoi.FillColor = Color.FromArgb(52, 73, 94);
             btnLamMoi.Font = new Font("Segoe UI", 9F);
             btnLamMoi.ForeColor = Color.White;
-            btnLamMoi.Location = new Point(825, 157);
-            btnLamMoi.Margin = new Padding(4);
+            btnLamMoi.Location = new Point(660, 126);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnLamMoi.Size = new Size(112, 45);
+            btnLamMoi.Size = new Size(90, 36);
             btnLamMoi.TabIndex = 13;
             btnLamMoi.Text = "Làm mới";
             btnLamMoi.Click += btnLamMoi_Click;
@@ -332,11 +326,10 @@ namespace QuanLyBanDienThoai.GUI
             btnTimKiem.FillColor = Color.FromArgb(103, 58, 183);
             btnTimKiem.Font = new Font("Segoe UI", 9F);
             btnTimKiem.ForeColor = Color.White;
-            btnTimKiem.Location = new Point(1050, 31);
-            btnTimKiem.Margin = new Padding(4);
+            btnTimKiem.Location = new Point(840, 25);
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnTimKiem.Size = new Size(125, 45);
+            btnTimKiem.Size = new Size(100, 36);
             btnTimKiem.TabIndex = 2;
             btnTimKiem.Text = "Tìm kiếm";
             btnTimKiem.Click += btnTimKiem_Click;
@@ -362,61 +355,55 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxInfo.CustomizableEdges = customizableEdges23;
             groupBoxInfo.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxInfo.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxInfo.Location = new Point(15, 15);
-            groupBoxInfo.Margin = new Padding(4);
+            groupBoxInfo.Location = new Point(12, 12);
             groupBoxInfo.Name = "groupBoxInfo";
             groupBoxInfo.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            groupBoxInfo.Size = new Size(972, 215);
+            groupBoxInfo.Size = new Size(778, 172);
             groupBoxInfo.TabIndex = 2;
             groupBoxInfo.Text = "Thông tin phiếu nhập";
             // 
             // lblMaPN
             // 
             lblMaPN.BackColor = Color.Transparent;
-            lblMaPN.Location = new Point(25, 54);
-            lblMaPN.Margin = new Padding(4);
+            lblMaPN.Location = new Point(20, 43);
             lblMaPN.Name = "lblMaPN";
-            lblMaPN.Size = new Size(60, 27);
+            lblMaPN.Size = new Size(50, 22);
             lblMaPN.TabIndex = 0;
             lblMaPN.Text = "Mã PN:";
             // 
             // lblMaNCC
             // 
             lblMaNCC.BackColor = Color.Transparent;
-            lblMaNCC.Location = new Point(25, 112);
-            lblMaNCC.Margin = new Padding(4);
+            lblMaNCC.Location = new Point(20, 90);
             lblMaNCC.Name = "lblMaNCC";
-            lblMaNCC.Size = new Size(116, 27);
+            lblMaNCC.Size = new Size(97, 22);
             lblMaNCC.TabIndex = 2;
             lblMaNCC.Text = "Nhà cung cấp:";
             // 
             // lblMaNV
             // 
             lblMaNV.BackColor = Color.Transparent;
-            lblMaNV.Location = new Point(25, 167);
-            lblMaNV.Margin = new Padding(4);
+            lblMaNV.Location = new Point(20, 134);
             lblMaNV.Name = "lblMaNV";
-            lblMaNV.Size = new Size(61, 27);
+            lblMaNV.Size = new Size(51, 22);
             lblMaNV.TabIndex = 4;
             lblMaNV.Text = "Mã NV:";
             // 
             // lblNgayNhap
             // 
             lblNgayNhap.BackColor = Color.Transparent;
-            lblNgayNhap.Location = new Point(501, 50);
-            lblNgayNhap.Margin = new Padding(4);
+            lblNgayNhap.Location = new Point(401, 40);
             lblNgayNhap.Name = "lblNgayNhap";
-            lblNgayNhap.Size = new Size(94, 27);
+            lblNgayNhap.Size = new Size(78, 22);
             lblNgayNhap.TabIndex = 6;
             lblNgayNhap.Text = "Ngày nhập:";
             // 
             // lblTongTien
             // 
             lblTongTien.BackColor = Color.Transparent;
-            lblTongTien.Location = new Point(501, 106);
-            lblTongTien.Margin = new Padding(4);
+            lblTongTien.Location = new Point(401, 85);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(82, 27);
+            lblTongTien.Size = new Size(69, 22);
             lblTongTien.TabIndex = 8;
             lblTongTien.Text = "Tổng tiền:";
             // 
@@ -431,11 +418,10 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxSearch.CustomizableEdges = customizableEdges27;
             groupBoxSearch.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             groupBoxSearch.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxSearch.Location = new Point(15, 238);
-            groupBoxSearch.Margin = new Padding(4);
+            groupBoxSearch.Location = new Point(12, 190);
             groupBoxSearch.Name = "groupBoxSearch";
             groupBoxSearch.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            groupBoxSearch.Size = new Size(594, 114);
+            groupBoxSearch.Size = new Size(475, 91);
             groupBoxSearch.TabIndex = 1;
             groupBoxSearch.Text = "Tìm kiếm";
             // 
@@ -446,11 +432,10 @@ namespace QuanLyBanDienThoai.GUI
             btn_timkiem.FillColor = Color.FromArgb(46, 204, 113);
             btn_timkiem.Font = new Font("Segoe UI", 9F);
             btn_timkiem.ForeColor = Color.White;
-            btn_timkiem.Location = new Point(448, 54);
-            btn_timkiem.Margin = new Padding(4);
+            btn_timkiem.Location = new Point(358, 43);
             btn_timkiem.Name = "btn_timkiem";
             btn_timkiem.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            btn_timkiem.Size = new Size(108, 45);
+            btn_timkiem.Size = new Size(86, 36);
             btn_timkiem.TabIndex = 15;
             btn_timkiem.Text = "Tìm kiếm";
             btn_timkiem.Click += btn_timkiem_Click;
@@ -458,10 +443,9 @@ namespace QuanLyBanDienThoai.GUI
             // lblTimKiem
             // 
             lblTimKiem.BackColor = Color.Transparent;
-            lblTimKiem.Location = new Point(25, 63);
-            lblTimKiem.Margin = new Padding(4);
+            lblTimKiem.Location = new Point(20, 50);
             lblTimKiem.Name = "lblTimKiem";
-            lblTimKiem.Size = new Size(71, 27);
+            lblTimKiem.Size = new Size(59, 22);
             lblTimKiem.TabIndex = 0;
             lblTimKiem.Text = "Từ khóa:";
             // 
@@ -473,11 +457,10 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxGrid.CustomizableEdges = customizableEdges29;
             groupBoxGrid.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             groupBoxGrid.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxGrid.Location = new Point(15, 360);
-            groupBoxGrid.Margin = new Padding(4);
+            groupBoxGrid.Location = new Point(12, 288);
             groupBoxGrid.Name = "groupBoxGrid";
             groupBoxGrid.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            groupBoxGrid.Size = new Size(970, 326);
+            groupBoxGrid.Size = new Size(776, 261);
             groupBoxGrid.TabIndex = 0;
             groupBoxGrid.Text = "Danh sách phiếu nhập";
             // 
@@ -490,13 +473,13 @@ namespace QuanLyBanDienThoai.GUI
             guna2GroupBox1.CustomizableEdges = customizableEdges35;
             guna2GroupBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2GroupBox1.ForeColor = Color.FromArgb(125, 137, 149);
-            guna2GroupBox1.Location = new Point(623, 238);
-            guna2GroupBox1.Margin = new Padding(4);
+            guna2GroupBox1.Location = new Point(498, 190);
             guna2GroupBox1.Name = "guna2GroupBox1";
             guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            guna2GroupBox1.Size = new Size(362, 114);
+            guna2GroupBox1.Size = new Size(290, 91);
             guna2GroupBox1.TabIndex = 3;
             guna2GroupBox1.Text = "Chuyển đổi";
+         
             // 
             // btn_chuyendoi
             // 
@@ -505,11 +488,10 @@ namespace QuanLyBanDienThoai.GUI
             btn_chuyendoi.FillColor = Color.FromArgb(46, 204, 113);
             btn_chuyendoi.Font = new Font("Segoe UI", 9F);
             btn_chuyendoi.ForeColor = Color.White;
-            btn_chuyendoi.Location = new Point(18, 54);
-            btn_chuyendoi.Margin = new Padding(4);
+            btn_chuyendoi.Location = new Point(14, 43);
             btn_chuyendoi.Name = "btn_chuyendoi";
             btn_chuyendoi.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            btn_chuyendoi.Size = new Size(100, 45);
+            btn_chuyendoi.Size = new Size(80, 36);
             btn_chuyendoi.TabIndex = 14;
             btn_chuyendoi.Text = "Html";
             btn_chuyendoi.Click += btn_chuyendoi_Click;
@@ -521,25 +503,23 @@ namespace QuanLyBanDienThoai.GUI
             guna2Button1.FillColor = Color.FromArgb(103, 58, 183);
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(1050, 31);
-            guna2Button1.Margin = new Padding(4);
+            guna2Button1.Location = new Point(840, 25);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2Button1.Size = new Size(125, 45);
+            guna2Button1.Size = new Size(100, 36);
             guna2Button1.TabIndex = 2;
             guna2Button1.Text = "Tìm kiếm";
             // 
             // frmQuanLyPhieuNhap
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 701);
+            ClientSize = new Size(800, 561);
             Controls.Add(guna2GroupBox1);
             Controls.Add(groupBoxGrid);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBoxInfo);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "frmQuanLyPhieuNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản lý phiếu nhập";

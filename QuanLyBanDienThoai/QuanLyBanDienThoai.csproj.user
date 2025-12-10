@@ -7,6 +7,9 @@
     <Compile Update="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\frmChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\frmChiTietPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\frmQuanLyHangSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\frmQuanLyNhaCungCap.cs">

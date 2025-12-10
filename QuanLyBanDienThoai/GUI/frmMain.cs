@@ -63,11 +63,7 @@ namespace QuanLyBanDienThoai.GUI
         {
             label_header.Text = "Quản Lý Hóa Đơn";
             img_header.Image = Properties.Resources.clipboard_list_2;
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            OpenChildForm(new frmQuanLyHoaDon(this));
         }
 
         private void btnPhieuNhap_Click(object sender, EventArgs e)

@@ -445,7 +445,6 @@ namespace QuanLyBanDienThoai.GUI
             guna2TextBox1.Size = new Size(234, 35);
             guna2TextBox1.TabIndex = 3;
             guna2TextBox1.TextOffset = new Point(6, 0);
-            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
             // 
             // guna2ControlBox3
             // 
