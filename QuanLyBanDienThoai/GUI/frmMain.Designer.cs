@@ -448,12 +448,11 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // guna2ControlBox3
             // 
-            guna2ControlBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             guna2ControlBox3.CustomizableEdges = customizableEdges27;
             guna2ControlBox3.FillColor = Color.Transparent;
             guna2ControlBox3.IconColor = Color.DimGray;
-            guna2ControlBox3.Location = new Point(781, 3);
+            guna2ControlBox3.Location = new Point(788, 0);
             guna2ControlBox3.Name = "guna2ControlBox3";
             guna2ControlBox3.ShadowDecoration.CustomizableEdges = customizableEdges28;
             guna2ControlBox3.Size = new Size(68, 35);
@@ -466,7 +465,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2ControlBox2.CustomizableEdges = customizableEdges29;
             guna2ControlBox2.FillColor = Color.Transparent;
             guna2ControlBox2.IconColor = Color.DimGray;
-            guna2ControlBox2.Location = new Point(855, 3);
+            guna2ControlBox2.Location = new Point(860, 0);
             guna2ControlBox2.Name = "guna2ControlBox2";
             guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges30;
             guna2ControlBox2.Size = new Size(68, 35);
@@ -478,7 +477,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2ControlBox1.CustomizableEdges = customizableEdges31;
             guna2ControlBox1.FillColor = Color.Transparent;
             guna2ControlBox1.IconColor = Color.DimGray;
-            guna2ControlBox1.Location = new Point(929, 3);
+            guna2ControlBox1.Location = new Point(932, 0);
             guna2ControlBox1.Name = "guna2ControlBox1";
             guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges32;
             guna2ControlBox1.Size = new Size(68, 35);
