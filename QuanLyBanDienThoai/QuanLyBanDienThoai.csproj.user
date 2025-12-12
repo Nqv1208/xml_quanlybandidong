@@ -11,6 +11,34 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\FormQuenMatKhau.cs">
+    <Compile Update="GUI\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmChiTietPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyHangSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLySanPham.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
