@@ -60,6 +60,12 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             groupBoxSearch = new Guna.UI2.WinForms.Guna2GroupBox();
             lblTimKiem = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -83,11 +89,15 @@
             btnSua = new Guna.UI2.WinForms.Guna2Button();
             btnXoa = new Guna.UI2.WinForms.Guna2Button();
             btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
+            guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            btnXuatHTML = new Guna.UI2.WinForms.Guna2Button();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             groupBoxSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSanPham).BeginInit();
             groupBoxGrid.SuspendLayout();
             groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)cboHang).BeginInit();
+            guna2GroupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBoxSearch
@@ -100,10 +110,10 @@
             groupBoxSearch.CustomizableEdges = customizableEdges5;
             groupBoxSearch.Font = new Font("Segoe UI", 9F);
             groupBoxSearch.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxSearch.Location = new Point(12, 244);
+            groupBoxSearch.Location = new Point(12, 260);
             groupBoxSearch.Name = "groupBoxSearch";
             groupBoxSearch.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            groupBoxSearch.Size = new Size(772, 92);
+            groupBoxSearch.Size = new Size(567, 90);
             groupBoxSearch.TabIndex = 4;
             groupBoxSearch.Text = "Tìm kiếm";
             // 
@@ -128,7 +138,7 @@
             txtTimKiem.PlaceholderText = "";
             txtTimKiem.SelectedText = "";
             txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtTimKiem.Size = new Size(342, 36);
+            txtTimKiem.Size = new Size(308, 36);
             txtTimKiem.TabIndex = 1;
             // 
             // btnTimKiem
@@ -138,7 +148,7 @@
             btnTimKiem.FillColor = Color.FromArgb(103, 58, 183);
             btnTimKiem.Font = new Font("Segoe UI", 9F);
             btnTimKiem.ForeColor = Color.White;
-            btnTimKiem.Location = new Point(479, 45);
+            btnTimKiem.Location = new Point(445, 45);
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnTimKiem.Size = new Size(100, 36);
@@ -181,7 +191,7 @@
             dgvSanPham.RowHeadersVisible = false;
             dgvSanPham.RowHeadersWidth = 62;
             dgvSanPham.RowTemplate.Height = 33;
-            dgvSanPham.Size = new Size(772, 269);
+            dgvSanPham.Size = new Size(772, 305);
             dgvSanPham.TabIndex = 0;
             dgvSanPham.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvSanPham.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -214,10 +224,10 @@
             groupBoxGrid.CustomizableEdges = customizableEdges7;
             groupBoxGrid.Font = new Font("Segoe UI", 9F);
             groupBoxGrid.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxGrid.Location = new Point(12, 333);
+            groupBoxGrid.Location = new Point(12, 356);
             groupBoxGrid.Name = "groupBoxGrid";
             groupBoxGrid.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            groupBoxGrid.Size = new Size(772, 309);
+            groupBoxGrid.Size = new Size(772, 345);
             groupBoxGrid.TabIndex = 3;
             groupBoxGrid.Text = "Danh sách sản phẩm";
             // 
@@ -455,11 +465,57 @@
             btnLamMoi.Text = "Làm mới";
             btnLamMoi.Click += btnLamMoi_Click;
             // 
+            // guna2GroupBox1
+            // 
+            guna2GroupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            guna2GroupBox1.BorderRadius = 6;
+            guna2GroupBox1.Controls.Add(btnXuatHTML);
+            guna2GroupBox1.Controls.Add(guna2Button1);
+            guna2GroupBox1.CustomizableEdges = customizableEdges33;
+            guna2GroupBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            guna2GroupBox1.ForeColor = Color.FromArgb(125, 137, 149);
+            guna2GroupBox1.Location = new Point(601, 260);
+            guna2GroupBox1.Name = "guna2GroupBox1";
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            guna2GroupBox1.Size = new Size(171, 90);
+            guna2GroupBox1.TabIndex = 9;
+            guna2GroupBox1.Text = "Chuyển đổi";
+            // 
+            // btnXuatHTML
+            // 
+            btnXuatHTML.BorderRadius = 6;
+            btnXuatHTML.CustomizableEdges = customizableEdges29;
+            btnXuatHTML.FillColor = Color.FromArgb(46, 204, 113);
+            btnXuatHTML.Font = new Font("Segoe UI", 9F);
+            btnXuatHTML.ForeColor = Color.White;
+            btnXuatHTML.Location = new Point(16, 45);
+            btnXuatHTML.Name = "btnXuatHTML";
+            btnXuatHTML.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            btnXuatHTML.Size = new Size(80, 36);
+            btnXuatHTML.TabIndex = 14;
+            btnXuatHTML.Text = "Html";
+            btnXuatHTML.Click += btnXuatHTML_Click;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderRadius = 6;
+            guna2Button1.CustomizableEdges = customizableEdges31;
+            guna2Button1.FillColor = Color.FromArgb(103, 58, 183);
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(840, 25);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            guna2Button1.Size = new Size(100, 36);
+            guna2Button1.TabIndex = 2;
+            guna2Button1.Text = "Tìm kiếm";
+            // 
             // frmQuanLySanPham
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 643);
+            ClientSize = new Size(784, 702);
+            Controls.Add(guna2GroupBox1);
             Controls.Add(groupBoxInfo);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBoxGrid);
@@ -473,6 +529,7 @@
             groupBoxInfo.ResumeLayout(false);
             groupBoxInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)cboHang).EndInit();
+            guna2GroupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -501,5 +558,8 @@
         private Krypton.Toolkit.KryptonComboBox cboHang;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtMoTa;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2Button btnXuatHTML;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
