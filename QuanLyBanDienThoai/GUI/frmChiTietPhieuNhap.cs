@@ -11,10 +11,12 @@ namespace QuanLyBanDienThoai.GUI
         private DataTable _dtSanPham = new();
         private DataTable _dtPhieuNhap = new();
         private DataTable _dtNCC = new();
+        private frmMain _parent;
 
-        public frmChiTietPhieuNhap(string maPN)
+        public frmChiTietPhieuNhap(string maPN, frmMain parent)
         {
             InitializeComponent();
+            _parent = parent;
             _maPN = maPN;
             LoadData();
         }
@@ -165,6 +167,8 @@ namespace QuanLyBanDienThoai.GUI
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+            frmQuanLyPhieuNhap frm = new frmQuanLyPhieuNhap(_parent);
+            _parent.OpenChildForm(frm);
         }
     }
 }

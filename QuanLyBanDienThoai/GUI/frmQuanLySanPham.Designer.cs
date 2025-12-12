@@ -133,8 +133,8 @@
             txtTimKiem.CustomizableEdges = customizableEdges1;
             txtTimKiem.DefaultText = "";
             txtTimKiem.Font = new Font("Segoe UI", 9F);
-            txtTimKiem.Location = new Point(117, 45);
-            txtTimKiem.Margin = new Padding(4, 5, 4, 5);
+            txtTimKiem.Location = new Point(146, 56);
+            txtTimKiem.Margin = new Padding(5, 6, 5, 6);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PlaceholderText = "";
             txtTimKiem.SelectedText = "";
@@ -156,7 +156,7 @@
             btnTimKiem.Location = new Point(445, 45);
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnTimKiem.Size = new Size(100, 36);
+            btnTimKiem.Size = new Size(125, 45);
             btnTimKiem.TabIndex = 2;
             btnTimKiem.Text = "Tìm kiếm";
             btnTimKiem.Click += btnTimKiem_Click;
@@ -183,6 +183,7 @@
             dgvSanPham.Dock = DockStyle.Fill;
             dgvSanPham.GridColor = Color.FromArgb(231, 229, 255);
             dgvSanPham.Location = new Point(0, 40);
+            dgvSanPham.Margin = new Padding(4, 4, 4, 4);
             dgvSanPham.Name = "dgvSanPham";
             dgvSanPham.ReadOnly = true;
             dgvSanPham.RowHeadersVisible = false;
@@ -251,7 +252,8 @@
             groupBoxInfo.CustomizableEdges = customizableEdges27;
             groupBoxInfo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxInfo.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxInfo.Location = new Point(9, 12);
+            groupBoxInfo.Location = new Point(11, 15);
+            groupBoxInfo.Margin = new Padding(4, 4, 4, 4);
             groupBoxInfo.Name = "groupBoxInfo";
             groupBoxInfo.ShadowDecoration.CustomizableEdges = customizableEdges28;
             groupBoxInfo.Size = new Size(791, 242);
@@ -261,9 +263,10 @@
             // cboHang
             // 
             cboHang.DropDownWidth = 185;
-            cboHang.Location = new Point(120, 144);
+            cboHang.Location = new Point(150, 180);
+            cboHang.Margin = new Padding(4, 4, 4, 4);
             cboHang.Name = "cboHang";
-            cboHang.Size = new Size(185, 26);
+            cboHang.Size = new Size(231, 30);
             cboHang.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             cboHang.TabIndex = 17;
             // 
@@ -284,13 +287,13 @@
             txtMoTa.CustomizableEdges = customizableEdges9;
             txtMoTa.DefaultText = "";
             txtMoTa.Font = new Font("Segoe UI", 9F);
-            txtMoTa.Location = new Point(482, 134);
-            txtMoTa.Margin = new Padding(4, 5, 4, 5);
+            txtMoTa.Location = new Point(602, 168);
+            txtMoTa.Margin = new Padding(5, 6, 5, 6);
             txtMoTa.Name = "txtMoTa";
             txtMoTa.PlaceholderText = "";
             txtMoTa.SelectedText = "";
             txtMoTa.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtMoTa.Size = new Size(260, 36);
+            txtMoTa.Size = new Size(325, 45);
             txtMoTa.TabIndex = 14;
             // 
             // lblMaSP
@@ -310,13 +313,13 @@
             txtMaSP.CustomizableEdges = customizableEdges11;
             txtMaSP.DefaultText = "";
             txtMaSP.Font = new Font("Segoe UI", 9F);
-            txtMaSP.Location = new Point(120, 45);
-            txtMaSP.Margin = new Padding(4, 5, 4, 5);
+            txtMaSP.Location = new Point(150, 56);
+            txtMaSP.Margin = new Padding(5, 6, 5, 6);
             txtMaSP.Name = "txtMaSP";
             txtMaSP.PlaceholderText = "";
             txtMaSP.SelectedText = "";
             txtMaSP.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtMaSP.Size = new Size(188, 36);
+            txtMaSP.Size = new Size(235, 45);
             txtMaSP.TabIndex = 1;
             // 
             // lblTenNCC
@@ -336,13 +339,13 @@
             txtTenSP.CustomizableEdges = customizableEdges13;
             txtTenSP.DefaultText = "";
             txtTenSP.Font = new Font("Segoe UI", 9F);
-            txtTenSP.Location = new Point(120, 91);
-            txtTenSP.Margin = new Padding(4, 5, 4, 5);
+            txtTenSP.Location = new Point(150, 114);
+            txtTenSP.Margin = new Padding(5, 6, 5, 6);
             txtTenSP.Name = "txtTenSP";
             txtTenSP.PlaceholderText = "";
             txtTenSP.SelectedText = "";
             txtTenSP.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtTenSP.Size = new Size(188, 36);
+            txtTenSP.Size = new Size(235, 45);
             txtTenSP.TabIndex = 3;
             // 
             // lblDiaChi
@@ -373,13 +376,13 @@
             txtSoLuong.CustomizableEdges = customizableEdges15;
             txtSoLuong.DefaultText = "";
             txtSoLuong.Font = new Font("Segoe UI", 9F);
-            txtSoLuong.Location = new Point(482, 45);
-            txtSoLuong.Margin = new Padding(4, 5, 4, 5);
+            txtSoLuong.Location = new Point(602, 56);
+            txtSoLuong.Margin = new Padding(5, 6, 5, 6);
             txtSoLuong.Name = "txtSoLuong";
             txtSoLuong.PlaceholderText = "";
             txtSoLuong.SelectedText = "";
             txtSoLuong.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtSoLuong.Size = new Size(260, 36);
+            txtSoLuong.Size = new Size(325, 45);
             txtSoLuong.TabIndex = 7;
             // 
             // lblEmail
@@ -399,13 +402,13 @@
             txtGia.CustomizableEdges = customizableEdges17;
             txtGia.DefaultText = "";
             txtGia.Font = new Font("Segoe UI", 9F);
-            txtGia.Location = new Point(482, 88);
-            txtGia.Margin = new Padding(4, 5, 4, 5);
+            txtGia.Location = new Point(602, 110);
+            txtGia.Margin = new Padding(5, 6, 5, 6);
             txtGia.Name = "txtGia";
             txtGia.PlaceholderText = "";
             txtGia.SelectedText = "";
             txtGia.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            txtGia.Size = new Size(260, 36);
+            txtGia.Size = new Size(325, 45);
             txtGia.TabIndex = 9;
             // 
             // btnThem
@@ -422,7 +425,7 @@
             btnThem.Location = new Point(353, 190);
             btnThem.Name = "btnThem";
             btnThem.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnThem.Size = new Size(90, 36);
+            btnThem.Size = new Size(112, 45);
             btnThem.TabIndex = 10;
             btnThem.Text = "Thêm";
             btnThem.Click += btnThem_Click;
@@ -440,7 +443,7 @@
             btnSua.Location = new Point(458, 190);
             btnSua.Name = "btnSua";
             btnSua.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnSua.Size = new Size(90, 36);
+            btnSua.Size = new Size(112, 45);
             btnSua.TabIndex = 11;
             btnSua.Text = "Sửa";
             btnSua.Click += btnSua_Click;
@@ -459,7 +462,7 @@
             btnXoa.Location = new Point(554, 190);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            btnXoa.Size = new Size(90, 36);
+            btnXoa.Size = new Size(112, 45);
             btnXoa.TabIndex = 12;
             btnXoa.Text = "Xóa";
             btnXoa.Click += btnXoa_Click;
@@ -478,7 +481,7 @@
             btnLamMoi.Location = new Point(652, 190);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            btnLamMoi.Size = new Size(90, 36);
+            btnLamMoi.Size = new Size(112, 45);
             btnLamMoi.TabIndex = 13;
             btnLamMoi.Text = "Làm mới";
             btnLamMoi.Click += btnLamMoi_Click;
@@ -534,7 +537,7 @@
             // 
             // frmQuanLySanPham
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 561);
             Controls.Add(guna2GroupBox1);
@@ -542,6 +545,7 @@
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBoxGrid);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "frmQuanLySanPham";
             Text = "frmQuanLySanPham";
             groupBoxSearch.ResumeLayout(false);

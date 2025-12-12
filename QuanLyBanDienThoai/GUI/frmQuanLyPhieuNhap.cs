@@ -203,7 +203,7 @@ namespace QuanLyBanDienThoai.GUI
 
                 if (!string.IsNullOrEmpty(maPN))
                 {
-                    frmChiTietPhieuNhap frmChiTiet = new frmChiTietPhieuNhap(maPN);
+                    frmChiTietPhieuNhap frmChiTiet = new frmChiTietPhieuNhap(maPN, _parent);
                     _parent.OpenChildForm(frmChiTiet);
                 }
             }
@@ -435,5 +435,9 @@ namespace QuanLyBanDienThoai.GUI
                 .Replace("'", "&#39;");
         }
 
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -73,9 +73,9 @@ namespace QuanLyBanDienThoai.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap file_bar_chart_ {
+        public static System.Drawing.Bitmap file_bar_chart_2 {
             get {
-                object obj = ResourceManager.GetObject("file_bar_chart_", resourceCulture);
+                object obj = ResourceManager.GetObject("file_bar_chart_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,29 @@ namespace QuanLyBanDienThoai.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap manufacture_2 {
+            get {
+                object obj = ResourceManager.GetObject("manufacture_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap package_open_2 {
             get {
                 object obj = ResourceManager.GetObject("package_open_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap settings_2 {
+            get {
+                object obj = ResourceManager.GetObject("settings_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

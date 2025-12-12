@@ -62,10 +62,11 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxInfo.CustomizableEdges = customizableEdges1;
             groupBoxInfo.Font = new Font("Segoe UI", 9F);
             groupBoxInfo.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxInfo.Location = new Point(12, 12);
+            groupBoxInfo.Location = new Point(15, 15);
+            groupBoxInfo.Margin = new Padding(4, 4, 4, 4);
             groupBoxInfo.Name = "groupBoxInfo";
             groupBoxInfo.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            groupBoxInfo.Size = new Size(776, 96);
+            groupBoxInfo.Size = new Size(970, 120);
             groupBoxInfo.TabIndex = 0;
             groupBoxInfo.Text = "Thông tin phiếu nhập";
             // 
@@ -74,9 +75,10 @@ namespace QuanLyBanDienThoai.GUI
             lblTongTien.BackColor = Color.Transparent;
             lblTongTien.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblTongTien.ForeColor = Color.FromArgb(211, 47, 47);
-            lblTongTien.Location = new Point(490, 40);
+            lblTongTien.Location = new Point(612, 50);
+            lblTongTien.Margin = new Padding(4, 4, 4, 4);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(136, 30);
+            lblTongTien.Size = new Size(163, 34);
             lblTongTien.TabIndex = 4;
             lblTongTien.Text = "Tổng tiền: 0 đ";
             // 
@@ -84,9 +86,10 @@ namespace QuanLyBanDienThoai.GUI
             // 
             lblNgayNhap.BackColor = Color.Transparent;
             lblNgayNhap.Font = new Font("Segoe UI", 10F);
-            lblNgayNhap.Location = new Point(291, 64);
+            lblNgayNhap.Location = new Point(364, 80);
+            lblNgayNhap.Margin = new Padding(4, 4, 4, 4);
             lblNgayNhap.Name = "lblNgayNhap";
-            lblNgayNhap.Size = new Size(127, 25);
+            lblNgayNhap.Size = new Size(144, 30);
             lblNgayNhap.TabIndex = 3;
             lblNgayNhap.Text = "Ngày nhập: N/A";
             // 
@@ -94,9 +97,10 @@ namespace QuanLyBanDienThoai.GUI
             // 
             lblMaNV.BackColor = Color.Transparent;
             lblMaNV.Font = new Font("Segoe UI", 10F);
-            lblMaNV.Location = new Point(291, 40);
+            lblMaNV.Location = new Point(364, 50);
+            lblMaNV.Margin = new Padding(4, 4, 4, 4);
             lblMaNV.Name = "lblMaNV";
-            lblMaNV.Size = new Size(147, 25);
+            lblMaNV.Size = new Size(165, 30);
             lblMaNV.TabIndex = 2;
             lblMaNV.Text = "Mã nhân viên: N/A";
             // 
@@ -104,9 +108,10 @@ namespace QuanLyBanDienThoai.GUI
             // 
             lblTenNCC.BackColor = Color.Transparent;
             lblTenNCC.Font = new Font("Segoe UI", 10F);
-            lblTenNCC.Location = new Point(20, 64);
+            lblTenNCC.Location = new Point(25, 80);
+            lblTenNCC.Margin = new Padding(4, 4, 4, 4);
             lblTenNCC.Name = "lblTenNCC";
-            lblTenNCC.Size = new Size(150, 25);
+            lblTenNCC.Size = new Size(168, 30);
             lblTenNCC.TabIndex = 1;
             lblTenNCC.Text = "Nhà cung cấp: N/A";
             // 
@@ -115,9 +120,10 @@ namespace QuanLyBanDienThoai.GUI
             lblMaPN.BackColor = Color.Transparent;
             lblMaPN.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lblMaPN.ForeColor = Color.FromArgb(100, 88, 255);
-            lblMaPN.Location = new Point(20, 40);
+            lblMaPN.Location = new Point(25, 50);
+            lblMaPN.Margin = new Padding(4, 4, 4, 4);
             lblMaPN.Name = "lblMaPN";
-            lblMaPN.Size = new Size(186, 25);
+            lblMaPN.Size = new Size(220, 30);
             lblMaPN.TabIndex = 0;
             lblMaPN.Text = "Mã phiếu nhập: PN001";
             // 
@@ -129,10 +135,11 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxChiTiet.CustomizableEdges = customizableEdges3;
             groupBoxChiTiet.Font = new Font("Segoe UI", 9F);
             groupBoxChiTiet.ForeColor = Color.FromArgb(125, 137, 149);
-            groupBoxChiTiet.Location = new Point(12, 116);
+            groupBoxChiTiet.Location = new Point(15, 145);
+            groupBoxChiTiet.Margin = new Padding(4, 4, 4, 4);
             groupBoxChiTiet.Name = "groupBoxChiTiet";
             groupBoxChiTiet.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            groupBoxChiTiet.Size = new Size(776, 400);
+            groupBoxChiTiet.Size = new Size(970, 500);
             groupBoxChiTiet.TabIndex = 1;
             groupBoxChiTiet.Text = "Chi tiết phiếu nhập";
             // 
@@ -158,12 +165,12 @@ namespace QuanLyBanDienThoai.GUI
             dgvChiTiet.Dock = DockStyle.Fill;
             dgvChiTiet.GridColor = Color.FromArgb(231, 229, 255);
             dgvChiTiet.Location = new Point(0, 40);
+            dgvChiTiet.Margin = new Padding(4, 4, 4, 4);
             dgvChiTiet.Name = "dgvChiTiet";
             dgvChiTiet.ReadOnly = true;
             dgvChiTiet.RowHeadersVisible = false;
             dgvChiTiet.RowHeadersWidth = 62;
-            dgvChiTiet.RowTemplate.Height = 33;
-            dgvChiTiet.Size = new Size(776, 360);
+            dgvChiTiet.Size = new Size(970, 460);
             dgvChiTiet.TabIndex = 0;
             dgvChiTiet.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvChiTiet.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -192,26 +199,29 @@ namespace QuanLyBanDienThoai.GUI
             btnDong.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnDong.BorderRadius = 6;
             btnDong.CustomizableEdges = customizableEdges5;
-            btnDong.FillColor = Color.FromArgb(103, 58, 183);
+            btnDong.FillColor = Color.FromArgb(52, 73, 94);
             btnDong.Font = new Font("Segoe UI", 9F);
             btnDong.ForeColor = Color.White;
-            btnDong.Location = new Point(680, 524);
+            btnDong.HoverState.FillColor = Color.FromArgb(44, 62, 80);
+            btnDong.Location = new Point(850, 655);
+            btnDong.Margin = new Padding(4, 4, 4, 4);
             btnDong.Name = "btnDong";
             btnDong.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnDong.Size = new Size(108, 36);
+            btnDong.Size = new Size(135, 45);
             btnDong.TabIndex = 2;
             btnDong.Text = "Đóng";
             btnDong.Click += btnDong_Click;
             // 
             // frmChiTietPhieuNhap
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 572);
+            ClientSize = new Size(1000, 715);
             Controls.Add(btnDong);
             Controls.Add(groupBoxChiTiet);
             Controls.Add(groupBoxInfo);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "frmChiTietPhieuNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Chi tiết phiếu nhập";

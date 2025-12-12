@@ -121,14 +121,20 @@
   <data name="clipboard_list_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\clipboard_list_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_bar_chart_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\file_bar_chart_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_bar_chart_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\file_bar_chart_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_dashboard_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\layout_dashboard_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="manufacture_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\manufacture_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="package_open_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\package_open_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\settings_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="store_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\store_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
