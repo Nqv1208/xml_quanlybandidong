@@ -277,8 +277,8 @@ namespace QuanLyBanDienThoai.GUI
 
             if (!string.IsNullOrEmpty(maHD))
             {
-                frmChiTietHoaDon frm = new frmChiTietHoaDon(maHD);
-                frm.ShowDialog();
+                frmChiTietHoaDon frm = new frmChiTietHoaDon(_parent, maHD, this);
+                _parent.OpenChildForm(frm);
             }
         }
 

@@ -201,11 +201,15 @@
             // btnDong
             // 
             btnDong.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnDong.Animated = true;
             btnDong.BorderRadius = 6;
             btnDong.CustomizableEdges = customizableEdges5;
-            btnDong.FillColor = Color.FromArgb(103, 58, 183);
-            btnDong.Font = new Font("Segoe UI", 9F);
+            btnDong.FillColor = Color.FromArgb(52, 73, 94);
+            btnDong.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDong.ForeColor = Color.White;
+            btnDong.HoverState.FillColor = Color.FromArgb(44, 62, 80);
+            btnDong.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDong.HoverState.ForeColor = Color.White;
             btnDong.Location = new Point(680, 435);
             btnDong.Name = "btnDong";
             btnDong.ShadowDecoration.CustomizableEdges = customizableEdges6;

@@ -11,14 +11,17 @@ namespace QuanLyBanDienThoai.GUI
         private DataTable _dtSanPham = new();
         private DataTable _dtKhach = new();
         private DataTable _dtNhanVien = new();
+        private frmMain _parent;
+        private Form? _parentForm;
 
-        public frmChiTietHoaDon(string maHD)
+        public frmChiTietHoaDon(frmMain parent, string maHD, Form? parentForm = null)
         {
             InitializeComponent();
+            _parent = parent;
             _maHD = maHD;
+            _parentForm = parentForm;
             LoadData();
         }
-
         private void LoadData()
         {
             try
@@ -153,6 +156,11 @@ namespace QuanLyBanDienThoai.GUI
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            // Nếu có form cha, hiển thị lại form cha
+            if (_parent != null && _parentForm != null)
+            {
+                _parent.OpenChildForm(_parentForm);
+            }
             this.Close();
         }
     }
