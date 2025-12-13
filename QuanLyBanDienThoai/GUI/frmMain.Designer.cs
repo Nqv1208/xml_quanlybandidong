@@ -140,6 +140,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel_sidebar.ShadowDecoration.CustomizableEdges = customizableEdges31;
             guna2Panel_sidebar.Size = new Size(300, 850);
             guna2Panel_sidebar.TabIndex = 0;
+            guna2Panel_sidebar.Paint += guna2Panel_sidebar_Paint;
             // 
             // btnAccount
             // 

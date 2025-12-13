@@ -112,5 +112,15 @@ namespace QuanLyBanDienThoai.GUI
         {
             Application.Exit();
         }
+
+        private void pnlRight_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

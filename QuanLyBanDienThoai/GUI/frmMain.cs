@@ -96,6 +96,7 @@ namespace QuanLyBanDienThoai.GUI
             img_header.Image = Properties.Resources.users_2;
             ResetSidebarButtons();
             btnSideBarOnClick(btnCustomer);
+            OpenChildForm(new frmQuanLyKhachHang());
         }
 
         private void btnBill_Click(object sender, EventArgs e)
@@ -173,6 +174,11 @@ namespace QuanLyBanDienThoai.GUI
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel_sidebar_Paint(object sender, PaintEventArgs e)
         {
 
         }

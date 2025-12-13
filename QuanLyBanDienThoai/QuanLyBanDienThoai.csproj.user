@@ -10,9 +10,6 @@
     <Compile Update="GUI\FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="GUI\FormQuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -31,13 +28,22 @@
     <Compile Update="GUI\frmQuanLyHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\frmQuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\frmQuanLyNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\frmQuanLyPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\frmQuanLySanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmQuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

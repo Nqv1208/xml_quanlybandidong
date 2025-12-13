@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="store_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\store_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phong-cach-thiet-ke-shop-dien-thoai-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phong-cach-thiet-ke-shop-dien-thoai-16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clipboard_list_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\clipboard_list_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_bar_chart_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\file_bar_chart_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layout_dashboard_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\layout_dashboard_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="manufacture_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\manufacture_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="users_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\users_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="package_open_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\package_open_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,10 +136,16 @@
   <data name="settings_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\settings_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="store_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\store_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="manufacture_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\manufacture_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="users_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\users_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_bar_chart_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\file_bar_chart_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout_dashboard_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\layout_dashboard_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phong-cach-thiet-ke-shop-dien-thoai-161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phong-cach-thiet-ke-shop-dien-thoai-161.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -113,6 +113,26 @@ namespace QuanLyBanDienThoai.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap phong_cach_thiet_ke_shop_dien_thoai_16 {
+            get {
+                object obj = ResourceManager.GetObject("phong-cach-thiet-ke-shop-dien-thoai-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap phong_cach_thiet_ke_shop_dien_thoai_161 {
+            get {
+                object obj = ResourceManager.GetObject("phong-cach-thiet-ke-shop-dien-thoai-161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap settings_2 {
             get {
                 object obj = ResourceManager.GetObject("settings_2", resourceCulture);

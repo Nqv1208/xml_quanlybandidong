@@ -2,13 +2,11 @@
 using System.Windows.Forms;
 using QuanLyBanDienThoai.Service;
 using QuanLyBanDienThoai.Model;
-// Các Form khác (FormMain, FormDangKy, FormQuenMatKhau) nằm trong cùng Namespace GUI
 
 namespace QuanLyBanDienThoai.GUI
 {
     public partial class FormDangNhap : Form
     {
-        // Khai báo Service để xử lý logic kiểm tra tài khoản
         private TaiKhoanService _taiKhoanService;
 
         public FormDangNhap()
@@ -16,88 +14,103 @@ namespace QuanLyBanDienThoai.GUI
             InitializeComponent();
             _taiKhoanService = new TaiKhoanService();
 
-            // Cài đặt thuộc tính PasswordChar để ẩn mật khẩu
+            // Đảm bảo mật khẩu được ẩn bằng ký tự chấm tròn
             txtMatKhau.UseSystemPasswordChar = true;
 
-            // GÁN TẤT CẢ CÁC SỰ KIỆN (Để tránh lỗi thiếu phương thức)
-            btnDangNhap.Click += btnDangNhap_Click;
-            linkDangKy.LinkClicked += linkDangKy_LinkClicked;
-            linkQuenMatKhau.LinkClicked += linkQuenMatKhau_LinkClicked;
-            btnThoat.Click += btnThoat_Click;
+            // Gán các sự kiện
+            // Lưu ý: Nếu trong Designer đã gán sự kiện rồi thì các dòng += này có thể bỏ qua để tránh gán 2 lần
+            // Nhưng để chắc chắn, bạn cứ giữ nguyên cũng không sao.
         }
-
-        // ==========================================================
-        // PHƯƠNG THỨC XỬ LÝ ĐĂNG NHẬP
-        // ==========================================================
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string tenDangNhap = txtTenDangNhap.Text.Trim();
             string matKhau = txtMatKhau.Text;
 
+            // 1. Kiểm tra dữ liệu đầu vào
             if (string.IsNullOrEmpty(tenDangNhap) || string.IsNullOrEmpty(matKhau))
             {
                 MessageBox.Show("Vui lòng nhập Tên đăng nhập và Mật khẩu.", "Thiếu Dữ Liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Gọi Service để kiểm tra thông tin đăng nhập
-            // Giả định TaiKhoanService có phương thức KiemTraDangNhap
+            // 2. Gọi Service kiểm tra đăng nhập
             TaiKhoan taiKhoanHienTai = _taiKhoanService.KiemTraDangNhap(tenDangNhap, matKhau);
 
             if (taiKhoanHienTai != null)
             {
-                // ĐĂNG NHẬP THÀNH CÔNG: Chuyển sang FormMain
+                // Thông báo thành công -> Chờ người dùng nhấn OK
                 MessageBox.Show("Đăng nhập thành công! Chào mừng " + taiKhoanHienTai.HoTen, "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Mở FormMain
-                FormMain mainForm = new FormMain();
+                // --- QUAN TRỌNG: LOGIC MỞ FORM CHÍNH ---
 
-                // (Tùy chọn) Có thể truyền thông tin tài khoản đang đăng nhập qua FormMain
-                // mainForm.LoggedInUser = taiKhoanHienTai;
+                // B1: Ẩn Form Đăng Nhập đi (không đóng ngay, vì đóng sẽ tắt app)
+                this.Hide();
 
-                mainForm.Show();
-                this.Hide(); // Ẩn Form Đăng nhập
+                try
+                {
+                    // B2: Khởi tạo và mở Form Main
+                    frmMain mainForm = new frmMain();
+
+                    // Dùng ShowDialog() để "treo" code ở đây, giữ cho ứng dụng chạy
+                    // cho đến khi bạn tắt Form Main đi.
+                    mainForm.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Không thể mở Form Chính: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Nếu lỗi thì hiện lại form đăng nhập
+                    this.Show();
+                }
+                finally
+                {
+                    // B3: Khi Form Main bị đóng (người dùng tắt app), 
+                    // dòng này mới chạy để đóng hoàn toàn ứng dụng sạch sẽ.
+                    this.Close();
+                }
             }
             else
             {
-                // ĐĂNG NHẬP THẤT BẠI
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.", "Lỗi Đăng Nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Đăng Nhập Thất Bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtMatKhau.Clear();
-                txtTenDangNhap.Focus();
+                txtMatKhau.Focus();
             }
         }
 
-        // ==========================================================
-        // PHƯƠNG THỨC XỬ LÝ ĐIỀU HƯỚNG
-        // ==========================================================
-
-        // Chuyển sang Form Đăng ký
         private void linkDangKy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // Chuyển sang form Đăng Ký
             FormDangKy dangKyForm = new FormDangKy();
-            dangKyForm.Show();
             this.Hide();
+            dangKyForm.ShowDialog(); // Dùng ShowDialog để khi tắt form Đăng ký thì quay lại đây được
+            this.Show(); // Hiện lại form đăng nhập khi form đăng ký đóng
         }
 
-        // Chuyển sang Form Quên Mật Khẩu
         private void linkQuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // FormQuenMatKhau tồn tại theo cấu trúc dự án
+            // Chuyển sang form Quên Mật Khẩu
             FormQuenMatKhau quenMatKhauForm = new FormQuenMatKhau();
-            quenMatKhauForm.Show();
             this.Hide();
+            quenMatKhauForm.ShowDialog();
+            this.Show();
         }
 
-        // Xử lý nút Thoát
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void FormDangNhap_Load(object sender, EventArgs e)
+        private void btnThoat_Click_1(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
+
+        // --- Các hàm sự kiện rỗng (Giữ lại để tránh lỗi Designer nếu có liên kết) ---
+        private void FormDangNhap_Load(object sender, EventArgs e) { }
+        private void FormDangNhap_Load_1(object sender, EventArgs e) { }
+        private void txtMatKhau_TextChanged(object sender, EventArgs e) { }
+        private void pnlRight_Paint(object sender, PaintEventArgs e) { }
+        private void picLogo_Click(object sender, EventArgs e) { }
+        private void pnlLeft_Paint(object sender, PaintEventArgs e) { }
     }
 }

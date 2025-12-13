@@ -16,7 +16,7 @@ namespace QuanLyBanDienThoai
             // Seed XML từ database nếu file chưa tồn tại
             Data.XmlSeeder.SeedFromDatabase();
 
-            Application.Run(new frmMain());
+            Application.Run(new FormDangKy());
         }
     }
 }
