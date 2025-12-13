@@ -647,6 +647,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // guna2Panel_Container
             // 
+            guna2Panel_Container.AutoScroll = true;
             guna2Panel_Container.CustomizableEdges = customizableEdges45;
             guna2Panel_Container.Dock = DockStyle.Fill;
             guna2Panel_Container.Location = new Point(300, 53);
