@@ -57,7 +57,8 @@ namespace QuanLyBanDienThoai.GUI
             }
             Form fm = childForm as Form;
             fm.TopLevel = false;
-            fm.Dock = DockStyle.Fill;
+            // Không sử dụng Dock = Fill để form giữ nguyên kích thước và có thể cuộn
+            fm.FormBorderStyle = FormBorderStyle.None;
             guna2Panel_Container.Controls.Add(fm);
             guna2Panel_Container.Tag = fm;
             fm.Show();
