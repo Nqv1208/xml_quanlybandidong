@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLyBanDienThoai.GUI
 {
-    public partial class Dashboard : Form
+    public partial class DashBoard : Form
     {
-        public Dashboard()
+        public DashBoard()
         {
             InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
