@@ -1,6 +1,6 @@
-﻿namespace QuanLyBanDienThoai.GUI
+namespace QuanLyBanDienThoai.GUI
 {
-    partial class DashBoard
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -199,7 +199,7 @@
             guna2HtmlLabel2.Location = new Point(14, 9);
             guna2HtmlLabel2.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(48, 27);
+            guna2HtmlLabel2.Size = new Size(40, 22);
             guna2HtmlLabel2.TabIndex = 22;
             guna2HtmlLabel2.Text = "More";
             // 
@@ -241,7 +241,7 @@
             guna2HtmlLabel1.Location = new Point(14, 9);
             guna2HtmlLabel1.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(48, 27);
+            guna2HtmlLabel1.Size = new Size(40, 22);
             guna2HtmlLabel1.TabIndex = 22;
             guna2HtmlLabel1.Text = "More";
             // 
@@ -295,7 +295,7 @@
             guna2HtmlLabel21.Location = new Point(89, 418);
             guna2HtmlLabel21.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            guna2HtmlLabel21.Size = new Size(247, 27);
+            guna2HtmlLabel21.Size = new Size(201, 22);
             guna2HtmlLabel21.TabIndex = 18;
             guna2HtmlLabel21.Text = "(205) 555-0100        (262) 555-0131";
             // 
@@ -319,7 +319,7 @@
             guna2HtmlLabel19.Location = new Point(44, 326);
             guna2HtmlLabel19.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            guna2HtmlLabel19.Size = new Size(145, 27);
+            guna2HtmlLabel19.Size = new Size(119, 22);
             guna2HtmlLabel19.TabIndex = 16;
             guna2HtmlLabel19.Text = "Thông tin liên hệ";
             // 
@@ -331,7 +331,7 @@
             label5.Location = new Point(36, 154);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(244, 25);
+            label5.Size = new Size(203, 20);
             label5.TabIndex = 4;
             label5.Text = "Yêu cầu đang chờ phê duyệt";
             // 
@@ -343,7 +343,7 @@
             label4.Location = new Point(382, 72);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(94, 81);
+            label4.Size = new Size(78, 67);
             label4.TabIndex = 3;
             label4.Text = "14";
             // 
@@ -355,7 +355,7 @@
             label3.Location = new Point(62, 72);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(101, 81);
+            label3.Size = new Size(85, 67);
             label3.TabIndex = 2;
             label3.Text = "26";
             // 
@@ -366,7 +366,7 @@
             label2.Location = new Point(342, 26);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(174, 25);
+            label2.Size = new Size(143, 20);
             label2.TabIndex = 1;
             label2.Text = "CUỘC HẸN SẮP TỚI";
             // 
@@ -377,7 +377,7 @@
             label1.Location = new Point(36, 26);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(183, 25);
+            label1.Size = new Size(154, 20);
             label1.TabIndex = 0;
             label1.Text = "YÊU CẦU PHÊ DUYỆT";
             // 
@@ -388,7 +388,7 @@
             guna2HtmlLabel35.Location = new Point(421, 800);
             guna2HtmlLabel35.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel35.Name = "guna2HtmlLabel35";
-            guna2HtmlLabel35.Size = new Size(150, 27);
+            guna2HtmlLabel35.Size = new Size(123, 22);
             guna2HtmlLabel35.TabIndex = 77;
             guna2HtmlLabel35.Text = "5. Oppo S23 Ultra";
             // 
@@ -399,7 +399,7 @@
             guna2HtmlLabel36.Location = new Point(421, 752);
             guna2HtmlLabel36.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel36.Name = "guna2HtmlLabel36";
-            guna2HtmlLabel36.Size = new Size(170, 27);
+            guna2HtmlLabel36.Size = new Size(143, 22);
             guna2HtmlLabel36.TabIndex = 76;
             guna2HtmlLabel36.Text = "4. Iphone 15 Promax";
             // 
@@ -410,7 +410,7 @@
             guna2HtmlLabel34.Location = new Point(421, 707);
             guna2HtmlLabel34.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel34.Name = "guna2HtmlLabel34";
-            guna2HtmlLabel34.Size = new Size(170, 27);
+            guna2HtmlLabel34.Size = new Size(142, 22);
             guna2HtmlLabel34.TabIndex = 75;
             guna2HtmlLabel34.Text = "3. Iphone 16 Promax";
             // 
@@ -421,7 +421,7 @@
             guna2HtmlLabel33.Location = new Point(421, 660);
             guna2HtmlLabel33.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel33.Name = "guna2HtmlLabel33";
-            guna2HtmlLabel33.Size = new Size(232, 27);
+            guna2HtmlLabel33.Size = new Size(192, 22);
             guna2HtmlLabel33.TabIndex = 74;
             guna2HtmlLabel33.Text = "2. SamSum Galaxy Ultra s23";
             // 
@@ -432,7 +432,7 @@
             guna2HtmlLabel32.Location = new Point(421, 610);
             guna2HtmlLabel32.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel32.Name = "guna2HtmlLabel32";
-            guna2HtmlLabel32.Size = new Size(167, 27);
+            guna2HtmlLabel32.Size = new Size(140, 22);
             guna2HtmlLabel32.TabIndex = 73;
             guna2HtmlLabel32.Text = "1. Iphone 17 Promax";
             // 
@@ -459,7 +459,7 @@
             guna2HtmlLabel29.Location = new Point(165, 22);
             guna2HtmlLabel29.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel29.Name = "guna2HtmlLabel29";
-            guna2HtmlLabel29.Size = new Size(92, 27);
+            guna2HtmlLabel29.Size = new Size(77, 22);
             guna2HtmlLabel29.TabIndex = 20;
             guna2HtmlLabel29.Text = "13:00-15:00";
             // 
@@ -471,7 +471,7 @@
             guna2HtmlLabel30.Location = new Point(21, 5);
             guna2HtmlLabel30.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel30.Name = "guna2HtmlLabel30";
-            guna2HtmlLabel30.Size = new Size(143, 27);
+            guna2HtmlLabel30.Size = new Size(119, 22);
             guna2HtmlLabel30.TabIndex = 19;
             guna2HtmlLabel30.Text = "Thời gian diễn ra";
             // 
@@ -482,7 +482,7 @@
             guna2HtmlLabel31.Location = new Point(21, 34);
             guna2HtmlLabel31.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel31.Name = "guna2HtmlLabel31";
-            guna2HtmlLabel31.Size = new Size(156, 27);
+            guna2HtmlLabel31.Size = new Size(131, 22);
             guna2HtmlLabel31.TabIndex = 8;
             guna2HtmlLabel31.Text = "Thảo luận đối sách";
             // 
@@ -509,7 +509,7 @@
             guna2HtmlLabel26.Location = new Point(165, 22);
             guna2HtmlLabel26.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel26.Name = "guna2HtmlLabel26";
-            guna2HtmlLabel26.Size = new Size(89, 27);
+            guna2HtmlLabel26.Size = new Size(75, 22);
             guna2HtmlLabel26.TabIndex = 20;
             guna2HtmlLabel26.Text = "11:00-12:00";
             // 
@@ -521,7 +521,7 @@
             guna2HtmlLabel27.Location = new Point(21, 5);
             guna2HtmlLabel27.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel27.Name = "guna2HtmlLabel27";
-            guna2HtmlLabel27.Size = new Size(143, 27);
+            guna2HtmlLabel27.Size = new Size(119, 22);
             guna2HtmlLabel27.TabIndex = 19;
             guna2HtmlLabel27.Text = "Thời gian diễn ra";
             // 
@@ -532,7 +532,7 @@
             guna2HtmlLabel28.Location = new Point(21, 34);
             guna2HtmlLabel28.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel28.Name = "guna2HtmlLabel28";
-            guna2HtmlLabel28.Size = new Size(155, 27);
+            guna2HtmlLabel28.Size = new Size(127, 22);
             guna2HtmlLabel28.TabIndex = 8;
             guna2HtmlLabel28.Text = "Trao đổi thông tin";
             // 
@@ -559,7 +559,7 @@
             guna2HtmlLabel25.Location = new Point(165, 22);
             guna2HtmlLabel25.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel25.Name = "guna2HtmlLabel25";
-            guna2HtmlLabel25.Size = new Size(95, 27);
+            guna2HtmlLabel25.Size = new Size(79, 22);
             guna2HtmlLabel25.TabIndex = 20;
             guna2HtmlLabel25.Text = "09:00-10:00";
             // 
@@ -571,7 +571,7 @@
             guna2HtmlLabel24.Location = new Point(21, 5);
             guna2HtmlLabel24.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            guna2HtmlLabel24.Size = new Size(143, 27);
+            guna2HtmlLabel24.Size = new Size(119, 22);
             guna2HtmlLabel24.TabIndex = 19;
             guna2HtmlLabel24.Text = "Thời gian diễn ra";
             // 
@@ -582,7 +582,7 @@
             guna2HtmlLabel23.Location = new Point(21, 34);
             guna2HtmlLabel23.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            guna2HtmlLabel23.Size = new Size(127, 27);
+            guna2HtmlLabel23.Size = new Size(106, 22);
             guna2HtmlLabel23.TabIndex = 8;
             guna2HtmlLabel23.Text = "Cuộc thảo luận";
             // 
@@ -594,7 +594,7 @@
             guna2HtmlLabel22.Location = new Point(32, 601);
             guna2HtmlLabel22.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            guna2HtmlLabel22.Size = new Size(42, 95);
+            guna2HtmlLabel22.Size = new Size(35, 79);
             guna2HtmlLabel22.TabIndex = 69;
             guna2HtmlLabel22.Text = "3";
             // 
@@ -606,7 +606,7 @@
             guna2HtmlLabel15.Location = new Point(700, 752);
             guna2HtmlLabel15.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            guna2HtmlLabel15.Size = new Size(82, 72);
+            guna2HtmlLabel15.Size = new Size(68, 61);
             guna2HtmlLabel15.TabIndex = 68;
             guna2HtmlLabel15.Text = "103";
             // 
@@ -617,7 +617,7 @@
             guna2HtmlLabel16.Location = new Point(700, 695);
             guna2HtmlLabel16.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            guna2HtmlLabel16.Size = new Size(254, 27);
+            guna2HtmlLabel16.Size = new Size(209, 22);
             guna2HtmlLabel16.TabIndex = 67;
             guna2HtmlLabel16.Text = "TỔNG SỐ SẢN PHẨM ĐÃ BÁN";
             // 
@@ -629,7 +629,7 @@
             guna2HtmlLabel14.Location = new Point(700, 601);
             guna2HtmlLabel14.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            guna2HtmlLabel14.Size = new Size(53, 72);
+            guna2HtmlLabel14.Size = new Size(44, 61);
             guna2HtmlLabel14.TabIndex = 63;
             guna2HtmlLabel14.Text = "10";
             // 
@@ -641,7 +641,7 @@
             guna2HtmlLabel12.Location = new Point(1068, 795);
             guna2HtmlLabel12.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            guna2HtmlLabel12.Size = new Size(106, 27);
+            guna2HtmlLabel12.Size = new Size(89, 22);
             guna2HtmlLabel12.TabIndex = 62;
             guna2HtmlLabel12.Text = "Tháng Trước";
             // 
@@ -653,7 +653,7 @@
             guna2HtmlLabel13.Location = new Point(1068, 726);
             guna2HtmlLabel13.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            guna2HtmlLabel13.Size = new Size(190, 72);
+            guna2HtmlLabel13.Size = new Size(157, 61);
             guna2HtmlLabel13.TabIndex = 61;
             guna2HtmlLabel13.Text = "$35,000";
             // 
@@ -665,7 +665,7 @@
             guna2HtmlLabel11.Location = new Point(1068, 670);
             guna2HtmlLabel11.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            guna2HtmlLabel11.Size = new Size(233, 27);
+            guna2HtmlLabel11.Size = new Size(192, 22);
             guna2HtmlLabel11.TabIndex = 60;
             guna2HtmlLabel11.Text = "Tính Tới Thời Điểm Hiện Tại";
             // 
@@ -677,7 +677,7 @@
             guna2HtmlLabel10.Location = new Point(1068, 601);
             guna2HtmlLabel10.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            guna2HtmlLabel10.Size = new Size(190, 72);
+            guna2HtmlLabel10.Size = new Size(157, 61);
             guna2HtmlLabel10.TabIndex = 59;
             guna2HtmlLabel10.Text = "$26,000";
             // 
@@ -688,7 +688,7 @@
             guna2HtmlLabel9.Location = new Point(1068, 544);
             guna2HtmlLabel9.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            guna2HtmlLabel9.Size = new Size(61, 27);
+            guna2HtmlLabel9.Size = new Size(51, 22);
             guna2HtmlLabel9.TabIndex = 58;
             guna2HtmlLabel9.Text = "JASPEL";
             // 
@@ -699,7 +699,7 @@
             guna2HtmlLabel8.Location = new Point(700, 544);
             guna2HtmlLabel8.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(348, 27);
+            guna2HtmlLabel8.Size = new Size(286, 22);
             guna2HtmlLabel8.TabIndex = 57;
             guna2HtmlLabel8.Text = "TỔNG SỐ HOÁ ĐƠN TRONG THÁNG NÀY";
             // 
@@ -710,7 +710,7 @@
             guna2HtmlLabel7.Location = new Point(407, 544);
             guna2HtmlLabel7.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(230, 27);
+            guna2HtmlLabel7.Size = new Size(191, 22);
             guna2HtmlLabel7.TabIndex = 56;
             guna2HtmlLabel7.Text = "TOP SẢN PHẨM BÁN CHẠY";
             // 
@@ -721,7 +721,7 @@
             guna2HtmlLabel3.Location = new Point(32, 544);
             guna2HtmlLabel3.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(183, 27);
+            guna2HtmlLabel3.Size = new Size(153, 22);
             guna2HtmlLabel3.TabIndex = 55;
             guna2HtmlLabel3.Text = "CUỘC HẸN HÔM NAY";
             // 
@@ -763,7 +763,7 @@
             guna2HtmlLabel43.Location = new Point(12, 6);
             guna2HtmlLabel43.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel43.Name = "guna2HtmlLabel43";
-            guna2HtmlLabel43.Size = new Size(48, 27);
+            guna2HtmlLabel43.Size = new Size(40, 22);
             guna2HtmlLabel43.TabIndex = 10;
             guna2HtmlLabel43.Text = "More";
             // 
@@ -805,7 +805,7 @@
             guna2HtmlLabel42.Location = new Point(12, 6);
             guna2HtmlLabel42.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel42.Name = "guna2HtmlLabel42";
-            guna2HtmlLabel42.Size = new Size(48, 27);
+            guna2HtmlLabel42.Size = new Size(40, 22);
             guna2HtmlLabel42.TabIndex = 10;
             guna2HtmlLabel42.Text = "More";
             // 
@@ -847,7 +847,7 @@
             guna2HtmlLabel41.Location = new Point(12, 6);
             guna2HtmlLabel41.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel41.Name = "guna2HtmlLabel41";
-            guna2HtmlLabel41.Size = new Size(48, 27);
+            guna2HtmlLabel41.Size = new Size(40, 22);
             guna2HtmlLabel41.TabIndex = 10;
             guna2HtmlLabel41.Text = "More";
             // 
@@ -889,7 +889,7 @@
             guna2HtmlLabel40.Location = new Point(12, 6);
             guna2HtmlLabel40.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel40.Name = "guna2HtmlLabel40";
-            guna2HtmlLabel40.Size = new Size(48, 27);
+            guna2HtmlLabel40.Size = new Size(40, 22);
             guna2HtmlLabel40.TabIndex = 10;
             guna2HtmlLabel40.Text = "More";
             // 
@@ -998,7 +998,7 @@
             guna2HtmlLabel46.Location = new Point(24, 129);
             guna2HtmlLabel46.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel46.Name = "guna2HtmlLabel46";
-            guna2HtmlLabel46.Size = new Size(187, 27);
+            guna2HtmlLabel46.Size = new Size(155, 22);
             guna2HtmlLabel46.TabIndex = 7;
             guna2HtmlLabel46.Text = "THỐNG KÊ CUỘC HẸN";
             // 
@@ -1010,7 +1010,7 @@
             guna2HtmlLabel45.Location = new Point(214, 16);
             guna2HtmlLabel45.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel45.Name = "guna2HtmlLabel45";
-            guna2HtmlLabel45.Size = new Size(21, 56);
+            guna2HtmlLabel45.Size = new Size(18, 47);
             guna2HtmlLabel45.TabIndex = 6;
             guna2HtmlLabel45.Text = "?";
             // 
@@ -1022,13 +1022,13 @@
             guna2HtmlLabel44.Location = new Point(24, 16);
             guna2HtmlLabel44.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel44.Name = "guna2HtmlLabel44";
-            guna2HtmlLabel44.Size = new Size(175, 56);
+            guna2HtmlLabel44.Size = new Size(145, 47);
             guna2HtmlLabel44.TabIndex = 5;
             guna2HtmlLabel44.Text = "Xin Chào,";
             // 
-            // DashBoard
+            // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -1063,9 +1063,8 @@
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 5, 4, 5);
-            Name = "DashBoard";
+            Name = "Dashboard";
             Text = "Dashboard";
-            Load += Dashboard_Load;
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
             guna2Panel2.ResumeLayout(false);
