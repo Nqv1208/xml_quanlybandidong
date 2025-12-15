@@ -1,5 +1,5 @@
 ﻿// Thuộc thư mục Model
-namespace QuanLyBanDienThoai.Model
+namespace QuanLyBanDienThoai.Models
 {
     public class TaiKhoan
     {
