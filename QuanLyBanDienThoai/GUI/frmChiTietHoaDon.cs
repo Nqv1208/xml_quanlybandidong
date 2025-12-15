@@ -209,7 +209,7 @@ namespace QuanLyBanDienThoai.GUI
                 {
                     string maSP = row["MaSP"]?.ToString() ?? "";
                     row["TenSP"] = spLookup.ContainsKey(maSP) ? spLookup[maSP] : "N/A";
-                    
+
                     // Đảm bảo có ThanhTien
                     if (row["ThanhTien"] == DBNull.Value || row["ThanhTien"] == null)
                     {

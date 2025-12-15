@@ -231,6 +231,7 @@ namespace QuanLyBanDienThoai.GUI
             btnHtml.Size = new Size(135, 45);
             btnHtml.TabIndex = 3;
             btnHtml.Text = "Html";
+            btnHtml.Click += btnHtml_Click;
             // 
             // frmChiTietPhieuNhap
             // 
