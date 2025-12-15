@@ -112,5 +112,13 @@ namespace QuanLyBanDienThoai.GUI
         private void pnlRight_Paint(object sender, PaintEventArgs e) { }
         private void picLogo_Click(object sender, EventArgs e) { }
         private void pnlLeft_Paint(object sender, PaintEventArgs e) { }
+
+        private void linkQuenMatKhau_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormQuenMatKhau quenmatkhauForm = new FormQuenMatKhau();
+            this.Hide();
+            quenmatkhauForm.ShowDialog(); // Dùng ShowDialog để khi tắt form Đăng ký thì quay lại đây được
+            this.Show();
+        }
     }
 }

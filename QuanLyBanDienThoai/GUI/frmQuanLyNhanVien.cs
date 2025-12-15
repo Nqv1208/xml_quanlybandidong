@@ -205,7 +205,7 @@ namespace QuanLyBanDienThoai.GUI
                 string filter = txtTimKiem.Text.Trim().Replace("'", "''");
                 DataView dv = _dtNhanVien.DefaultView;
                 dv.RowFilter = $"MaNV LIKE '%{filter}%' OR TenNV LIKE '%{filter}%' OR ChucVu LIKE '%{filter}%' OR SoDienThoai LIKE '%{filter}%'";
-                
+
                 DataTable filtered = dv.ToTable();
                 dgvNhanVien.DataSource = filtered;
                 dgvNhanVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -329,6 +329,11 @@ namespace QuanLyBanDienThoai.GUI
                 .Replace(">", "&gt;")
                 .Replace("\"", "&quot;")
                 .Replace("'", "&#39;");
+        }
+
+        private void groupBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
