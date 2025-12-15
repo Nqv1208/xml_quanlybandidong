@@ -1,7 +1,7 @@
 using System.Data;
-using QuanLyBanDienThoai.DAL;
+using System.IO;
 
-namespace QuanLyBanDienThoai.Data;
+namespace QuanLyBanDienThoai.DAL;
 
 /// <summary>
 /// Thực hiện kéo dữ liệu từ database xuống XML khi file chưa tồn tại.
