@@ -459,10 +459,11 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btn_chuyendoi
             // 
+            btn_chuyendoi.Animated = true;
             btn_chuyendoi.BorderRadius = 6;
             btn_chuyendoi.CustomizableEdges = customizableEdges21;
             btn_chuyendoi.FillColor = Color.FromArgb(52, 73, 94);
-            btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             btn_chuyendoi.ForeColor = Color.White;
             btn_chuyendoi.Location = new Point(18, 54);
             btn_chuyendoi.Margin = new Padding(4);
@@ -520,10 +521,11 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btn_timkiem
             // 
-            btn_timkiem.BorderRadius = 6;
+            btn_timkiem.Animated = true;
+            btn_timkiem.BorderRadius = 8;
             btn_timkiem.CustomizableEdges = customizableEdges27;
             btn_timkiem.FillColor = Color.FromArgb(46, 204, 113);
-            btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             btn_timkiem.ForeColor = Color.White;
             btn_timkiem.HoverState.FillColor = Color.FromArgb(39, 174, 96);
             btn_timkiem.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -555,7 +557,7 @@ namespace QuanLyBanDienThoai.GUI
             // frmQuanLyNhanVien
             // 
             BackColor = Color.FromArgb(242, 254, 250);
-            ClientSize = new Size(1000, 797);
+            ClientSize = new Size(1000, 795);
             Controls.Add(guna2GroupBox1);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBox2);
@@ -563,7 +565,6 @@ namespace QuanLyBanDienThoai.GUI
             Font = new Font("Segoe UI", 10F);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
-            MinimumSize = new Size(1000, 797);
             Name = "frmQuanLyNhanVien";
             Padding = new Padding(10);
             StartPosition = FormStartPosition.CenterScreen;

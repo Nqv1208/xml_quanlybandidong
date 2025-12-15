@@ -1,5 +1,6 @@
-using QuanLyBanDienThoai.Data;
+using QuanLyBanDienThoai.DAL;
 using System.Data;
+using System.Text;
 using Guna.UI2.WinForms;
 
 namespace QuanLyBanDienThoai.GUI
@@ -169,6 +170,93 @@ namespace QuanLyBanDienThoai.GUI
             this.Close();
             frmQuanLyPhieuNhap frm = new frmQuanLyPhieuNhap(_parent);
             _parent.OpenChildForm(frm);
+        }
+
+        private void btnHtml_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Lấy thông tin phiếu nhập
+                DataRow? phieuNhap = _dtPhieuNhap.AsEnumerable()
+                    .FirstOrDefault(r => r.Field<string>("MaPN") == _maPN);
+
+                if (phieuNhap == null)
+                {
+                    MessageBox.Show("Không tìm thấy thông tin phiếu nhập!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Lấy thông tin nhà cung cấp
+                string maNCC = phieuNhap["MaNCC"]?.ToString() ?? "";
+                DataRow? ncc = _dtNCC.AsEnumerable()
+                    .FirstOrDefault(r => r.Field<string>("MaNCC") == maNCC);
+
+                // Lọc chi tiết theo phiếu nhập
+                DataView dv = _dtChiTiet.DefaultView;
+                dv.RowFilter = $"MaPN = '{_maPN}'";
+                DataTable filteredChiTiet = dv.ToTable();
+
+                if (filteredChiTiet.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không có chi tiết để xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Load sản phẩm để lấy tên
+                var spLookup = _dtSanPham.AsEnumerable()
+                    .ToDictionary(r => r.Field<string>("MaSP"), r => r.Field<string>("TenSP"));
+
+                // Tạo DataTable chi tiết có TenSP
+                DataTable chiTietWithTenSP = filteredChiTiet.Copy();
+                if (!chiTietWithTenSP.Columns.Contains("TenSP"))
+                    chiTietWithTenSP.Columns.Add("TenSP", typeof(string));
+
+                foreach (DataRow row in chiTietWithTenSP.Rows)
+                {
+                    string maSP = row["MaSP"]?.ToString() ?? "";
+                    row["TenSP"] = spLookup.ContainsKey(maSP) ? spLookup[maSP] : "N/A";
+                    
+                    // Đảm bảo có ThanhTien
+                    if (row["ThanhTien"] == DBNull.Value || row["ThanhTien"] == null)
+                    {
+                        int soLuong = Convert.ToInt32(row["SoLuong"] ?? 0);
+                        decimal donGia = Convert.ToDecimal(row["DonGiaNhap"] ?? 0);
+                        row["ThanhTien"] = soLuong * donGia;
+                    }
+                }
+
+                // Tạo header info
+                Dictionary<string, string> headerInfo = new()
+                {
+                    { "MaPN", _maPN },
+                    { "TenNCC", ncc?["TenNCC"]?.ToString() ?? "N/A" },
+                    { "MaNV", phieuNhap["MaNV"]?.ToString() ?? "N/A" },
+                    { "NgayNhap", phieuNhap["NgayNhap"]?.ToString() ?? "" }
+                };
+
+                // Xuất HTML
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "HTML Files|*.html";
+                sfd.FileName = $"ChiTietPhieuNhap_{_maPN}.html";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    string htmlContent = XmlDataService.ConvertChiTietToHtml(
+                        headerInfo,
+                        chiTietWithTenSP,
+                        "Chitietphieunhap.xslt",
+                        "PhieuNhapInfo",
+                        "ChiTietPhieuNhap");
+
+                    File.WriteAllText(sfd.FileName, htmlContent, Encoding.UTF8);
+                    MessageBox.Show("Xuất HTML thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(sfd.FileName) { UseShellExecute = true });
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xuất file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using QuanLyBanDienThoai.DAL;
 using QuanLyBanDienThoai.GUI;
 
 namespace QuanLyBanDienThoai
@@ -14,9 +15,9 @@ namespace QuanLyBanDienThoai
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             // Seed XML từ database nếu file chưa tồn tại
-            Data.XmlSeeder.SeedFromDatabase();
+            XmlSeeder.SeedFromDatabase();
 
-            Application.Run(new FormDangKy());
+            Application.Run(new FormDangNhap());
         }
     }
 }

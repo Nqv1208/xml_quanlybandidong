@@ -1,5 +1,5 @@
 using System.Data;
-using QuanLyBanDienThoai.Data;
+using QuanLyBanDienThoai.DAL;
 
 namespace QuanLyBanDienThoai.GUI
 {

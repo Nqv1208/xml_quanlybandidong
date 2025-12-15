@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Linq;
 using Guna.UI2.WinForms;
-using QuanLyBanDienThoai.Data; // Đảm bảo bạn đã có namespace này từ project cũ
+using QuanLyBanDienThoai.DAL; // Đảm bảo bạn đã có namespace này từ project cũ
 
 namespace QuanLyBanDienThoai.GUI
 {
@@ -245,7 +245,7 @@ namespace QuanLyBanDienThoai.GUI
                 {
                     // Lấy dữ liệu hiện tại trên Grid (bao gồm cả kết quả đang tìm kiếm)
                     DataTable dtToExport = (DataTable)dgvKhachHang.DataSource;
-                    string htmlContent = ConvertDataTableToHtml(dtToExport);
+                    string htmlContent = XmlDataService.ConvertDataTableToHtml(dtToExport, "Khachhang.xslt", "KhachHang");
 
                     File.WriteAllText(sfd.FileName, htmlContent, Encoding.UTF8);
 
@@ -261,78 +261,5 @@ namespace QuanLyBanDienThoai.GUI
             }
         }
 
-        // Hàm tạo nội dung HTML từ DataTable (Tái sử dụng style đẹp từ form Nhân viên)
-        private string ConvertDataTableToHtml(DataTable dt)
-        {
-            StringBuilder html = new StringBuilder();
-
-            html.AppendLine("<!DOCTYPE html>");
-            html.AppendLine("<html lang='vi'>");
-            html.AppendLine("<head>");
-            html.AppendLine("    <meta charset='utf-8'>");
-            html.AppendLine("    <meta name='viewport' content='width=device-width, initial-scale=1.0'>");
-            html.AppendLine("    <title>Danh Sách Khách Hàng</title>");
-            html.AppendLine("    <style>");
-            html.AppendLine("        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }");
-            html.AppendLine("        .container { max-width: 1200px; margin: 20px auto; background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); }");
-            html.AppendLine("        .header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #e0e0e0; }");
-            html.AppendLine("        .header h1 { color: #2ecc71; font-size: 2.5em; margin-bottom: 10px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }"); // Màu xanh lá chủ đạo
-            html.AppendLine("        .table-wrapper { overflow-x: auto; border-radius: 10px; border: 1px solid #e0e0e0; }");
-            html.AppendLine("        table { width: 100%; border-collapse: collapse; margin: 0; background-color: #ffffff; }");
-            html.AppendLine("        th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #eeeeee; }");
-            html.AppendLine("        th { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; font-weight: 600; text-transform: uppercase; }");
-            html.AppendLine("        tr:hover { background-color: #e8f5e9; }"); // Hover màu xanh nhạt
-            html.AppendLine("        .footer { text-align: center; margin-top: 30px; color: #9e9e9e; font-size: 0.8em; }");
-            html.AppendLine("    </style>");
-            html.AppendLine("</head>");
-            html.AppendLine("<body>");
-
-            html.AppendLine("<div class='container'>");
-            html.AppendLine("<div class='header'>");
-            html.AppendLine("<h1>🤝 DANH SÁCH KHÁCH HÀNG</h1>");
-            html.AppendLine($"<p>Thời gian xuất: {DateTime.Now:dd/MM/yyyy HH:mm:ss} | Số lượng: {dt.Rows.Count} khách hàng</p>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("<div class='content'>");
-            html.AppendLine("<div class='table-wrapper'>");
-            html.AppendLine("<table>");
-
-            // Header bảng
-            html.AppendLine("<thead><tr>");
-            html.AppendLine("<th>Mã KH</th>");
-            html.AppendLine("<th>Tên Khách Hàng</th>");
-            html.AppendLine("<th>Số Điện Thoại</th>");
-            html.AppendLine("</tr></thead>");
-
-            // Dữ liệu bảng
-            html.AppendLine("<tbody>");
-            foreach (DataRow row in dt.Rows)
-            {
-                html.AppendLine("<tr>");
-                // Xử lý null khi lấy dữ liệu
-                string ma = row["MaKH"] != DBNull.Value ? row["MaKH"].ToString() : "";
-                string ten = row["TenKH"] != DBNull.Value ? row["TenKH"].ToString() : "";
-                string sdt = row["SoDienThoai"] != DBNull.Value ? row["SoDienThoai"].ToString() : "";
-
-                html.AppendLine($"<td><strong>{ma}</strong></td>");
-                html.AppendLine($"<td>{ten}</td>");
-                html.AppendLine($"<td>{sdt}</td>");
-                html.AppendLine("</tr>");
-            }
-            html.AppendLine("</tbody>");
-            html.AppendLine("</table>");
-            html.AppendLine("</div>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("<div class='footer'>");
-            html.AppendLine("<p>Hệ thống quản lý bán điện thoại - Module Khách Hàng</p>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("</div>");
-            html.AppendLine("</body>");
-            html.AppendLine("</html>");
-
-            return html.ToString();
-        }
     }
 }

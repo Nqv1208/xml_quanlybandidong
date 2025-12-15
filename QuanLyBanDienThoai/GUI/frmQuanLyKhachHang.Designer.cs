@@ -53,292 +53,416 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-
-            this.components = new System.ComponentModel.Container();
-
-            // Khởi tạo các đối tượng
-            this.groupBoxInfo = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblMaKH = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtMaKH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblTenKH = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtTenKH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblSoDienThoai = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnThem = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSua = new Guna.UI2.WinForms.Guna2Button();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
-
-            this.groupBoxSearch = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblTuKhoa = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_timkiem = new Guna.UI2.WinForms.Guna2Button();
-
-            this.groupBoxConvert = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.btn_chuyendoi = new Guna.UI2.WinForms.Guna2Button();
-
-            this.groupBoxList = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dgvKhachHang = new Guna.UI2.WinForms.Guna2DataGridView();
-
-            this.groupBoxInfo.SuspendLayout();
-            this.groupBoxSearch.SuspendLayout();
-            this.groupBoxConvert.SuspendLayout();
-            this.groupBoxList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
-            this.SuspendLayout();
-
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            groupBoxInfo = new Guna.UI2.WinForms.Guna2GroupBox();
+            btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
+            btnXoa = new Guna.UI2.WinForms.Guna2Button();
+            btnSua = new Guna.UI2.WinForms.Guna2Button();
+            btnThem = new Guna.UI2.WinForms.Guna2Button();
+            txtSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
+            lblSoDienThoai = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtTenKH = new Guna.UI2.WinForms.Guna2TextBox();
+            lblTenKH = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            txtMaKH = new Guna.UI2.WinForms.Guna2TextBox();
+            lblMaKH = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            groupBoxSearch = new Guna.UI2.WinForms.Guna2GroupBox();
+            btn_timkiem = new Guna.UI2.WinForms.Guna2Button();
+            txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
+            lblTuKhoa = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            groupBoxConvert = new Guna.UI2.WinForms.Guna2GroupBox();
+            btn_chuyendoi = new Guna.UI2.WinForms.Guna2Button();
+            groupBoxList = new Guna.UI2.WinForms.Guna2GroupBox();
+            dgvKhachHang = new Guna.UI2.WinForms.Guna2DataGridView();
+            groupBoxInfo.SuspendLayout();
+            groupBoxSearch.SuspendLayout();
+            groupBoxConvert.SuspendLayout();
+            groupBoxList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvKhachHang).BeginInit();
+            SuspendLayout();
             // 
-            // --- 1. GROUP BOX: THÔNG TIN KHÁCH HÀNG ---
+            // groupBoxInfo
             // 
-            this.groupBoxInfo.Controls.Add(this.btnLamMoi);
-            this.groupBoxInfo.Controls.Add(this.btnXoa);
-            this.groupBoxInfo.Controls.Add(this.btnSua);
-            this.groupBoxInfo.Controls.Add(this.btnThem);
-            this.groupBoxInfo.Controls.Add(this.txtSoDienThoai);
-            this.groupBoxInfo.Controls.Add(this.lblSoDienThoai);
-            this.groupBoxInfo.Controls.Add(this.txtTenKH);
-            this.groupBoxInfo.Controls.Add(this.lblTenKH);
-            this.groupBoxInfo.Controls.Add(this.txtMaKH);
-            this.groupBoxInfo.Controls.Add(this.lblMaKH);
-            this.groupBoxInfo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.groupBoxInfo.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxInfo.Name = "groupBoxInfo";
-            this.groupBoxInfo.Size = new System.Drawing.Size(976, 180); // Kích thước rộng để chứa đủ nút
-            this.groupBoxInfo.TabIndex = 0;
-            this.groupBoxInfo.Text = "Thông tin khách hàng";
-
-            // lblMaKH
-            this.lblMaKH.BackColor = System.Drawing.Color.Transparent;
-            this.lblMaKH.Location = new System.Drawing.Point(30, 60);
-            this.lblMaKH.Name = "lblMaKH";
-            this.lblMaKH.Size = new System.Drawing.Size(100, 20);
-            this.lblMaKH.TabIndex = 0;
-            this.lblMaKH.Text = "Mã khách hàng:";
-
-            // txtMaKH
-            this.txtMaKH.BorderRadius = 5;
-            this.txtMaKH.Location = new System.Drawing.Point(150, 50);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(250, 36);
-            this.txtMaKH.TabIndex = 1;
-
-            // lblTenKH
-            this.lblTenKH.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenKH.Location = new System.Drawing.Point(30, 110);
-            this.lblTenKH.Name = "lblTenKH";
-            this.lblTenKH.Size = new System.Drawing.Size(100, 20);
-            this.lblTenKH.TabIndex = 2;
-            this.lblTenKH.Text = "Tên khách hàng:";
-
-            // txtTenKH
-            this.txtTenKH.BorderRadius = 5;
-            this.txtTenKH.Location = new System.Drawing.Point(150, 100);
-            this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(250, 36);
-            this.txtTenKH.TabIndex = 3;
-
-            // lblSoDienThoai (Đặt bên phải MaKH)
-            this.lblSoDienThoai.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoDienThoai.Location = new System.Drawing.Point(450, 60);
-            this.lblSoDienThoai.Name = "lblSoDienThoai";
-            this.lblSoDienThoai.Size = new System.Drawing.Size(90, 20);
-            this.lblSoDienThoai.TabIndex = 4;
-            this.lblSoDienThoai.Text = "Số điện thoại:";
-
+            groupBoxInfo.Controls.Add(btnLamMoi);
+            groupBoxInfo.Controls.Add(btnXoa);
+            groupBoxInfo.Controls.Add(btnSua);
+            groupBoxInfo.Controls.Add(btnThem);
+            groupBoxInfo.Controls.Add(txtSoDienThoai);
+            groupBoxInfo.Controls.Add(lblSoDienThoai);
+            groupBoxInfo.Controls.Add(txtTenKH);
+            groupBoxInfo.Controls.Add(lblTenKH);
+            groupBoxInfo.Controls.Add(txtMaKH);
+            groupBoxInfo.Controls.Add(lblMaKH);
+            groupBoxInfo.CustomizableEdges = customizableEdges15;
+            groupBoxInfo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBoxInfo.ForeColor = Color.FromArgb(125, 137, 149);
+            groupBoxInfo.Location = new Point(15, 19);
+            groupBoxInfo.Margin = new Padding(4, 5, 4, 5);
+            groupBoxInfo.Name = "groupBoxInfo";
+            groupBoxInfo.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            groupBoxInfo.Size = new Size(972, 188);
+            groupBoxInfo.TabIndex = 0;
+            groupBoxInfo.Text = "Thông tin khách hàng";
+            // 
+            // btnLamMoi
+            // 
+            btnLamMoi.Animated = true;
+            btnLamMoi.BorderRadius = 8;
+            btnLamMoi.CustomizableEdges = customizableEdges1;
+            btnLamMoi.FillColor = Color.FromArgb(52, 73, 94);
+            btnLamMoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnLamMoi.ForeColor = Color.White;
+            btnLamMoi.Location = new Point(855, 117);
+            btnLamMoi.Margin = new Padding(4, 5, 4, 5);
+            btnLamMoi.Name = "btnLamMoi";
+            btnLamMoi.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnLamMoi.Size = new Size(105, 45);
+            btnLamMoi.TabIndex = 9;
+            btnLamMoi.Text = "Làm mới";
+            btnLamMoi.Click += btnLamMoi_Click;
+            // 
+            // btnXoa
+            // 
+            btnXoa.Animated = true;
+            btnXoa.BorderRadius = 8;
+            btnXoa.CustomizableEdges = customizableEdges3;
+            btnXoa.FillColor = Color.FromArgb(231, 76, 60);
+            btnXoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnXoa.ForeColor = Color.White;
+            btnXoa.Location = new Point(736, 117);
+            btnXoa.Margin = new Padding(4, 5, 4, 5);
+            btnXoa.Name = "btnXoa";
+            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnXoa.Size = new Size(100, 45);
+            btnXoa.TabIndex = 8;
+            btnXoa.Text = "Xóa";
+            btnXoa.Click += btnXoa_Click;
+            // 
+            // btnSua
+            // 
+            btnSua.Animated = true;
+            btnSua.BorderRadius = 8;
+            btnSua.CustomizableEdges = customizableEdges5;
+            btnSua.FillColor = Color.FromArgb(52, 152, 219);
+            btnSua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnSua.ForeColor = Color.White;
+            btnSua.Location = new Point(618, 117);
+            btnSua.Margin = new Padding(4, 5, 4, 5);
+            btnSua.Name = "btnSua";
+            btnSua.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnSua.Size = new Size(100, 45);
+            btnSua.TabIndex = 7;
+            btnSua.Text = "Sửa";
+            btnSua.Click += btnSua_Click;
+            // 
+            // btnThem
+            // 
+            btnThem.Animated = true;
+            btnThem.BorderRadius = 8;
+            btnThem.CustomizableEdges = customizableEdges7;
+            btnThem.FillColor = Color.FromArgb(46, 204, 113);
+            btnThem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnThem.ForeColor = Color.White;
+            btnThem.Location = new Point(501, 117);
+            btnThem.Margin = new Padding(4, 5, 4, 5);
+            btnThem.Name = "btnThem";
+            btnThem.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnThem.Size = new Size(100, 45);
+            btnThem.TabIndex = 6;
+            btnThem.Text = "Thêm";
+            btnThem.Click += btnThem_Click;
+            // 
             // txtSoDienThoai
-            this.txtSoDienThoai.BorderRadius = 5;
-            this.txtSoDienThoai.Location = new System.Drawing.Point(550, 50);
-            this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(250, 36);
-            this.txtSoDienThoai.TabIndex = 5;
-
-            // Các nút bấm (Sắp xếp hàng ngang bên dưới phần nhập liệu bên phải)
-            // btnThem (Màu xanh lá)
-            this.btnThem.BorderRadius = 5;
-            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(450, 100);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(90, 36);
-            this.btnThem.TabIndex = 6;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-
-            // btnSua (Màu xanh dương)
-            this.btnSua.BorderRadius = 5;
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(550, 100);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(90, 36);
-            this.btnSua.TabIndex = 7;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-
-            // btnXoa (Màu đỏ)
-            this.btnXoa.BorderRadius = 5;
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(650, 100);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(90, 36);
-            this.btnXoa.TabIndex = 8;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-
-            // btnLamMoi (Màu xám/xanh đen)
-            this.btnLamMoi.BorderRadius = 5;
-            this.btnLamMoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(750, 100);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(90, 36);
-            this.btnLamMoi.TabIndex = 9;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-
             // 
-            // --- 2. GROUP BOX: TÌM KIẾM ---
+            txtSoDienThoai.BorderRadius = 5;
+            txtSoDienThoai.CustomizableEdges = customizableEdges9;
+            txtSoDienThoai.DefaultText = "";
+            txtSoDienThoai.Font = new Font("Segoe UI", 9F);
+            txtSoDienThoai.Location = new Point(634, 56);
+            txtSoDienThoai.Margin = new Padding(5, 8, 5, 8);
+            txtSoDienThoai.Name = "txtSoDienThoai";
+            txtSoDienThoai.PlaceholderText = "";
+            txtSoDienThoai.SelectedText = "";
+            txtSoDienThoai.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtSoDienThoai.Size = new Size(275, 45);
+            txtSoDienThoai.TabIndex = 5;
             // 
-            this.groupBoxSearch.Controls.Add(this.btn_timkiem);
-            this.groupBoxSearch.Controls.Add(this.txtTimKiem);
-            this.groupBoxSearch.Controls.Add(this.lblTuKhoa);
-            this.groupBoxSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.groupBoxSearch.Location = new System.Drawing.Point(12, 210);
-            this.groupBoxSearch.Name = "groupBoxSearch";
-            this.groupBoxSearch.Size = new System.Drawing.Size(600, 100);
-            this.groupBoxSearch.TabIndex = 1;
-            this.groupBoxSearch.Text = "Tìm kiếm";
-
-            // lblTuKhoa
-            this.lblTuKhoa.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuKhoa.Location = new System.Drawing.Point(20, 55);
-            this.lblTuKhoa.Name = "lblTuKhoa";
-            this.lblTuKhoa.Size = new System.Drawing.Size(80, 20);
-            this.lblTuKhoa.TabIndex = 0;
-            this.lblTuKhoa.Text = "Nhập từ khóa:";
-
-            // txtTimKiem
-            this.txtTimKiem.BorderRadius = 5;
-            this.txtTimKiem.Location = new System.Drawing.Point(120, 45);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(300, 36);
-            this.txtTimKiem.TabIndex = 1;
-            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
-
+            // lblSoDienThoai
+            // 
+            lblSoDienThoai.BackColor = Color.Transparent;
+            lblSoDienThoai.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lblSoDienThoai.ForeColor = Color.FromArgb(149, 165, 166);
+            lblSoDienThoai.Location = new Point(508, 67);
+            lblSoDienThoai.Margin = new Padding(4, 5, 4, 5);
+            lblSoDienThoai.Name = "lblSoDienThoai";
+            lblSoDienThoai.Size = new Size(117, 27);
+            lblSoDienThoai.TabIndex = 4;
+            lblSoDienThoai.Text = "Số điện thoại:";
+            // 
+            // txtTenKH
+            // 
+            txtTenKH.BorderRadius = 5;
+            txtTenKH.CustomizableEdges = customizableEdges11;
+            txtTenKH.DefaultText = "";
+            txtTenKH.Font = new Font("Segoe UI", 9F);
+            txtTenKH.Location = new Point(188, 117);
+            txtTenKH.Margin = new Padding(5, 8, 5, 8);
+            txtTenKH.Name = "txtTenKH";
+            txtTenKH.PlaceholderText = "";
+            txtTenKH.SelectedText = "";
+            txtTenKH.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtTenKH.Size = new Size(275, 45);
+            txtTenKH.TabIndex = 3;
+            // 
+            // lblTenKH
+            // 
+            lblTenKH.BackColor = Color.Transparent;
+            lblTenKH.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lblTenKH.ForeColor = Color.FromArgb(149, 165, 166);
+            lblTenKH.Location = new Point(38, 128);
+            lblTenKH.Margin = new Padding(4, 5, 4, 5);
+            lblTenKH.Name = "lblTenKH";
+            lblTenKH.Size = new Size(135, 27);
+            lblTenKH.TabIndex = 2;
+            lblTenKH.Text = "Tên khách hàng:";
+            // 
+            // txtMaKH
+            // 
+            txtMaKH.BorderRadius = 5;
+            txtMaKH.CustomizableEdges = customizableEdges13;
+            txtMaKH.DefaultText = "";
+            txtMaKH.Font = new Font("Segoe UI", 9F);
+            txtMaKH.Location = new Point(188, 56);
+            txtMaKH.Margin = new Padding(5, 8, 5, 8);
+            txtMaKH.Name = "txtMaKH";
+            txtMaKH.PlaceholderText = "";
+            txtMaKH.SelectedText = "";
+            txtMaKH.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtMaKH.Size = new Size(275, 45);
+            txtMaKH.TabIndex = 1;
+            // 
+            // lblMaKH
+            // 
+            lblMaKH.BackColor = Color.Transparent;
+            lblMaKH.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lblMaKH.ForeColor = Color.FromArgb(149, 165, 166);
+            lblMaKH.Location = new Point(38, 65);
+            lblMaKH.Margin = new Padding(4, 5, 4, 5);
+            lblMaKH.Name = "lblMaKH";
+            lblMaKH.Size = new Size(130, 27);
+            lblMaKH.TabIndex = 0;
+            lblMaKH.Text = "Mã khách hàng:";
+            // 
+            // groupBoxSearch
+            // 
+            groupBoxSearch.Controls.Add(btn_timkiem);
+            groupBoxSearch.Controls.Add(txtTimKiem);
+            groupBoxSearch.Controls.Add(lblTuKhoa);
+            groupBoxSearch.CustomizableEdges = customizableEdges21;
+            groupBoxSearch.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBoxSearch.ForeColor = Color.FromArgb(125, 137, 149);
+            groupBoxSearch.Location = new Point(15, 227);
+            groupBoxSearch.Margin = new Padding(4, 5, 4, 5);
+            groupBoxSearch.Name = "groupBoxSearch";
+            groupBoxSearch.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            groupBoxSearch.Size = new Size(641, 134);
+            groupBoxSearch.TabIndex = 1;
+            groupBoxSearch.Text = "Tìm kiếm";
+            // 
             // btn_timkiem
-            this.btn_timkiem.BorderRadius = 5;
-            this.btn_timkiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btn_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_timkiem.ForeColor = System.Drawing.Color.White;
-            this.btn_timkiem.Location = new System.Drawing.Point(440, 45);
-            this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(100, 36);
-            this.btn_timkiem.TabIndex = 2;
-            this.btn_timkiem.Text = "Tìm kiếm";
-            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
-
             // 
-            // --- 3. GROUP BOX: CHUYỂN ĐỔI ---
+            btn_timkiem.BorderRadius = 8;
+            btn_timkiem.CustomizableEdges = customizableEdges17;
+            btn_timkiem.FillColor = Color.FromArgb(46, 204, 113);
+            btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btn_timkiem.ForeColor = Color.White;
+            btn_timkiem.Location = new Point(501, 59);
+            btn_timkiem.Margin = new Padding(4, 5, 4, 5);
+            btn_timkiem.Name = "btn_timkiem";
+            btn_timkiem.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btn_timkiem.Size = new Size(113, 45);
+            btn_timkiem.TabIndex = 2;
+            btn_timkiem.Text = "Tìm kiếm";
+            btn_timkiem.Click += btn_timkiem_Click;
             // 
-            this.groupBoxConvert.Controls.Add(this.btn_chuyendoi);
-            this.groupBoxConvert.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxConvert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.groupBoxConvert.Location = new System.Drawing.Point(630, 210);
-            this.groupBoxConvert.Name = "groupBoxConvert";
-            this.groupBoxConvert.Size = new System.Drawing.Size(358, 100);
-            this.groupBoxConvert.TabIndex = 2;
-            this.groupBoxConvert.Text = "Chuyển đổi";
-
-            // btn_chuyendoi (Html)
-            this.btn_chuyendoi.BorderRadius = 5;
-            this.btn_chuyendoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btn_chuyendoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btn_chuyendoi.ForeColor = System.Drawing.Color.White;
-            this.btn_chuyendoi.Location = new System.Drawing.Point(30, 45);
-            this.btn_chuyendoi.Name = "btn_chuyendoi";
-            this.btn_chuyendoi.Size = new System.Drawing.Size(100, 36);
-            this.btn_chuyendoi.TabIndex = 0;
-            this.btn_chuyendoi.Text = "Html";
-            this.btn_chuyendoi.Click += new System.EventHandler(this.btn_chuyendoi_Click);
-
+            // txtTimKiem
             // 
-            // --- 4. GROUP BOX: DANH SÁCH KHÁCH HÀNG (DATAGRIDVIEW) ---
+            txtTimKiem.BorderRadius = 5;
+            txtTimKiem.CustomizableEdges = customizableEdges19;
+            txtTimKiem.DefaultText = "";
+            txtTimKiem.Font = new Font("Segoe UI", 9F);
+            txtTimKiem.Location = new Point(188, 59);
+            txtTimKiem.Margin = new Padding(5, 8, 5, 8);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.PlaceholderText = "";
+            txtTimKiem.SelectedText = "";
+            txtTimKiem.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txtTimKiem.Size = new Size(275, 45);
+            txtTimKiem.TabIndex = 1;
             // 
-            this.groupBoxList.Controls.Add(this.dgvKhachHang);
-            this.groupBoxList.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.groupBoxList.Location = new System.Drawing.Point(12, 330);
-            this.groupBoxList.Name = "groupBoxList";
-            this.groupBoxList.Size = new System.Drawing.Size(976, 400);
-            this.groupBoxList.TabIndex = 3;
-            this.groupBoxList.Text = "Danh sách khách hàng";
-
+            // lblTuKhoa
+            // 
+            lblTuKhoa.BackColor = Color.Transparent;
+            lblTuKhoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lblTuKhoa.ForeColor = Color.FromArgb(149, 165, 166);
+            lblTuKhoa.Location = new Point(38, 69);
+            lblTuKhoa.Margin = new Padding(4, 5, 4, 5);
+            lblTuKhoa.Name = "lblTuKhoa";
+            lblTuKhoa.Size = new Size(118, 27);
+            lblTuKhoa.TabIndex = 0;
+            lblTuKhoa.Text = "Nhập từ khóa:";
+            // 
+            // groupBoxConvert
+            // 
+            groupBoxConvert.Controls.Add(btn_chuyendoi);
+            groupBoxConvert.CustomizableEdges = customizableEdges25;
+            groupBoxConvert.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBoxConvert.ForeColor = Color.FromArgb(125, 137, 149);
+            groupBoxConvert.Location = new Point(673, 227);
+            groupBoxConvert.Margin = new Padding(4, 5, 4, 5);
+            groupBoxConvert.Name = "groupBoxConvert";
+            groupBoxConvert.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            groupBoxConvert.Size = new Size(314, 134);
+            groupBoxConvert.TabIndex = 2;
+            groupBoxConvert.Text = "Chuyển đổi";
+            // 
+            // btn_chuyendoi
+            // 
+            btn_chuyendoi.BorderRadius = 8;
+            btn_chuyendoi.CustomizableEdges = customizableEdges23;
+            btn_chuyendoi.FillColor = Color.FromArgb(52, 73, 94);
+            btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btn_chuyendoi.ForeColor = Color.White;
+            btn_chuyendoi.Location = new Point(21, 59);
+            btn_chuyendoi.Margin = new Padding(4, 5, 4, 5);
+            btn_chuyendoi.Name = "btn_chuyendoi";
+            btn_chuyendoi.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btn_chuyendoi.Size = new Size(100, 45);
+            btn_chuyendoi.TabIndex = 0;
+            btn_chuyendoi.Text = "Html";
+            btn_chuyendoi.Click += btn_chuyendoi_Click;
+            // 
+            // groupBoxList
+            // 
+            groupBoxList.Controls.Add(dgvKhachHang);
+            groupBoxList.CustomizableEdges = customizableEdges27;
+            groupBoxList.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBoxList.ForeColor = Color.FromArgb(125, 137, 149);
+            groupBoxList.Location = new Point(15, 380);
+            groupBoxList.Margin = new Padding(4, 5, 4, 5);
+            groupBoxList.Name = "groupBoxList";
+            groupBoxList.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            groupBoxList.Size = new Size(972, 401);
+            groupBoxList.TabIndex = 3;
+            groupBoxList.Text = "Danh sách khách hàng";
+            // 
             // dgvKhachHang
-            this.dgvKhachHang.AllowUserToAddRows = false;
-            this.dgvKhachHang.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvKhachHang.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKhachHang.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvKhachHang.Location = new System.Drawing.Point(3, 40); // Cách top để tránh đè lên tiêu đề GroupBox
-            this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.ReadOnly = true;
-            this.dgvKhachHang.RowHeadersVisible = false;
-            this.dgvKhachHang.Size = new System.Drawing.Size(970, 357);
-            this.dgvKhachHang.TabIndex = 0;
-            this.dgvKhachHang.ThemeStyle.HeaderStyle.Height = 30;
-            this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
-
             // 
-            // --- CẤU HÌNH FORM CHÍNH ---
+            dgvKhachHang.AllowUserToAddRows = false;
+            dgvKhachHang.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgvKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvKhachHang.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(125, 137, 149);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvKhachHang.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvKhachHang.Dock = DockStyle.Fill;
+            dgvKhachHang.GridColor = Color.FromArgb(231, 229, 255);
+            dgvKhachHang.Location = new Point(0, 40);
+            dgvKhachHang.Margin = new Padding(4, 5, 4, 5);
+            dgvKhachHang.Name = "dgvKhachHang";
+            dgvKhachHang.ReadOnly = true;
+            dgvKhachHang.RowHeadersVisible = false;
+            dgvKhachHang.RowHeadersWidth = 62;
+            dgvKhachHang.Size = new Size(972, 361);
+            dgvKhachHang.TabIndex = 0;
+            dgvKhachHang.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            dgvKhachHang.ThemeStyle.AlternatingRowsStyle.Font = null;
+            dgvKhachHang.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            dgvKhachHang.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            dgvKhachHang.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            dgvKhachHang.ThemeStyle.BackColor = Color.White;
+            dgvKhachHang.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            dgvKhachHang.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            dgvKhachHang.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvKhachHang.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            dgvKhachHang.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            dgvKhachHang.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvKhachHang.ThemeStyle.HeaderStyle.Height = 30;
+            dgvKhachHang.ThemeStyle.ReadOnly = true;
+            dgvKhachHang.ThemeStyle.RowsStyle.BackColor = Color.White;
+            dgvKhachHang.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvKhachHang.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            dgvKhachHang.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            dgvKhachHang.ThemeStyle.RowsStyle.Height = 33;
+            dgvKhachHang.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dgvKhachHang.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvKhachHang.CellClick += dgvKhachHang_CellClick;
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(254)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1000, 750);
-            this.Controls.Add(this.groupBoxList);
-            this.Controls.Add(this.groupBoxConvert);
-            this.Controls.Add(this.groupBoxSearch);
-            this.Controls.Add(this.groupBoxInfo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmQuanLyKhachHang";
-            this.Text = "Quản lý khách hàng";
-
-            this.groupBoxInfo.ResumeLayout(false);
-            this.groupBoxInfo.PerformLayout();
-            this.groupBoxSearch.ResumeLayout(false);
-            this.groupBoxSearch.PerformLayout();
-            this.groupBoxConvert.ResumeLayout(false);
-            this.groupBoxList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
-            this.ResumeLayout(false);
+            // frmQuanLyKhachHang
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(242, 254, 250);
+            ClientSize = new Size(1000, 795);
+            Controls.Add(groupBoxList);
+            Controls.Add(groupBoxConvert);
+            Controls.Add(groupBoxSearch);
+            Controls.Add(groupBoxInfo);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmQuanLyKhachHang";
+            Text = "Quản lý khách hàng";
+            groupBoxInfo.ResumeLayout(false);
+            groupBoxInfo.PerformLayout();
+            groupBoxSearch.ResumeLayout(false);
+            groupBoxSearch.PerformLayout();
+            groupBoxConvert.ResumeLayout(false);
+            groupBoxList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvKhachHang).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

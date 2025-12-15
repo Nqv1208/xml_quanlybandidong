@@ -125,7 +125,7 @@ namespace QuanLyBanDienThoai.GUI
             dgvHangSanXuat.RowHeadersVisible = false;
             dgvHangSanXuat.RowHeadersWidth = 51;
             dgvHangSanXuat.RowTemplate.Height = 29;
-            dgvHangSanXuat.Size = new Size(972, 306);
+            dgvHangSanXuat.Size = new Size(972, 400);
             dgvHangSanXuat.TabIndex = 0;
             dgvHangSanXuat.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvHangSanXuat.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -153,7 +153,7 @@ namespace QuanLyBanDienThoai.GUI
             // lblMaHang
             // 
             lblMaHang.BackColor = Color.Transparent;
-            lblMaHang.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMaHang.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblMaHang.ForeColor = Color.FromArgb(149, 165, 166);
             lblMaHang.Location = new Point(20, 54);
             lblMaHang.Name = "lblMaHang";
@@ -342,11 +342,12 @@ namespace QuanLyBanDienThoai.GUI
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2HtmlLabel1.ForeColor = Color.FromArgb(149, 165, 166);
             guna2HtmlLabel1.Location = new Point(20, 119);
             guna2HtmlLabel1.Margin = new Padding(4);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(80, 27);
+            guna2HtmlLabel1.Size = new Size(84, 27);
             guna2HtmlLabel1.TabIndex = 16;
             guna2HtmlLabel1.Text = "Tên hãng:";
             // 
@@ -359,7 +360,7 @@ namespace QuanLyBanDienThoai.GUI
             groupBox2.Location = new Point(15, 342);
             groupBox2.Name = "groupBox2";
             groupBox2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            groupBox2.Size = new Size(972, 346);
+            groupBox2.Size = new Size(972, 440);
             groupBox2.TabIndex = 1;
             groupBox2.Text = "Danh sách hãng sản xuất";
             // 
@@ -382,10 +383,10 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btn_chuyendoi
             // 
-            btn_chuyendoi.BorderRadius = 6;
+            btn_chuyendoi.BorderRadius = 8;
             btn_chuyendoi.CustomizableEdges = customizableEdges17;
             btn_chuyendoi.FillColor = Color.FromArgb(52, 73, 94);
-            btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             btn_chuyendoi.ForeColor = Color.White;
             btn_chuyendoi.Location = new Point(18, 54);
             btn_chuyendoi.Margin = new Padding(4);
@@ -432,20 +433,21 @@ namespace QuanLyBanDienThoai.GUI
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2HtmlLabel2.ForeColor = Color.FromArgb(149, 165, 166);
             guna2HtmlLabel2.Location = new Point(24, 66);
             guna2HtmlLabel2.Margin = new Padding(4);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(116, 27);
+            guna2HtmlLabel2.Size = new Size(118, 27);
             guna2HtmlLabel2.TabIndex = 17;
             guna2HtmlLabel2.Text = "Nhập từ khóa:";
             // 
             // btn_timkiem
             // 
-            btn_timkiem.BorderRadius = 6;
+            btn_timkiem.BorderRadius = 8;
             btn_timkiem.CustomizableEdges = customizableEdges23;
             btn_timkiem.FillColor = Color.FromArgb(46, 204, 113);
-            btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             btn_timkiem.ForeColor = Color.White;
             btn_timkiem.HoverState.FillColor = Color.FromArgb(39, 174, 96);
             btn_timkiem.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -477,7 +479,7 @@ namespace QuanLyBanDienThoai.GUI
             // frmQuanLyHangSanXuat
             // 
             BackColor = Color.FromArgb(242, 254, 250);
-            ClientSize = new Size(1000, 701);
+            ClientSize = new Size(1000, 795);
             Controls.Add(guna2GroupBox1);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBox2);
