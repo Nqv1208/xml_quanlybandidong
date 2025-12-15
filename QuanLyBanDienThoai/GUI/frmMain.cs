@@ -27,6 +27,7 @@ namespace QuanLyBanDienThoai.GUI
         {
             InitializeComponent();
             _taiKhoanHienTai = tk; // Lưu thông tin tài khoản được truyền sang
+            this.FormClosing += frmMain_FormClosing;
 
             // Load thông tin nhân viên từ XML
             LoadNhanVien();
@@ -271,6 +272,14 @@ namespace QuanLyBanDienThoai.GUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            try
+            {
+                XmlSynchronizer.SyncAllToDatabase();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi đồng bộ dữ liệu về database: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             this.Hide();
             FormDangNhap loginForm = new FormDangNhap();
             loginForm.ShowDialog();
@@ -285,6 +294,18 @@ namespace QuanLyBanDienThoai.GUI
         private void label_name_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                XmlSynchronizer.SyncAllToDatabase();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi đồng bộ dữ liệu về database: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

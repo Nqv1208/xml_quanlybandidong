@@ -3,6 +3,8 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Xsl;
+using Microsoft.Data.SqlClient;
+using System.Linq;
 
 namespace QuanLyBanDienThoai.DAL;
 
@@ -82,6 +84,78 @@ public static class XmlDataService
     public static DataTable LoadForSyncToDatabase(string fileName, string tableName)
     {
         return LoadTable(fileName, tableName);
+    }
+
+    /// <summary>
+    /// Đồng bộ toàn bộ dữ liệu từ các file XML về database (truncate và bulk copy).
+    /// Gọi khi thoát chương trình để lưu các thay đổi.
+    /// </summary>
+    public static void SyncAllXmlToDatabase()
+    {
+        // Danh sách mapping file XML -> bảng database
+        var items = new (string FileName, string TableName, string DbTable)[]
+        {
+            ("Taikhoan.xml", "TaiKhoan", "TaiKhoan"),
+            ("Nhanvien.xml", "NhanVien", "NhanVien"),
+            ("Hangsanxuat.xml", "HangSanXuat", "HangSanXuat"),
+            ("Sanpham.xml", "SanPham", "SanPham"),
+            ("Nhacungcap.xml", "NhaCungCap", "NhaCungCap"),
+            ("Phieunhap.xml", "PhieuNhap", "PhieuNhap"),
+            ("Chitietphieunhap.xml", "ChiTietPhieuNhap", "ChiTietPhieuNhap"),
+            ("Khachhang.xml", "KhachHang", "KhachHang"),
+            ("HoaDon.xml", "HoaDon", "HoaDon"),
+            ("Chitiethoadon.xml", "ChiTietHoaDon", "ChiTietHoaDon")
+        };
+
+        using SqlConnection conn = DatabaseHelper.GetConnection();
+        conn.Open();
+        using SqlTransaction tran = conn.BeginTransaction();
+        try
+        {
+            foreach (var item in items)
+            {
+                DataTable dt = LoadTable(item.FileName, item.TableName);
+
+                // Lấy danh sách cột thực tế của bảng đích (để map case-insensitive)
+                DataTable schemaTable = new();
+                using (SqlCommand schemaCmd = new($"SELECT TOP 0 * FROM {item.DbTable}", conn, tran))
+                using (SqlDataAdapter adp = new(schemaCmd))
+                {
+                    adp.Fill(schemaTable);
+                }
+                var destColumns = schemaTable.Columns.Cast<DataColumn>()
+                    .ToDictionary(c => c.ColumnName, c => c.ColumnName, StringComparer.OrdinalIgnoreCase);
+
+                // Truncate bảng trước khi ghi
+                using (SqlCommand cmd = new($"TRUNCATE TABLE {item.DbTable}", conn, tran))
+                {
+                    cmd.ExecuteNonQuery();
+                }
+
+                // Bulk copy dữ liệu từ DataTable lên DB
+                using SqlBulkCopy bulk = new(conn, SqlBulkCopyOptions.Default, tran)
+                {
+                    DestinationTableName = item.DbTable
+                };
+
+                foreach (DataColumn col in dt.Columns)
+                {
+                    if (destColumns.TryGetValue(col.ColumnName, out string destName))
+                    {
+                        bulk.ColumnMappings.Add(col.ColumnName, destName);
+                    }
+                }
+
+                bulk.WriteToServer(dt);
+            }
+
+            tran.Commit();
+        }
+        catch
+        {
+            tran.Rollback();
+            throw;
+        }
     }
 
     /// <summary>
