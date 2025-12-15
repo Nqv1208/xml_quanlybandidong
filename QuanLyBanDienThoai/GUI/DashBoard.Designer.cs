@@ -1,6 +1,6 @@
 namespace QuanLyBanDienThoai.GUI
 {
-    partial class Dashboard
+    partial class DashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,47 @@ namespace QuanLyBanDienThoai.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges65 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges67 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges68 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges66 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges79 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges80 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges75 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges76 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges69 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges70 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges71 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges72 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges73 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges74 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges77 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges78 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -183,12 +183,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel2.BorderRadius = 21;
             guna2Panel2.Controls.Add(guna2HtmlLabel2);
             guna2Panel2.Controls.Add(guna2CircleButton2);
-            guna2Panel2.CustomizableEdges = customizableEdges2;
+            guna2Panel2.CustomizableEdges = customizableEdges42;
             guna2Panel2.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel2.Location = new Point(368, 228);
             guna2Panel2.Margin = new Padding(4, 5, 4, 5);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges43;
             guna2Panel2.Size = new Size(138, 45);
             guna2Panel2.TabIndex = 22;
             // 
@@ -199,7 +199,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel2.Location = new Point(14, 9);
             guna2HtmlLabel2.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(40, 22);
+            guna2HtmlLabel2.Size = new Size(48, 27);
             guna2HtmlLabel2.TabIndex = 22;
             guna2HtmlLabel2.Text = "More";
             // 
@@ -214,7 +214,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2CircleButton2.Location = new Point(98, 6);
             guna2CircleButton2.Margin = new Padding(4, 5, 4, 5);
             guna2CircleButton2.Name = "guna2CircleButton2";
-            guna2CircleButton2.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            guna2CircleButton2.ShadowDecoration.CustomizableEdges = customizableEdges41;
             guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton2.Size = new Size(30, 31);
             guna2CircleButton2.TabIndex = 22;
@@ -225,12 +225,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel1.BorderRadius = 21;
             guna2Panel1.Controls.Add(guna2HtmlLabel1);
             guna2Panel1.Controls.Add(guna2CircleButton1);
-            guna2Panel1.CustomizableEdges = customizableEdges5;
+            guna2Panel1.CustomizableEdges = customizableEdges45;
             guna2Panel1.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel1.Location = new Point(60, 228);
             guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges46;
             guna2Panel1.Size = new Size(138, 45);
             guna2Panel1.TabIndex = 21;
             // 
@@ -241,7 +241,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel1.Location = new Point(14, 9);
             guna2HtmlLabel1.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(40, 22);
+            guna2HtmlLabel1.Size = new Size(48, 27);
             guna2HtmlLabel1.TabIndex = 22;
             guna2HtmlLabel1.Text = "More";
             // 
@@ -256,33 +256,33 @@ namespace QuanLyBanDienThoai.GUI
             guna2CircleButton1.Location = new Point(98, 6);
             guna2CircleButton1.Margin = new Padding(4, 5, 4, 5);
             guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges44;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(30, 31);
             guna2CircleButton1.TabIndex = 22;
             // 
             // guna2PictureBox3
             // 
-            guna2PictureBox3.CustomizableEdges = customizableEdges7;
+            guna2PictureBox3.CustomizableEdges = customizableEdges47;
             guna2PictureBox3.Image = (Image)resources.GetObject("guna2PictureBox3.Image");
             guna2PictureBox3.ImageRotate = 0F;
             guna2PictureBox3.Location = new Point(46, 418);
             guna2PictureBox3.Margin = new Padding(4, 5, 4, 5);
             guna2PictureBox3.Name = "guna2PictureBox3";
-            guna2PictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2PictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges48;
             guna2PictureBox3.Size = new Size(30, 37);
             guna2PictureBox3.TabIndex = 20;
             guna2PictureBox3.TabStop = false;
             // 
             // guna2PictureBox2
             // 
-            guna2PictureBox2.CustomizableEdges = customizableEdges9;
+            guna2PictureBox2.CustomizableEdges = customizableEdges49;
             guna2PictureBox2.Image = (Image)resources.GetObject("guna2PictureBox2.Image");
             guna2PictureBox2.ImageRotate = 0F;
             guna2PictureBox2.Location = new Point(46, 378);
             guna2PictureBox2.Margin = new Padding(4, 5, 4, 5);
             guna2PictureBox2.Name = "guna2PictureBox2";
-            guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges50;
             guna2PictureBox2.Size = new Size(30, 37);
             guna2PictureBox2.TabIndex = 19;
             guna2PictureBox2.TabStop = false;
@@ -295,7 +295,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel21.Location = new Point(89, 418);
             guna2HtmlLabel21.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            guna2HtmlLabel21.Size = new Size(201, 22);
+            guna2HtmlLabel21.Size = new Size(247, 27);
             guna2HtmlLabel21.TabIndex = 18;
             guna2HtmlLabel21.Text = "(205) 555-0100        (262) 555-0131";
             // 
@@ -319,7 +319,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel19.Location = new Point(44, 326);
             guna2HtmlLabel19.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            guna2HtmlLabel19.Size = new Size(119, 22);
+            guna2HtmlLabel19.Size = new Size(145, 27);
             guna2HtmlLabel19.TabIndex = 16;
             guna2HtmlLabel19.Text = "Thông tin liên hệ";
             // 
@@ -331,7 +331,7 @@ namespace QuanLyBanDienThoai.GUI
             label5.Location = new Point(36, 154);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(203, 20);
+            label5.Size = new Size(244, 25);
             label5.TabIndex = 4;
             label5.Text = "Yêu cầu đang chờ phê duyệt";
             // 
@@ -343,7 +343,7 @@ namespace QuanLyBanDienThoai.GUI
             label4.Location = new Point(382, 72);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(78, 67);
+            label4.Size = new Size(94, 81);
             label4.TabIndex = 3;
             label4.Text = "14";
             // 
@@ -355,7 +355,7 @@ namespace QuanLyBanDienThoai.GUI
             label3.Location = new Point(62, 72);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(85, 67);
+            label3.Size = new Size(101, 81);
             label3.TabIndex = 2;
             label3.Text = "26";
             // 
@@ -366,7 +366,7 @@ namespace QuanLyBanDienThoai.GUI
             label2.Location = new Point(342, 26);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(143, 20);
+            label2.Size = new Size(174, 25);
             label2.TabIndex = 1;
             label2.Text = "CUỘC HẸN SẮP TỚI";
             // 
@@ -377,7 +377,7 @@ namespace QuanLyBanDienThoai.GUI
             label1.Location = new Point(36, 26);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(154, 20);
+            label1.Size = new Size(183, 25);
             label1.TabIndex = 0;
             label1.Text = "YÊU CẦU PHÊ DUYỆT";
             // 
@@ -388,7 +388,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel35.Location = new Point(421, 800);
             guna2HtmlLabel35.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel35.Name = "guna2HtmlLabel35";
-            guna2HtmlLabel35.Size = new Size(123, 22);
+            guna2HtmlLabel35.Size = new Size(150, 27);
             guna2HtmlLabel35.TabIndex = 77;
             guna2HtmlLabel35.Text = "5. Oppo S23 Ultra";
             // 
@@ -399,7 +399,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel36.Location = new Point(421, 752);
             guna2HtmlLabel36.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel36.Name = "guna2HtmlLabel36";
-            guna2HtmlLabel36.Size = new Size(143, 22);
+            guna2HtmlLabel36.Size = new Size(170, 27);
             guna2HtmlLabel36.TabIndex = 76;
             guna2HtmlLabel36.Text = "4. Iphone 15 Promax";
             // 
@@ -410,7 +410,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel34.Location = new Point(421, 707);
             guna2HtmlLabel34.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel34.Name = "guna2HtmlLabel34";
-            guna2HtmlLabel34.Size = new Size(142, 22);
+            guna2HtmlLabel34.Size = new Size(170, 27);
             guna2HtmlLabel34.TabIndex = 75;
             guna2HtmlLabel34.Text = "3. Iphone 16 Promax";
             // 
@@ -421,7 +421,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel33.Location = new Point(421, 660);
             guna2HtmlLabel33.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel33.Name = "guna2HtmlLabel33";
-            guna2HtmlLabel33.Size = new Size(192, 22);
+            guna2HtmlLabel33.Size = new Size(232, 27);
             guna2HtmlLabel33.TabIndex = 74;
             guna2HtmlLabel33.Text = "2. SamSum Galaxy Ultra s23";
             // 
@@ -432,7 +432,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel32.Location = new Point(421, 610);
             guna2HtmlLabel32.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel32.Name = "guna2HtmlLabel32";
-            guna2HtmlLabel32.Size = new Size(140, 22);
+            guna2HtmlLabel32.Size = new Size(167, 27);
             guna2HtmlLabel32.TabIndex = 73;
             guna2HtmlLabel32.Text = "1. Iphone 17 Promax";
             // 
@@ -442,12 +442,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel6.Controls.Add(guna2HtmlLabel29);
             guna2Panel6.Controls.Add(guna2HtmlLabel30);
             guna2Panel6.Controls.Add(guna2HtmlLabel31);
-            guna2Panel6.CustomizableEdges = customizableEdges11;
+            guna2Panel6.CustomizableEdges = customizableEdges51;
             guna2Panel6.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel6.Location = new Point(96, 773);
             guna2Panel6.Margin = new Padding(4, 5, 4, 5);
             guna2Panel6.Name = "guna2Panel6";
-            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges52;
             guna2Panel6.Size = new Size(255, 77);
             guna2Panel6.TabIndex = 72;
             // 
@@ -459,7 +459,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel29.Location = new Point(165, 22);
             guna2HtmlLabel29.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel29.Name = "guna2HtmlLabel29";
-            guna2HtmlLabel29.Size = new Size(77, 22);
+            guna2HtmlLabel29.Size = new Size(92, 27);
             guna2HtmlLabel29.TabIndex = 20;
             guna2HtmlLabel29.Text = "13:00-15:00";
             // 
@@ -471,7 +471,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel30.Location = new Point(21, 5);
             guna2HtmlLabel30.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel30.Name = "guna2HtmlLabel30";
-            guna2HtmlLabel30.Size = new Size(119, 22);
+            guna2HtmlLabel30.Size = new Size(143, 27);
             guna2HtmlLabel30.TabIndex = 19;
             guna2HtmlLabel30.Text = "Thời gian diễn ra";
             // 
@@ -482,7 +482,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel31.Location = new Point(21, 34);
             guna2HtmlLabel31.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel31.Name = "guna2HtmlLabel31";
-            guna2HtmlLabel31.Size = new Size(131, 22);
+            guna2HtmlLabel31.Size = new Size(156, 27);
             guna2HtmlLabel31.TabIndex = 8;
             guna2HtmlLabel31.Text = "Thảo luận đối sách";
             // 
@@ -492,12 +492,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel5.Controls.Add(guna2HtmlLabel26);
             guna2Panel5.Controls.Add(guna2HtmlLabel27);
             guna2Panel5.Controls.Add(guna2HtmlLabel28);
-            guna2Panel5.CustomizableEdges = customizableEdges13;
+            guna2Panel5.CustomizableEdges = customizableEdges53;
             guna2Panel5.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel5.Location = new Point(96, 687);
             guna2Panel5.Margin = new Padding(4, 5, 4, 5);
             guna2Panel5.Name = "guna2Panel5";
-            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges54;
             guna2Panel5.Size = new Size(255, 77);
             guna2Panel5.TabIndex = 71;
             // 
@@ -509,7 +509,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel26.Location = new Point(165, 22);
             guna2HtmlLabel26.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel26.Name = "guna2HtmlLabel26";
-            guna2HtmlLabel26.Size = new Size(75, 22);
+            guna2HtmlLabel26.Size = new Size(89, 27);
             guna2HtmlLabel26.TabIndex = 20;
             guna2HtmlLabel26.Text = "11:00-12:00";
             // 
@@ -521,7 +521,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel27.Location = new Point(21, 5);
             guna2HtmlLabel27.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel27.Name = "guna2HtmlLabel27";
-            guna2HtmlLabel27.Size = new Size(119, 22);
+            guna2HtmlLabel27.Size = new Size(143, 27);
             guna2HtmlLabel27.TabIndex = 19;
             guna2HtmlLabel27.Text = "Thời gian diễn ra";
             // 
@@ -532,7 +532,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel28.Location = new Point(21, 34);
             guna2HtmlLabel28.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel28.Name = "guna2HtmlLabel28";
-            guna2HtmlLabel28.Size = new Size(127, 22);
+            guna2HtmlLabel28.Size = new Size(155, 27);
             guna2HtmlLabel28.TabIndex = 8;
             guna2HtmlLabel28.Text = "Trao đổi thông tin";
             // 
@@ -542,12 +542,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel4.Controls.Add(guna2HtmlLabel25);
             guna2Panel4.Controls.Add(guna2HtmlLabel24);
             guna2Panel4.Controls.Add(guna2HtmlLabel23);
-            guna2Panel4.CustomizableEdges = customizableEdges15;
+            guna2Panel4.CustomizableEdges = customizableEdges55;
             guna2Panel4.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel4.Location = new Point(96, 601);
             guna2Panel4.Margin = new Padding(4, 5, 4, 5);
             guna2Panel4.Name = "guna2Panel4";
-            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges56;
             guna2Panel4.Size = new Size(255, 77);
             guna2Panel4.TabIndex = 70;
             // 
@@ -559,7 +559,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel25.Location = new Point(165, 22);
             guna2HtmlLabel25.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel25.Name = "guna2HtmlLabel25";
-            guna2HtmlLabel25.Size = new Size(79, 22);
+            guna2HtmlLabel25.Size = new Size(95, 27);
             guna2HtmlLabel25.TabIndex = 20;
             guna2HtmlLabel25.Text = "09:00-10:00";
             // 
@@ -571,7 +571,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel24.Location = new Point(21, 5);
             guna2HtmlLabel24.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            guna2HtmlLabel24.Size = new Size(119, 22);
+            guna2HtmlLabel24.Size = new Size(143, 27);
             guna2HtmlLabel24.TabIndex = 19;
             guna2HtmlLabel24.Text = "Thời gian diễn ra";
             // 
@@ -582,7 +582,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel23.Location = new Point(21, 34);
             guna2HtmlLabel23.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            guna2HtmlLabel23.Size = new Size(106, 22);
+            guna2HtmlLabel23.Size = new Size(127, 27);
             guna2HtmlLabel23.TabIndex = 8;
             guna2HtmlLabel23.Text = "Cuộc thảo luận";
             // 
@@ -594,7 +594,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel22.Location = new Point(32, 601);
             guna2HtmlLabel22.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            guna2HtmlLabel22.Size = new Size(35, 79);
+            guna2HtmlLabel22.Size = new Size(42, 95);
             guna2HtmlLabel22.TabIndex = 69;
             guna2HtmlLabel22.Text = "3";
             // 
@@ -606,7 +606,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel15.Location = new Point(700, 752);
             guna2HtmlLabel15.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            guna2HtmlLabel15.Size = new Size(68, 61);
+            guna2HtmlLabel15.Size = new Size(82, 72);
             guna2HtmlLabel15.TabIndex = 68;
             guna2HtmlLabel15.Text = "103";
             // 
@@ -617,7 +617,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel16.Location = new Point(700, 695);
             guna2HtmlLabel16.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            guna2HtmlLabel16.Size = new Size(209, 22);
+            guna2HtmlLabel16.Size = new Size(254, 27);
             guna2HtmlLabel16.TabIndex = 67;
             guna2HtmlLabel16.Text = "TỔNG SỐ SẢN PHẨM ĐÃ BÁN";
             // 
@@ -629,7 +629,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel14.Location = new Point(700, 601);
             guna2HtmlLabel14.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            guna2HtmlLabel14.Size = new Size(44, 61);
+            guna2HtmlLabel14.Size = new Size(53, 72);
             guna2HtmlLabel14.TabIndex = 63;
             guna2HtmlLabel14.Text = "10";
             // 
@@ -641,7 +641,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel12.Location = new Point(1068, 795);
             guna2HtmlLabel12.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            guna2HtmlLabel12.Size = new Size(89, 22);
+            guna2HtmlLabel12.Size = new Size(106, 27);
             guna2HtmlLabel12.TabIndex = 62;
             guna2HtmlLabel12.Text = "Tháng Trước";
             // 
@@ -653,7 +653,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel13.Location = new Point(1068, 726);
             guna2HtmlLabel13.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            guna2HtmlLabel13.Size = new Size(157, 61);
+            guna2HtmlLabel13.Size = new Size(190, 72);
             guna2HtmlLabel13.TabIndex = 61;
             guna2HtmlLabel13.Text = "$35,000";
             // 
@@ -665,7 +665,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel11.Location = new Point(1068, 670);
             guna2HtmlLabel11.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            guna2HtmlLabel11.Size = new Size(192, 22);
+            guna2HtmlLabel11.Size = new Size(233, 27);
             guna2HtmlLabel11.TabIndex = 60;
             guna2HtmlLabel11.Text = "Tính Tới Thời Điểm Hiện Tại";
             // 
@@ -677,7 +677,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel10.Location = new Point(1068, 601);
             guna2HtmlLabel10.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            guna2HtmlLabel10.Size = new Size(157, 61);
+            guna2HtmlLabel10.Size = new Size(190, 72);
             guna2HtmlLabel10.TabIndex = 59;
             guna2HtmlLabel10.Text = "$26,000";
             // 
@@ -688,7 +688,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel9.Location = new Point(1068, 544);
             guna2HtmlLabel9.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            guna2HtmlLabel9.Size = new Size(51, 22);
+            guna2HtmlLabel9.Size = new Size(61, 27);
             guna2HtmlLabel9.TabIndex = 58;
             guna2HtmlLabel9.Text = "JASPEL";
             // 
@@ -699,7 +699,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel8.Location = new Point(700, 544);
             guna2HtmlLabel8.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(286, 22);
+            guna2HtmlLabel8.Size = new Size(348, 27);
             guna2HtmlLabel8.TabIndex = 57;
             guna2HtmlLabel8.Text = "TỔNG SỐ HOÁ ĐƠN TRONG THÁNG NÀY";
             // 
@@ -710,7 +710,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel7.Location = new Point(407, 544);
             guna2HtmlLabel7.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(191, 22);
+            guna2HtmlLabel7.Size = new Size(230, 27);
             guna2HtmlLabel7.TabIndex = 56;
             guna2HtmlLabel7.Text = "TOP SẢN PHẨM BÁN CHẠY";
             // 
@@ -721,7 +721,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel3.Location = new Point(32, 544);
             guna2HtmlLabel3.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(153, 22);
+            guna2HtmlLabel3.Size = new Size(183, 27);
             guna2HtmlLabel3.TabIndex = 55;
             guna2HtmlLabel3.Text = "CUỘC HẸN HÔM NAY";
             // 
@@ -731,12 +731,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel12.BorderRadius = 21;
             guna2Panel12.Controls.Add(guna2CircleButton7);
             guna2Panel12.Controls.Add(guna2HtmlLabel43);
-            guna2Panel12.CustomizableEdges = customizableEdges18;
+            guna2Panel12.CustomizableEdges = customizableEdges58;
             guna2Panel12.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel12.Location = new Point(1099, 880);
             guna2Panel12.Margin = new Padding(4, 5, 4, 5);
             guna2Panel12.Name = "guna2Panel12";
-            guna2Panel12.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            guna2Panel12.ShadowDecoration.CustomizableEdges = customizableEdges59;
             guna2Panel12.Size = new Size(138, 45);
             guna2Panel12.TabIndex = 66;
             // 
@@ -751,7 +751,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2CircleButton7.Location = new Point(98, 6);
             guna2CircleButton7.Margin = new Padding(4, 5, 4, 5);
             guna2CircleButton7.Name = "guna2CircleButton7";
-            guna2CircleButton7.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            guna2CircleButton7.ShadowDecoration.CustomizableEdges = customizableEdges57;
             guna2CircleButton7.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton7.Size = new Size(30, 31);
             guna2CircleButton7.TabIndex = 13;
@@ -763,7 +763,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel43.Location = new Point(12, 6);
             guna2HtmlLabel43.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel43.Name = "guna2HtmlLabel43";
-            guna2HtmlLabel43.Size = new Size(40, 22);
+            guna2HtmlLabel43.Size = new Size(48, 27);
             guna2HtmlLabel43.TabIndex = 10;
             guna2HtmlLabel43.Text = "More";
             // 
@@ -773,12 +773,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel11.BorderRadius = 21;
             guna2Panel11.Controls.Add(guna2CircleButton6);
             guna2Panel11.Controls.Add(guna2HtmlLabel42);
-            guna2Panel11.CustomizableEdges = customizableEdges21;
+            guna2Panel11.CustomizableEdges = customizableEdges61;
             guna2Panel11.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel11.Location = new Point(743, 880);
             guna2Panel11.Margin = new Padding(4, 5, 4, 5);
             guna2Panel11.Name = "guna2Panel11";
-            guna2Panel11.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            guna2Panel11.ShadowDecoration.CustomizableEdges = customizableEdges62;
             guna2Panel11.Size = new Size(138, 45);
             guna2Panel11.TabIndex = 65;
             // 
@@ -793,7 +793,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2CircleButton6.Location = new Point(98, 6);
             guna2CircleButton6.Margin = new Padding(4, 5, 4, 5);
             guna2CircleButton6.Name = "guna2CircleButton6";
-            guna2CircleButton6.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2CircleButton6.ShadowDecoration.CustomizableEdges = customizableEdges60;
             guna2CircleButton6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton6.Size = new Size(30, 31);
             guna2CircleButton6.TabIndex = 13;
@@ -805,7 +805,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel42.Location = new Point(12, 6);
             guna2HtmlLabel42.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel42.Name = "guna2HtmlLabel42";
-            guna2HtmlLabel42.Size = new Size(40, 22);
+            guna2HtmlLabel42.Size = new Size(48, 27);
             guna2HtmlLabel42.TabIndex = 10;
             guna2HtmlLabel42.Text = "More";
             // 
@@ -815,12 +815,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel10.BorderRadius = 21;
             guna2Panel10.Controls.Add(guna2CircleButton5);
             guna2Panel10.Controls.Add(guna2HtmlLabel41);
-            guna2Panel10.CustomizableEdges = customizableEdges24;
+            guna2Panel10.CustomizableEdges = customizableEdges64;
             guna2Panel10.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel10.Location = new Point(452, 880);
             guna2Panel10.Margin = new Padding(4, 5, 4, 5);
             guna2Panel10.Name = "guna2Panel10";
-            guna2Panel10.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            guna2Panel10.ShadowDecoration.CustomizableEdges = customizableEdges65;
             guna2Panel10.Size = new Size(138, 45);
             guna2Panel10.TabIndex = 64;
             // 
@@ -835,7 +835,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2CircleButton5.Location = new Point(98, 6);
             guna2CircleButton5.Margin = new Padding(4, 5, 4, 5);
             guna2CircleButton5.Name = "guna2CircleButton5";
-            guna2CircleButton5.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            guna2CircleButton5.ShadowDecoration.CustomizableEdges = customizableEdges63;
             guna2CircleButton5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton5.Size = new Size(30, 31);
             guna2CircleButton5.TabIndex = 13;
@@ -847,7 +847,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel41.Location = new Point(12, 6);
             guna2HtmlLabel41.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel41.Name = "guna2HtmlLabel41";
-            guna2HtmlLabel41.Size = new Size(40, 22);
+            guna2HtmlLabel41.Size = new Size(48, 27);
             guna2HtmlLabel41.TabIndex = 10;
             guna2HtmlLabel41.Text = "More";
             // 
@@ -857,12 +857,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel13.BorderRadius = 21;
             guna2Panel13.Controls.Add(guna2CircleButton4);
             guna2Panel13.Controls.Add(guna2HtmlLabel40);
-            guna2Panel13.CustomizableEdges = customizableEdges27;
+            guna2Panel13.CustomizableEdges = customizableEdges67;
             guna2Panel13.FillColor = Color.FromArgb(240, 241, 246);
             guna2Panel13.Location = new Point(32, 880);
             guna2Panel13.Margin = new Padding(4, 5, 4, 5);
             guna2Panel13.Name = "guna2Panel13";
-            guna2Panel13.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            guna2Panel13.ShadowDecoration.CustomizableEdges = customizableEdges68;
             guna2Panel13.Size = new Size(138, 45);
             guna2Panel13.TabIndex = 78;
             // 
@@ -877,7 +877,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2CircleButton4.Location = new Point(98, 6);
             guna2CircleButton4.Margin = new Padding(4, 5, 4, 5);
             guna2CircleButton4.Name = "guna2CircleButton4";
-            guna2CircleButton4.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            guna2CircleButton4.ShadowDecoration.CustomizableEdges = customizableEdges66;
             guna2CircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton4.Size = new Size(30, 31);
             guna2CircleButton4.TabIndex = 13;
@@ -889,7 +889,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel40.Location = new Point(12, 6);
             guna2HtmlLabel40.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel40.Name = "guna2HtmlLabel40";
-            guna2HtmlLabel40.Size = new Size(40, 22);
+            guna2HtmlLabel40.Size = new Size(48, 27);
             guna2HtmlLabel40.TabIndex = 10;
             guna2HtmlLabel40.Text = "More";
             // 
@@ -900,12 +900,12 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel3.Controls.Add(guna2HtmlLabel46);
             guna2Panel3.Controls.Add(guna2HtmlLabel45);
             guna2Panel3.Controls.Add(guna2HtmlLabel44);
-            guna2Panel3.CustomizableEdges = customizableEdges39;
+            guna2Panel3.CustomizableEdges = customizableEdges79;
             guna2Panel3.FillColor = Color.FromArgb(30, 48, 88);
             guna2Panel3.Location = new Point(22, 25);
             guna2Panel3.Margin = new Padding(4, 5, 4, 5);
             guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges80;
             guna2Panel3.Size = new Size(631, 473);
             guna2Panel3.TabIndex = 79;
             // 
@@ -915,11 +915,11 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel7.Controls.Add(guna2Button3);
             guna2Panel7.Controls.Add(guna2Button2);
             guna2Panel7.Controls.Add(guna2Button1);
-            guna2Panel7.CustomizableEdges = customizableEdges35;
+            guna2Panel7.CustomizableEdges = customizableEdges75;
             guna2Panel7.Location = new Point(208, 113);
             guna2Panel7.Margin = new Padding(4, 5, 4, 5);
             guna2Panel7.Name = "guna2Panel7";
-            guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges76;
             guna2Panel7.Size = new Size(384, 57);
             guna2Panel7.TabIndex = 9;
             // 
@@ -927,7 +927,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             guna2Button3.Animated = true;
             guna2Button3.BorderRadius = 5;
-            guna2Button3.CustomizableEdges = customizableEdges29;
+            guna2Button3.CustomizableEdges = customizableEdges69;
             guna2Button3.FillColor = Color.Transparent;
             guna2Button3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2Button3.ForeColor = Color.White;
@@ -936,7 +936,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2Button3.Location = new Point(260, 6);
             guna2Button3.Margin = new Padding(4, 5, 4, 5);
             guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges70;
             guna2Button3.Size = new Size(116, 45);
             guna2Button3.TabIndex = 2;
             guna2Button3.Text = "30 Ngày";
@@ -945,7 +945,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             guna2Button2.Animated = true;
             guna2Button2.BorderRadius = 5;
-            guna2Button2.CustomizableEdges = customizableEdges31;
+            guna2Button2.CustomizableEdges = customizableEdges71;
             guna2Button2.FillColor = Color.Transparent;
             guna2Button2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2Button2.ForeColor = Color.White;
@@ -954,7 +954,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2Button2.Location = new Point(135, 6);
             guna2Button2.Margin = new Padding(4, 5, 4, 5);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges72;
             guna2Button2.Size = new Size(116, 45);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Hàng Tuần";
@@ -963,7 +963,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             guna2Button1.Animated = true;
             guna2Button1.BorderRadius = 5;
-            guna2Button1.CustomizableEdges = customizableEdges33;
+            guna2Button1.CustomizableEdges = customizableEdges73;
             guna2Button1.FillColor = Color.Transparent;
             guna2Button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2Button1.ForeColor = Color.White;
@@ -972,20 +972,20 @@ namespace QuanLyBanDienThoai.GUI
             guna2Button1.Location = new Point(6, 6);
             guna2Button1.Margin = new Padding(4, 5, 4, 5);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges74;
             guna2Button1.Size = new Size(116, 45);
             guna2Button1.TabIndex = 0;
             guna2Button1.Text = "Hàng Tháng";
             // 
             // guna2PictureBox1
             // 
-            guna2PictureBox1.CustomizableEdges = customizableEdges37;
+            guna2PictureBox1.CustomizableEdges = customizableEdges77;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
             guna2PictureBox1.Location = new Point(10, 180);
             guna2PictureBox1.Margin = new Padding(4, 5, 4, 5);
             guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges78;
             guna2PictureBox1.Size = new Size(582, 260);
             guna2PictureBox1.TabIndex = 8;
             guna2PictureBox1.TabStop = false;
@@ -998,7 +998,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel46.Location = new Point(24, 129);
             guna2HtmlLabel46.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel46.Name = "guna2HtmlLabel46";
-            guna2HtmlLabel46.Size = new Size(155, 22);
+            guna2HtmlLabel46.Size = new Size(187, 27);
             guna2HtmlLabel46.TabIndex = 7;
             guna2HtmlLabel46.Text = "THỐNG KÊ CUỘC HẸN";
             // 
@@ -1010,7 +1010,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel45.Location = new Point(214, 16);
             guna2HtmlLabel45.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel45.Name = "guna2HtmlLabel45";
-            guna2HtmlLabel45.Size = new Size(18, 47);
+            guna2HtmlLabel45.Size = new Size(21, 56);
             guna2HtmlLabel45.TabIndex = 6;
             guna2HtmlLabel45.Text = "?";
             // 
@@ -1022,13 +1022,13 @@ namespace QuanLyBanDienThoai.GUI
             guna2HtmlLabel44.Location = new Point(24, 16);
             guna2HtmlLabel44.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel44.Name = "guna2HtmlLabel44";
-            guna2HtmlLabel44.Size = new Size(145, 47);
+            guna2HtmlLabel44.Size = new Size(175, 56);
             guna2HtmlLabel44.TabIndex = 5;
             guna2HtmlLabel44.Text = "Xin Chào,";
             // 
-            // Dashboard
+            // DashBoard
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -1063,8 +1063,9 @@ namespace QuanLyBanDienThoai.GUI
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 5, 4, 5);
-            Name = "Dashboard";
-            Text = "Dashboard";
+            Name = "DashBoard";
+            Text = "DashBoard";
+            Load += Dashboard_Load;
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
             guna2Panel2.ResumeLayout(false);
