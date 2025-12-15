@@ -32,6 +32,9 @@ namespace QuanLyBanDienThoai.GUI
             // Load thông tin nhân viên từ XML
             LoadNhanVien();
 
+            // Load thông tin nhân viên từ XML
+            LoadNhanVien();
+
             label_header.Text = "Tổng quan";
             img_header.Image = Properties.Resources.layout_dashboard_2;
             ResetSidebarButtons();
