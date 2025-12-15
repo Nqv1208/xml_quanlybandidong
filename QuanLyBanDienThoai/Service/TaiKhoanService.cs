@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
-using QuanLyBanDienThoai.Model;
+using QuanLyBanDienThoai.Models;
 
 namespace QuanLyBanDienThoai.Service
 {

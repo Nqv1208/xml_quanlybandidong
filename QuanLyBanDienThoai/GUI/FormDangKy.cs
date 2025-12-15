@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using QuanLyBanDienThoai.Model;
+using QuanLyBanDienThoai.Models;
 using QuanLyBanDienThoai.Service;
 
 namespace QuanLyBanDienThoai.GUI

@@ -24,10 +24,10 @@ namespace QuanLyBanDienThoai.GUI
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -144,6 +144,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnAccount
             // 
+            btnAccount.Animated = true;
             btnAccount.BackColor = Color.White;
             btnAccount.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnAccount.CustomizableEdges = customizableEdges3;
@@ -157,8 +158,8 @@ namespace QuanLyBanDienThoai.GUI
             btnAccount.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnAccount.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnAccount.HoverState.ForeColor = Color.White;
-            btnAccount.HoverState.Image = (Image)resources.GetObject("resource.Image");
-            btnAccount.Image = (Image)resources.GetObject("btnAccount.Image");
+            btnAccount.HoverState.Image = Properties.Resources.user_cog_white;
+            btnAccount.Image = Properties.Resources.user_cog;
             btnAccount.ImageAlign = HorizontalAlignment.Left;
             btnAccount.ImageOffset = new Point(8, 0);
             btnAccount.ImageSize = new Size(26, 26);
@@ -227,6 +228,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnStaff
             // 
+            btnStaff.Animated = true;
             btnStaff.BackColor = Color.White;
             btnStaff.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnStaff.CustomizableEdges = customizableEdges8;
@@ -240,8 +242,8 @@ namespace QuanLyBanDienThoai.GUI
             btnStaff.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnStaff.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnStaff.HoverState.ForeColor = Color.White;
-            btnStaff.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            btnStaff.Image = (Image)resources.GetObject("btnStaff.Image");
+            btnStaff.HoverState.Image = Properties.Resources.users_white;
+            btnStaff.Image = Properties.Resources.users;
             btnStaff.ImageAlign = HorizontalAlignment.Left;
             btnStaff.ImageOffset = new Point(8, 0);
             btnStaff.ImageSize = new Size(26, 26);
@@ -257,6 +259,7 @@ namespace QuanLyBanDienThoai.GUI
             // btnLogout
             // 
             btnLogout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnLogout.Animated = true;
             btnLogout.BackColor = Color.White;
             btnLogout.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnLogout.CustomizableEdges = customizableEdges10;
@@ -270,8 +273,8 @@ namespace QuanLyBanDienThoai.GUI
             btnLogout.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnLogout.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnLogout.HoverState.ForeColor = Color.White;
-            btnLogout.HoverState.Image = (Image)resources.GetObject("resource.Image2");
-            btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
+            btnLogout.HoverState.Image = Properties.Resources.logout_white;
+            btnLogout.Image = Properties.Resources.logout;
             btnLogout.ImageAlign = HorizontalAlignment.Left;
             btnLogout.ImageOffset = new Point(8, 0);
             btnLogout.ImageSize = new Size(26, 26);
@@ -286,6 +289,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnDashboard
             // 
+            btnDashboard.Animated = true;
             btnDashboard.BackColor = Color.White;
             btnDashboard.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnDashboard.CustomizableEdges = customizableEdges12;
@@ -299,8 +303,6 @@ namespace QuanLyBanDienThoai.GUI
             btnDashboard.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnDashboard.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnDashboard.HoverState.ForeColor = Color.White;
-            btnDashboard.HoverState.Image = (Image)resources.GetObject("resource.Image3");
-            btnDashboard.Image = (Image)resources.GetObject("btnDashboard.Image");
             btnDashboard.ImageAlign = HorizontalAlignment.Left;
             btnDashboard.ImageOffset = new Point(8, 0);
             btnDashboard.ImageSize = new Size(26, 26);
@@ -329,6 +331,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnPhieuNhap
             // 
+            btnPhieuNhap.Animated = true;
             btnPhieuNhap.BackColor = Color.White;
             btnPhieuNhap.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnPhieuNhap.CustomizableEdges = customizableEdges16;
@@ -342,8 +345,8 @@ namespace QuanLyBanDienThoai.GUI
             btnPhieuNhap.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnPhieuNhap.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnPhieuNhap.HoverState.ForeColor = Color.White;
-            btnPhieuNhap.HoverState.Image = (Image)resources.GetObject("resource.Image4");
-            btnPhieuNhap.Image = (Image)resources.GetObject("btnPhieuNhap.Image");
+            btnPhieuNhap.HoverState.Image = Properties.Resources.file_bar_chart_white;
+            btnPhieuNhap.Image = Properties.Resources.file_bar_chart;
             btnPhieuNhap.ImageAlign = HorizontalAlignment.Left;
             btnPhieuNhap.ImageOffset = new Point(8, 0);
             btnPhieuNhap.ImageSize = new Size(26, 26);
@@ -358,6 +361,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnProvider
             // 
+            btnProvider.Animated = true;
             btnProvider.BackColor = Color.White;
             btnProvider.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnProvider.CustomizableEdges = customizableEdges18;
@@ -371,8 +375,8 @@ namespace QuanLyBanDienThoai.GUI
             btnProvider.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnProvider.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnProvider.HoverState.ForeColor = Color.White;
-            btnProvider.HoverState.Image = (Image)resources.GetObject("resource.Image5");
-            btnProvider.Image = (Image)resources.GetObject("btnProvider.Image");
+            btnProvider.HoverState.Image = Properties.Resources.store_white;
+            btnProvider.Image = Properties.Resources.store;
             btnProvider.ImageAlign = HorizontalAlignment.Left;
             btnProvider.ImageOffset = new Point(8, 0);
             btnProvider.ImageSize = new Size(26, 26);
@@ -387,6 +391,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnBill
             // 
+            btnBill.Animated = true;
             btnBill.BackColor = Color.White;
             btnBill.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnBill.CustomizableEdges = customizableEdges20;
@@ -400,8 +405,8 @@ namespace QuanLyBanDienThoai.GUI
             btnBill.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnBill.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnBill.HoverState.ForeColor = Color.White;
-            btnBill.HoverState.Image = (Image)resources.GetObject("resource.Image6");
-            btnBill.Image = (Image)resources.GetObject("btnBill.Image");
+            btnBill.HoverState.Image = Properties.Resources.clipboard_list_white;
+            btnBill.Image = Properties.Resources.clipboard_list;
             btnBill.ImageAlign = HorizontalAlignment.Left;
             btnBill.ImageOffset = new Point(8, 0);
             btnBill.ImageSize = new Size(26, 26);
@@ -416,6 +421,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnCustomer
             // 
+            btnCustomer.Animated = true;
             btnCustomer.BackColor = Color.White;
             btnCustomer.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnCustomer.CustomizableEdges = customizableEdges22;
@@ -429,8 +435,8 @@ namespace QuanLyBanDienThoai.GUI
             btnCustomer.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnCustomer.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnCustomer.HoverState.ForeColor = Color.White;
-            btnCustomer.HoverState.Image = (Image)resources.GetObject("resource.Image7");
-            btnCustomer.Image = (Image)resources.GetObject("btnCustomer.Image");
+            btnCustomer.HoverState.Image = Properties.Resources.users_white;
+            btnCustomer.Image = Properties.Resources.users;
             btnCustomer.ImageAlign = HorizontalAlignment.Left;
             btnCustomer.ImageOffset = new Point(8, 0);
             btnCustomer.ImageSize = new Size(26, 26);
@@ -445,6 +451,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btnProduct
             // 
+            btnProduct.Animated = true;
             btnProduct.BackColor = Color.White;
             btnProduct.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btnProduct.CustomizableEdges = customizableEdges24;
@@ -458,8 +465,8 @@ namespace QuanLyBanDienThoai.GUI
             btnProduct.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btnProduct.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btnProduct.HoverState.ForeColor = Color.White;
-            btnProduct.HoverState.Image = (Image)resources.GetObject("resource.Image8");
-            btnProduct.Image = (Image)resources.GetObject("btnProduct.Image");
+            btnProduct.HoverState.Image = Properties.Resources.package_open_white;
+            btnProduct.Image = Properties.Resources.package_open;
             btnProduct.ImageAlign = HorizontalAlignment.Left;
             btnProduct.ImageOffset = new Point(8, 0);
             btnProduct.ImageSize = new Size(26, 26);
@@ -474,6 +481,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btn_hangsanxuat
             // 
+            btn_hangsanxuat.Animated = true;
             btn_hangsanxuat.BackColor = Color.White;
             btn_hangsanxuat.CustomBorderThickness = new Padding(0, 0, 0, 8);
             btn_hangsanxuat.CustomizableEdges = customizableEdges26;
@@ -487,8 +495,8 @@ namespace QuanLyBanDienThoai.GUI
             btn_hangsanxuat.HoverState.BorderColor = Color.FromArgb(56, 103, 214);
             btn_hangsanxuat.HoverState.FillColor = Color.FromArgb(75, 123, 236);
             btn_hangsanxuat.HoverState.ForeColor = Color.White;
-            btn_hangsanxuat.HoverState.Image = (Image)resources.GetObject("resource.Image9");
-            btn_hangsanxuat.Image = (Image)resources.GetObject("btn_hangsanxuat.Image");
+            btn_hangsanxuat.HoverState.Image = Properties.Resources.manufacture_white;
+            btn_hangsanxuat.Image = Properties.Resources.manufacture;
             btn_hangsanxuat.ImageAlign = HorizontalAlignment.Left;
             btn_hangsanxuat.ImageOffset = new Point(8, 0);
             btn_hangsanxuat.ImageSize = new Size(26, 26);
@@ -530,7 +538,7 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel_Top.Location = new Point(300, 0);
             guna2Panel_Top.Name = "guna2Panel_Top";
             guna2Panel_Top.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            guna2Panel_Top.Size = new Size(1000, 53);
+            guna2Panel_Top.Size = new Size(1000, 55);
             guna2Panel_Top.TabIndex = 1;
             // 
             // guna2CircleButton1
@@ -651,10 +659,10 @@ namespace QuanLyBanDienThoai.GUI
             guna2Panel_Container.AutoScroll = true;
             guna2Panel_Container.CustomizableEdges = customizableEdges45;
             guna2Panel_Container.Dock = DockStyle.Fill;
-            guna2Panel_Container.Location = new Point(300, 53);
+            guna2Panel_Container.Location = new Point(300, 55);
             guna2Panel_Container.Name = "guna2Panel_Container";
             guna2Panel_Container.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            guna2Panel_Container.Size = new Size(1000, 797);
+            guna2Panel_Container.Size = new Size(1000, 795);
             guna2Panel_Container.TabIndex = 2;
             // 
             // frmMain

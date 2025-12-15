@@ -134,7 +134,7 @@ namespace QuanLyBanDienThoai.GUI
             dgvTaiKhoan.RowHeadersVisible = false;
             dgvTaiKhoan.RowHeadersWidth = 51;
             dgvTaiKhoan.RowTemplate.Height = 29;
-            dgvTaiKhoan.Size = new Size(972, 356);
+            dgvTaiKhoan.Size = new Size(969, 354);
             dgvTaiKhoan.TabIndex = 0;
             dgvTaiKhoan.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvTaiKhoan.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -162,7 +162,7 @@ namespace QuanLyBanDienThoai.GUI
             // lblMaTK
             // 
             lblMaTK.BackColor = Color.Transparent;
-            lblMaTK.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMaTK.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblMaTK.ForeColor = Color.FromArgb(149, 165, 166);
             lblMaTK.Location = new Point(20, 61);
             lblMaTK.Name = "lblMaTK";
@@ -203,7 +203,7 @@ namespace QuanLyBanDienThoai.GUI
             txtTenDangNhap.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenDangNhap.Font = new Font("Segoe UI", 10F);
             txtTenDangNhap.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenDangNhap.Location = new Point(625, 110);
+            txtTenDangNhap.Location = new Point(625, 54);
             txtTenDangNhap.Margin = new Padding(3, 2, 3, 2);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.PlaceholderText = "";
@@ -246,7 +246,7 @@ namespace QuanLyBanDienThoai.GUI
             cboQuyen.ForeColor = Color.FromArgb(68, 88, 112);
             cboQuyen.ItemHeight = 40;
             cboQuyen.Items.AddRange(new object[] { "Admin", "NhanVien" });
-            cboQuyen.Location = new Point(625, 54);
+            cboQuyen.Location = new Point(625, 107);
             cboQuyen.Margin = new Padding(4);
             cboQuyen.Name = "cboQuyen";
             cboQuyen.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -390,6 +390,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // groupBox1
             // 
+            groupBox1.BorderRadius = 6;
             groupBox1.Controls.Add(lblNhanVien);
             groupBox1.Controls.Add(lblQuyen);
             groupBox1.Controls.Add(lblMatKhau);
@@ -410,51 +411,55 @@ namespace QuanLyBanDienThoai.GUI
             groupBox1.Location = new Point(15, 15);
             groupBox1.Name = "groupBox1";
             groupBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            groupBox1.Size = new Size(972, 229);
+            groupBox1.Size = new Size(969, 229);
             groupBox1.TabIndex = 0;
             groupBox1.Text = "Thông tin tài khoản";
             // 
             // lblNhanVien
             // 
             lblNhanVien.BackColor = Color.Transparent;
+            lblNhanVien.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblNhanVien.ForeColor = Color.FromArgb(149, 165, 166);
             lblNhanVien.Location = new Point(20, 177);
             lblNhanVien.Margin = new Padding(4);
             lblNhanVien.Name = "lblNhanVien";
-            lblNhanVien.Size = new Size(86, 27);
+            lblNhanVien.Size = new Size(91, 27);
             lblNhanVien.TabIndex = 24;
             lblNhanVien.Text = "Nhân viên:";
             // 
             // lblQuyen
             // 
             lblQuyen.BackColor = Color.Transparent;
+            lblQuyen.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblQuyen.ForeColor = Color.FromArgb(149, 165, 166);
-            lblQuyen.Location = new Point(472, 120);
+            lblQuyen.Location = new Point(483, 119);
             lblQuyen.Margin = new Padding(4);
             lblQuyen.Name = "lblQuyen";
-            lblQuyen.Size = new Size(59, 27);
+            lblQuyen.Size = new Size(62, 27);
             lblQuyen.TabIndex = 23;
             lblQuyen.Text = "Quyền:";
             // 
             // lblMatKhau
             // 
             lblMatKhau.BackColor = Color.Transparent;
+            lblMatKhau.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblMatKhau.ForeColor = Color.FromArgb(149, 165, 166);
             lblMatKhau.Location = new Point(20, 119);
             lblMatKhau.Margin = new Padding(4);
             lblMatKhau.Name = "lblMatKhau";
-            lblMatKhau.Size = new Size(81, 27);
+            lblMatKhau.Size = new Size(84, 27);
             lblMatKhau.TabIndex = 22;
             lblMatKhau.Text = "Mật khẩu:";
             // 
             // lblTenDangNhap
             // 
             lblTenDangNhap.BackColor = Color.Transparent;
+            lblTenDangNhap.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblTenDangNhap.ForeColor = Color.FromArgb(149, 165, 166);
-            lblTenDangNhap.Location = new Point(472, 63);
+            lblTenDangNhap.Location = new Point(483, 61);
             lblTenDangNhap.Margin = new Padding(4);
             lblTenDangNhap.Name = "lblTenDangNhap";
-            lblTenDangNhap.Size = new Size(126, 27);
+            lblTenDangNhap.Size = new Size(131, 27);
             lblTenDangNhap.TabIndex = 21;
             lblTenDangNhap.Text = "Tên đăng nhập:";
             // 
@@ -468,7 +473,7 @@ namespace QuanLyBanDienThoai.GUI
             groupBox2.Location = new Point(15, 388);
             groupBox2.Name = "groupBox2";
             groupBox2.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            groupBox2.Size = new Size(972, 396);
+            groupBox2.Size = new Size(969, 394);
             groupBox2.TabIndex = 1;
             groupBox2.Text = "Danh sách tài khoản";
             // 
@@ -491,7 +496,8 @@ namespace QuanLyBanDienThoai.GUI
             // 
             // btn_chuyendoi
             // 
-            btn_chuyendoi.BorderRadius = 6;
+            btn_chuyendoi.Animated = true;
+            btn_chuyendoi.BorderRadius = 8;
             btn_chuyendoi.CustomizableEdges = customizableEdges23;
             btn_chuyendoi.FillColor = Color.FromArgb(52, 73, 94);
             btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -541,17 +547,19 @@ namespace QuanLyBanDienThoai.GUI
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             guna2HtmlLabel2.ForeColor = Color.FromArgb(149, 165, 166);
             guna2HtmlLabel2.Location = new Point(24, 66);
             guna2HtmlLabel2.Margin = new Padding(4);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(116, 27);
+            guna2HtmlLabel2.Size = new Size(118, 27);
             guna2HtmlLabel2.TabIndex = 17;
             guna2HtmlLabel2.Text = "Nhập từ khóa:";
             // 
             // btn_timkiem
             // 
-            btn_timkiem.BorderRadius = 6;
+            btn_timkiem.Animated = true;
+            btn_timkiem.BorderRadius = 8;
             btn_timkiem.CustomizableEdges = customizableEdges7;
             btn_timkiem.FillColor = Color.FromArgb(46, 204, 113);
             btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -586,7 +594,7 @@ namespace QuanLyBanDienThoai.GUI
             // frmQuanLyTaiKhoan
             // 
             BackColor = Color.FromArgb(242, 254, 250);
-            ClientSize = new Size(1000, 797);
+            ClientSize = new Size(1000, 795);
             Controls.Add(guna2GroupBox1);
             Controls.Add(groupBoxSearch);
             Controls.Add(groupBox2);

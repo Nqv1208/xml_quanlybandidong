@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using QuanLyBanDienThoai.Service;
-using QuanLyBanDienThoai.Model;
+using QuanLyBanDienThoai.Models;
 
 namespace QuanLyBanDienThoai.GUI
 {

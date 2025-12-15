@@ -1,6 +1,8 @@
 using Guna.UI2.WinForms;
 using System.Runtime.InteropServices;
-using QuanLyBanDienThoai.Model; // Đừng quên dòng này để dùng class TaiKhoan
+using QuanLyBanDienThoai.Models;
+using QuanLyBanDienThoai.DAL;
+using System.Data;
 
 namespace QuanLyBanDienThoai.GUI
 {
@@ -11,6 +13,8 @@ namespace QuanLyBanDienThoai.GUI
 
         // Biến lưu thông tin tài khoản đang đăng nhập
         private TaiKhoan _taiKhoanHienTai;
+        private NhanVien _nhanVienHienTai;
+        private string name = "";
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -24,17 +28,61 @@ namespace QuanLyBanDienThoai.GUI
             InitializeComponent();
             _taiKhoanHienTai = tk; // Lưu thông tin tài khoản được truyền sang
 
+            // Load thông tin nhân viên từ XML
+            LoadNhanVien();
+
             label_header.Text = "Tổng quan";
             img_header.Image = Properties.Resources.layout_dashboard_2;
             ResetSidebarButtons();
 
             // Mặc định mở Dashboard
             btnSideBarOnClick(btnDashboard);
-            OpenChildForm(new DashBoard()); // Lưu ý: Đảm bảo tên class là Dashboard (chữ b thường)
+            name = _nhanVienHienTai?.TenNV ?? _taiKhoanHienTai.HoTen ?? "";
+            OpenChildForm(new Dashboard(name)); 
 
             // --- GỌI HÀM PHÂN QUYỀN & HIỂN THỊ ---
             PhanQuyen();
             HienThiThongTin();
+        }
+
+        /// <summary>
+        /// Load thông tin nhân viên từ XML dựa trên MaNV của tài khoản hiện tại
+        /// </summary>
+        private void LoadNhanVien()
+        {
+            try
+            {
+                if (_taiKhoanHienTai == null || string.IsNullOrEmpty(_taiKhoanHienTai.MaNV))
+                {
+                    _nhanVienHienTai = null;
+                    return;
+                }
+
+                DataTable dtNhanVien = XmlDataService.LoadTable("Nhanvien.xml", "NhanVien");
+                DataRow? nvRow = dtNhanVien.AsEnumerable()
+                    .FirstOrDefault(r => r.Field<string>("MaNV") == _taiKhoanHienTai.MaNV);
+
+                if (nvRow != null)
+                {
+                    _nhanVienHienTai = new NhanVien
+                    {
+                        MaNV = nvRow["MaNV"]?.ToString() ?? "",
+                        TenNV = nvRow["TenNV"]?.ToString() ?? "",
+                        ChucVu = nvRow["ChucVu"]?.ToString() ?? "",
+                        SoDienThoai = nvRow["SoDienThoai"]?.ToString() ?? ""
+                    };
+                }
+                else
+                {
+                    _nhanVienHienTai = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Nếu không load được nhân viên, để null
+                _nhanVienHienTai = null;
+                // Có thể log lỗi ở đây nếu cần
+            }
         }
 
         // Hàm xử lý phân quyền
@@ -58,13 +106,19 @@ namespace QuanLyBanDienThoai.GUI
         // Hàm hiển thị tên và quyền lên thanh Sidebar
         private void HienThiThongTin()
         {
-            if (_taiKhoanHienTai != null)
+            if (_nhanVienHienTai != null)
             {
-                // Gán họ tên vào Label Name (Góc dưới trái sidebar)
-                if (label_name != null) label_name.Text = _taiKhoanHienTai.HoTen;
+                // Hiển thị tên nhân viên từ bảng NhanVien
+                if (label_name != null) label_name.Text = _nhanVienHienTai.TenNV;
 
-                // Gán quyền vào Label Role
-                if (label_role != null) label_role.Text = _taiKhoanHienTai.Quyen;
+                // Hiển thị chức vụ từ bảng NhanVien
+                if (label_role != null) label_role.Text = _nhanVienHienTai.ChucVu;
+            }
+            else if (_taiKhoanHienTai != null)
+            {
+                // Fallback: Nếu không có nhân viên, dùng thông tin từ tài khoản
+                if (label_name != null) label_name.Text = _taiKhoanHienTai.HoTen ?? "N/A";
+                if (label_role != null) label_role.Text = _taiKhoanHienTai.Quyen ?? "N/A";
             }
         }
 
@@ -114,7 +168,8 @@ namespace QuanLyBanDienThoai.GUI
             img_header.Image = Properties.Resources.layout_dashboard_2;
             ResetSidebarButtons();
             btnSideBarOnClick(btnDashboard);
-            OpenChildForm(new DashBoard());
+            string userName = _nhanVienHienTai?.TenNV ?? _taiKhoanHienTai?.HoTen ?? "";
+            OpenChildForm(new Dashboard(userName));
         }
 
         private void btn_hangsanxuat_Click(object sender, EventArgs e)

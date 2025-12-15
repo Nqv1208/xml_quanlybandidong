@@ -133,7 +133,7 @@ namespace QuanLyBanDienThoai.GUI
             dgvPhieuNhap.ReadOnly = true;
             dgvPhieuNhap.RowHeadersVisible = false;
             dgvPhieuNhap.RowHeadersWidth = 62;
-            dgvPhieuNhap.Size = new Size(970, 275);
+            dgvPhieuNhap.Size = new Size(969, 369);
             dgvPhieuNhap.TabIndex = 0;
             dgvPhieuNhap.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvPhieuNhap.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -260,7 +260,7 @@ namespace QuanLyBanDienThoai.GUI
             // btnThem
             // 
             btnThem.Animated = true;
-            btnThem.BorderRadius = 6;
+            btnThem.BorderRadius = 8;
             btnThem.CustomizableEdges = customizableEdges13;
             btnThem.FillColor = Color.FromArgb(46, 204, 113);
             btnThem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
@@ -280,7 +280,7 @@ namespace QuanLyBanDienThoai.GUI
             // btnSua
             // 
             btnSua.Animated = true;
-            btnSua.BorderRadius = 6;
+            btnSua.BorderRadius = 8;
             btnSua.CustomizableEdges = customizableEdges15;
             btnSua.FillColor = Color.FromArgb(52, 152, 219);
             btnSua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
@@ -300,7 +300,7 @@ namespace QuanLyBanDienThoai.GUI
             // btnXoa
             // 
             btnXoa.Animated = true;
-            btnXoa.BorderRadius = 6;
+            btnXoa.BorderRadius = 8;
             btnXoa.CustomizableEdges = customizableEdges17;
             btnXoa.FillColor = Color.FromArgb(211, 47, 47);
             btnXoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
@@ -320,7 +320,7 @@ namespace QuanLyBanDienThoai.GUI
             // btnLamMoi
             // 
             btnLamMoi.Animated = true;
-            btnLamMoi.BorderRadius = 6;
+            btnLamMoi.BorderRadius = 8;
             btnLamMoi.CustomizableEdges = customizableEdges19;
             btnLamMoi.FillColor = Color.FromArgb(52, 73, 94);
             btnLamMoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
@@ -447,7 +447,7 @@ namespace QuanLyBanDienThoai.GUI
             // btn_timkiem
             // 
             btn_timkiem.Animated = true;
-            btn_timkiem.BorderRadius = 6;
+            btn_timkiem.BorderRadius = 8;
             btn_timkiem.CustomizableEdges = customizableEdges23;
             btn_timkiem.FillColor = Color.FromArgb(46, 204, 113);
             btn_timkiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
@@ -490,7 +490,7 @@ namespace QuanLyBanDienThoai.GUI
             groupBoxGrid.Margin = new Padding(4);
             groupBoxGrid.Name = "groupBoxGrid";
             groupBoxGrid.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            groupBoxGrid.Size = new Size(970, 315);
+            groupBoxGrid.Size = new Size(969, 409);
             groupBoxGrid.TabIndex = 0;
             groupBoxGrid.Text = "Danh sách phiếu nhập";
             // 
@@ -515,12 +515,12 @@ namespace QuanLyBanDienThoai.GUI
             // btn_chuyendoi
             // 
             btn_chuyendoi.Animated = true;
-            btn_chuyendoi.BorderRadius = 6;
+            btn_chuyendoi.BorderRadius = 8;
             btn_chuyendoi.CustomizableEdges = customizableEdges29;
-            btn_chuyendoi.FillColor = Color.FromArgb(46, 204, 113);
+            btn_chuyendoi.FillColor = Color.FromArgb(52, 73, 94);
             btn_chuyendoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             btn_chuyendoi.ForeColor = SystemColors.Window;
-            btn_chuyendoi.HoverState.FillColor = Color.FromArgb(46, 204, 113);
+            btn_chuyendoi.HoverState.FillColor = Color.FromArgb(44, 62, 80);
             btn_chuyendoi.HoverState.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_chuyendoi.HoverState.ForeColor = Color.White;
             btn_chuyendoi.Location = new Point(18, 54);
@@ -551,7 +551,7 @@ namespace QuanLyBanDienThoai.GUI
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 701);
+            ClientSize = new Size(1000, 795);
             Controls.Add(guna2GroupBox1);
             Controls.Add(groupBoxGrid);
             Controls.Add(groupBoxSearch);

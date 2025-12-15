@@ -3,7 +3,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using QuanLyBanDienThoai.Data;
+using QuanLyBanDienThoai.DAL;
 
 namespace QuanLyBanDienThoai.GUI
 {
@@ -261,7 +261,7 @@ namespace QuanLyBanDienThoai.GUI
             {
                 try
                 {
-                    string html = ConvertDataTableToHtml(_dtSp);
+                    string html = XmlDataService.ConvertDataTableToHtml(_dtSp, "Sanpham.xslt", "SanPham");
                     File.WriteAllText(sfd.FileName, html, Encoding.UTF8);
 
                     MessageBox.Show("Xuất HTML thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -273,103 +273,6 @@ namespace QuanLyBanDienThoai.GUI
                     MessageBox.Show("Lỗi khi xuất file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-        /// <summary>
-        /// Chuyển DataTable thành HTML (tương tự pattern ở frmQuanLyHoaDon)
-        /// </summary>
-        private string ConvertDataTableToHtml(DataTable dt)
-        {
-            StringBuilder html = new StringBuilder();
-
-            html.AppendLine("<!DOCTYPE html>");
-            html.AppendLine("<html lang='vi'>");
-            html.AppendLine("<head>");
-            html.AppendLine("<meta charset='utf-8'>");
-            html.AppendLine("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
-            html.AppendLine("<title>Danh Sách Sản Phẩm</title>");
-            html.AppendLine("<style>");
-            html.AppendLine("body{font-family:Segoe UI, Tahoma, sans-serif; padding:20px; background:#f6f8fb}");
-            html.AppendLine(".container{max-width:1200px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}");
-            html.AppendLine(".header{padding:10px 0;text-align:center}");
-            html.AppendLine(".header h1{margin:0;font-size:22px}");
-            html.AppendLine("table{width:100%;border-collapse:collapse;margin-top:18px}");
-            html.AppendLine("th{background:#2b8be6;color:#fff;padding:12px;text-align:left}");
-            html.AppendLine("td{padding:10px;border-bottom:1px solid #eee}");
-            html.AppendLine("@media (max-width:768px){th,td{padding:8px;font-size:13px}}");
-            html.AppendLine("</style>");
-            html.AppendLine("</head>");
-            html.AppendLine("<body>");
-            html.AppendLine("<div class='container'>");
-            html.AppendLine("<div class='header'><h1>📦 DANH SÁCH SẢN PHẨM</h1>");
-            html.AppendLine($"<p>Xuất lúc: {DateTime.Now:dd/MM/yyyy HH:mm:ss} — Tổng: {dt.Rows.Count} sản phẩm</p></div>");
-            html.AppendLine("<div class='content'>");
-            html.AppendLine("<table>");
-            html.AppendLine("<thead><tr>");
-
-            // header: dùng GetDisplayName để đổi tên cột thân thiện
-            foreach (DataColumn col in dt.Columns)
-            {
-                html.AppendLine($"<th>{GetDisplayName(col.ColumnName)}</th>");
-            }
-
-            html.AppendLine("</tr></thead>");
-            html.AppendLine("<tbody>");
-
-            foreach (DataRow row in dt.Rows)
-            {
-                html.AppendLine("<tr>");
-                foreach (DataColumn col in dt.Columns)
-                {
-                    string cell = FormatCellValue(row[col], col.ColumnName);
-                    html.AppendLine($"<td>{cell}</td>");
-                }
-                html.AppendLine("</tr>");
-            }
-
-            html.AppendLine("</tbody>");
-            html.AppendLine("</table>");
-            html.AppendLine("</div>");
-            html.AppendLine("</div>");
-            html.AppendLine("</body>");
-            html.AppendLine("</html>");
-
-            return html.ToString();
-        }
-
-        private string FormatCellValue(object value, string columnName)
-        {
-            if (value == null || value == DBNull.Value)
-                return "-";
-
-            string str = value.ToString() ?? "";
-
-            // Format giá tiền
-            if ((columnName.Equals("GiaBan", StringComparison.OrdinalIgnoreCase)
-                 || columnName.Equals("DonGia", StringComparison.OrdinalIgnoreCase)
-                 || columnName.Equals("GiaNhap", StringComparison.OrdinalIgnoreCase)
-                 ) && decimal.TryParse(str, out decimal money))
-            {
-                return money.ToString("N0") + " đ";
-            }
-
-            // Format số lượng
-            if ((columnName.Equals("SoLuongTon", StringComparison.OrdinalIgnoreCase)
-                 || columnName.Equals("SoLuong", StringComparison.OrdinalIgnoreCase))
-                && int.TryParse(str, out int n))
-            {
-                return n.ToString();
-            }
-
-            // Escape HTML mặc định
-            return EscapeHtml(str);
-        }
-
-        private string EscapeHtml(string? text)
-        {
-            if (string.IsNullOrEmpty(text)) return "";
-            return text.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;")
-                       .Replace("\"", "&quot;").Replace("'", "&#39;");
         }
 
         private string GetDisplayName(string columnName)

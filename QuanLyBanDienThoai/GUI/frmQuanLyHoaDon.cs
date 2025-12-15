@@ -3,7 +3,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using QuanLyBanDienThoai.Data;
+using QuanLyBanDienThoai.DAL;
 
 namespace QuanLyBanDienThoai.GUI
 {
@@ -298,7 +298,7 @@ namespace QuanLyBanDienThoai.GUI
             {
                 try
                 {
-                    string htmlContent = ConvertDataTableToHtml(_dtHd);
+                    string htmlContent = XmlDataService.ConvertDataTableToHtml(_dtHd, "Hoadon.xslt", "HoaDon");
 
                     File.WriteAllText(sfd.FileName, htmlContent, Encoding.UTF8);
 
@@ -314,109 +314,6 @@ namespace QuanLyBanDienThoai.GUI
                     MessageBox.Show("Lỗi khi xuất file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-        private string ConvertDataTableToHtml(DataTable dt)
-        {
-            StringBuilder html = new StringBuilder();
-
-            html.AppendLine("<!DOCTYPE html>");
-            html.AppendLine("<html lang='vi'>");
-            html.AppendLine("<head>");
-            html.AppendLine("<meta charset='utf-8'>");
-            html.AppendLine("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
-            html.AppendLine("<title>Danh Sách Hóa Đơn</title>");
-            html.AppendLine("<style>");
-            html.AppendLine("* { margin: 0; padding: 0; box-sizing: border-box; }");
-            html.AppendLine("body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); padding: 20px; min-height: 100vh; }");
-            html.AppendLine(".container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }");
-            html.AppendLine(".header { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); color: white; padding: 30px; text-align: center; }");
-            html.AppendLine(".header h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }");
-            html.AppendLine(".header p { font-size: 14px; opacity: 0.9; }");
-            html.AppendLine(".content { padding: 30px; }");
-            html.AppendLine(".table-wrapper { overflow-x: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }");
-            html.AppendLine("table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; }");
-            html.AppendLine("thead { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); }");
-            html.AppendLine("th { color: white; font-weight: 600; padding: 18px 15px; text-align: left; font-size: 14px; letter-spacing: 0.5px; border: none; }");
-            html.AppendLine("tbody tr:hover { background-color: #fff0f5; transform: scale(1.01); transition: 0.2s; }");
-            html.AppendLine("td { padding: 14px; font-size: 14px; border-bottom: 1px solid #eee; }");
-            html.AppendLine("</style>");
-            html.AppendLine("</head>");
-            html.AppendLine("<body>");
-
-            html.AppendLine("<div class='container'>");
-            html.AppendLine("<div class='header'>");
-            html.AppendLine("<h1>📑 DANH SÁCH HÓA ĐƠN</h1>");
-            html.AppendLine($"<p>Xuất lúc: {DateTime.Now:dd/MM/yyyy HH:mm:ss} — Tổng: {dt.Rows.Count} hóa đơn</p>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("<div class='content'>");
-            html.AppendLine("<div class='table-wrapper'>");
-            html.AppendLine("<table>");
-
-            // HEADER
-            html.AppendLine("<thead><tr>");
-            foreach (DataColumn col in dt.Columns)
-                html.AppendLine($"<th>{GetDisplayName(col.ColumnName)}</th>");
-            html.AppendLine("</tr></thead>");
-
-            // BODY
-            html.AppendLine("<tbody>");
-            foreach (DataRow row in dt.Rows)
-            {
-                html.AppendLine("<tr>");
-                foreach (DataColumn col in dt.Columns)
-                {
-                    string v = FormatCellValue(row[col], col.ColumnName);
-                    html.AppendLine($"<td>{v}</td>");
-                }
-                html.AppendLine("</tr>");
-            }
-            html.AppendLine("</tbody>");
-
-            html.AppendLine("</table>");
-            html.AppendLine("</div>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("</div>");
-            html.AppendLine("</body>");
-            html.AppendLine("</html>");
-
-            return html.ToString();
-        }
-        private string FormatCellValue(object value, string columnName)
-        {
-            if (value == null || value == DBNull.Value)
-                return "-";
-
-            string strValue = value.ToString() ?? "";
-
-            // Format ngày lập
-            if (columnName == "NgayLap" && DateTime.TryParse(strValue, out DateTime dt))
-            {
-                return dt.ToString("dd/MM/yyyy HH:mm");
-            }
-
-            // Format tiền tệ
-            if (columnName == "TongTien" && decimal.TryParse(strValue, out decimal money))
-            {
-                return money.ToString("N0") + " đ";
-            }
-
-            // Các cột khác: escape HTML để an toàn
-            return EscapeHtml(strValue);
-        }
-
-        private string EscapeHtml(string? text)
-        {
-            if (string.IsNullOrEmpty(text))
-                return "";
-
-            return text
-                .Replace("&", "&amp;")
-                .Replace("<", "&lt;")
-                .Replace(">", "&gt;")
-                .Replace("\"", "&quot;")
-                .Replace("'", "&#39;");
         }
 
         private string GetDisplayName(string columnName)

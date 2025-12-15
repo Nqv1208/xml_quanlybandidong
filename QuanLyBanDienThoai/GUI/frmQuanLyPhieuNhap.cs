@@ -1,4 +1,4 @@
-using QuanLyBanDienThoai.Data;
+using QuanLyBanDienThoai.DAL;
 using System.Data;
 using System.Text;
 
@@ -281,7 +281,7 @@ namespace QuanLyBanDienThoai.GUI
                 try
                 {
                     // Lấy HTML từ DataTable
-                    string htmlContent = ConvertDataTableToHtml(_dtPN);
+                    string htmlContent = XmlDataService.ConvertDataTableToHtml(_dtPN, "Phieunhap.xslt", "PhieuNhap");
 
                     // Ghi file
                     File.WriteAllText(sfd.FileName, htmlContent, Encoding.UTF8);
@@ -298,92 +298,6 @@ namespace QuanLyBanDienThoai.GUI
             }
         }
 
-        private string ConvertDataTableToHtml(DataTable dt)
-        {
-            StringBuilder html = new StringBuilder();
-
-            html.AppendLine("<!DOCTYPE html>");
-            html.AppendLine("<html lang='vi'>");
-            html.AppendLine("<head>");
-            html.AppendLine("<meta charset='utf-8'>");
-            html.AppendLine("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
-            html.AppendLine("<title>Danh Sách Phiếu Nhập</title>");
-            html.AppendLine("<style>");
-            html.AppendLine("* { margin: 0; padding: 0; box-sizing: border-box; }");
-            html.AppendLine("body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; min-height: 100vh; }");
-            html.AppendLine(".container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }");
-            html.AppendLine(".header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }");
-            html.AppendLine(".header h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }");
-            html.AppendLine(".header p { font-size: 14px; opacity: 0.9; }");
-            html.AppendLine(".content { padding: 30px; }");
-            html.AppendLine(".table-wrapper { overflow-x: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }");
-            html.AppendLine("table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; }");
-            html.AppendLine("thead { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }");
-            html.AppendLine("th { color: white; font-weight: 600; padding: 18px 15px; text-align: left; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; border: none; }");
-            html.AppendLine("th:first-child { border-top-left-radius: 10px; }");
-            html.AppendLine("th:last-child { border-top-right-radius: 10px; }");
-            html.AppendLine("tbody tr { transition: all 0.3s ease; border-bottom: 1px solid #e0e0e0; }");
-            html.AppendLine("tbody tr:hover { background-color: #f5f7ff; transform: scale(1.01); box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2); }");
-            html.AppendLine("tbody tr:nth-child(even) { background-color: #fafbff; }");
-            html.AppendLine("tbody tr:nth-child(even):hover { background-color: #f0f2ff; }");
-            html.AppendLine("td { padding: 15px; color: #333; font-size: 14px; border: none; }");
-            html.AppendLine("td:first-child { font-weight: 600; color: #667eea; }");
-            html.AppendLine(".footer { background: #f8f9fa; padding: 20px 30px; text-align: center; color: #666; font-size: 12px; border-top: 1px solid #e0e0e0; }");
-            html.AppendLine(".footer strong { color: #667eea; }");
-            html.AppendLine("@media print { body { background: white; padding: 0; } .container { box-shadow: none; } }");
-            html.AppendLine("@media (max-width: 768px) { .header h1 { font-size: 24px; } th, td { padding: 10px 8px; font-size: 12px; } }");
-            html.AppendLine("</style>");
-            html.AppendLine("</head>");
-            html.AppendLine("<body>");
-
-            html.AppendLine("<div class='container'>");
-            html.AppendLine("<div class='header'>");
-            html.AppendLine("<h1>📋 DANH SÁCH PHIẾU NHẬP</h1>");
-            html.AppendLine($"<p>Xuất ngày: {DateTime.Now:dd/MM/yyyy HH:mm:ss} | Tổng số: {dt.Rows.Count} phiếu nhập</p>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("<div class='content'>");
-            html.AppendLine("<div class='table-wrapper'>");
-            html.AppendLine("<table>");
-
-            // Tạo tiêu đề bảng (Header)
-            html.AppendLine("<thead><tr>");
-            foreach (DataColumn column in dt.Columns)
-            {
-                string displayName = GetDisplayName(column.ColumnName);
-                html.AppendLine($"<th>{displayName}</th>");
-            }
-            html.AppendLine("</tr></thead>");
-
-            // Tạo nội dung bảng (Body)
-            html.AppendLine("<tbody>");
-            foreach (DataRow row in dt.Rows)
-            {
-                html.AppendLine("<tr>");
-                for (int i = 0; i < dt.Columns.Count; i++)
-                {
-                    string columnName = dt.Columns[i].ColumnName;
-                    object? cellValue = row[i];
-                    string formattedValue = FormatCellValue(cellValue, columnName);
-                    html.AppendLine($"<td>{formattedValue}</td>");
-                }
-                html.AppendLine("</tr>");
-            }
-            html.AppendLine("</tbody>");
-            html.AppendLine("</table>");
-            html.AppendLine("</div>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("<div class='footer'>");
-            html.AppendLine($"<p>Hệ thống quản lý bán điện thoại | <strong>Xuất báo cáo</strong> | {DateTime.Now:dd/MM/yyyy HH:mm:ss}</p>");
-            html.AppendLine("</div>");
-
-            html.AppendLine("</div>");
-            html.AppendLine("</body>");
-            html.AppendLine("</html>");
-
-            return html.ToString();
-        }
 
         private string GetDisplayName(string columnName)
         {
