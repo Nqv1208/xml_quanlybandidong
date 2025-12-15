@@ -193,6 +193,7 @@ namespace QuanLyBanDienThoai.GUI
             label_name.Size = new Size(173, 25);
             label_name.TabIndex = 7;
             label_name.Text = "Nguyễn Quang Vinh";
+            label_name.Click += label_name_Click;
             // 
             // label_role
             // 

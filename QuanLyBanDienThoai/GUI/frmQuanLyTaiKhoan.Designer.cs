@@ -270,6 +270,7 @@ namespace QuanLyBanDienThoai.GUI
             cboNhanVien.ShadowDecoration.CustomizableEdges = customizableEdges10;
             cboNhanVien.Size = new Size(300, 46);
             cboNhanVien.TabIndex = 10;
+            cboNhanVien.SelectedIndexChanged += cboNhanVien_SelectedIndexChanged;
             // 
             // btnThem
             // 

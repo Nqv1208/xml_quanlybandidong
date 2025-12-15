@@ -50,7 +50,8 @@ namespace QuanLyBanDienThoai.GUI
                 try
                 {
                     // B2: Khởi tạo và mở Form Main
-                    frmMain mainForm = new frmMain();
+                    frmMain mainForm = new frmMain(taiKhoanHienTai);
+                   
 
                     // Dùng ShowDialog() để "treo" code ở đây, giữ cho ứng dụng chạy
                     // cho đến khi bạn tắt Form Main đi.

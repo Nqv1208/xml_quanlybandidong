@@ -371,6 +371,11 @@ namespace QuanLyBanDienThoai.GUI
                 .Replace("\"", "&quot;")
                 .Replace("'", "&#39;");
         }
+
+        private void cboNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -1,12 +1,16 @@
 using Guna.UI2.WinForms;
 using System.Runtime.InteropServices;
+using QuanLyBanDienThoai.Model; // Đừng quên dòng này để dùng class TaiKhoan
 
 namespace QuanLyBanDienThoai.GUI
 {
-    public partial class frmMain : Form  // ✅ Kế thừa từ Form
+    public partial class frmMain : Form
     {
         private Form? currentForm = null;
         private Dictionary<Guna2Button, Image> _originalImages = new Dictionary<Guna2Button, Image>();
+
+        // Biến lưu thông tin tài khoản đang đăng nhập
+        private TaiKhoan _taiKhoanHienTai;
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -14,23 +18,62 @@ namespace QuanLyBanDienThoai.GUI
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        public frmMain()
+        // --- SỬA CONSTRUCTOR ĐỂ NHẬN THAM SỐ TAIKHOAN ---
+        public frmMain(TaiKhoan tk)
         {
             InitializeComponent();
+            _taiKhoanHienTai = tk; // Lưu thông tin tài khoản được truyền sang
+
             label_header.Text = "Tổng quan";
             img_header.Image = Properties.Resources.layout_dashboard_2;
             ResetSidebarButtons();
-            btnSideBarOnClick(btnDashboard);
-            OpenChildForm(new DashBoard());
 
+            // Mặc định mở Dashboard
+            btnSideBarOnClick(btnDashboard);
+            OpenChildForm(new DashBoard()); // Lưu ý: Đảm bảo tên class là Dashboard (chữ b thường)
+
+            // --- GỌI HÀM PHÂN QUYỀN & HIỂN THỊ ---
+            PhanQuyen();
+            HienThiThongTin();
         }
+
+        // Hàm xử lý phân quyền
+        private void PhanQuyen()
+        {
+            // Kiểm tra nếu tài khoản tồn tại và Quyền là "NhanVien"
+            // (Chữ "NhanVien" phải khớp y hệt trong file XML của bạn)
+            if (_taiKhoanHienTai != null && _taiKhoanHienTai.Quyen == "NhanVien")
+            {
+                // 1. Ẩn nút Quản lý Tài khoản (Nhân viên không được cấp tài khoản cho người khác)
+                if (btnAccount != null) btnAccount.Visible = false;
+
+                // 2. Ẩn nút Quản lý Nhân viên (Tùy chọn: Nhân viên thường không quản lý nhân sự)
+                if (btnStaff != null) btnStaff.Visible = false;
+
+                // 3. Ẩn nút Thống kê/Dashboard nếu cần (Tùy logic của bạn)
+                // if (btnDashboard != null) btnDashboard.Enabled = false;
+            }
+        }
+
+        // Hàm hiển thị tên và quyền lên thanh Sidebar
+        private void HienThiThongTin()
+        {
+            if (_taiKhoanHienTai != null)
+            {
+                // Gán họ tên vào Label Name (Góc dưới trái sidebar)
+                if (label_name != null) label_name.Text = _taiKhoanHienTai.HoTen;
+
+                // Gán quyền vào Label Role
+                if (label_role != null) label_role.Text = _taiKhoanHienTai.Quyen;
+            }
+        }
+
+        // --- CÁC HÀM CŨ GIỮ NGUYÊN BÊN DƯỚI ---
 
         private void frmMain_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
             img_header.Image = Properties.Resources.layout_dashboard_2;
-
-            // Lưu Image ban đầu của các button sidebar
             SaveOriginalButtonStates();
         }
 
@@ -40,7 +83,6 @@ namespace QuanLyBanDienThoai.GUI
             {
                 if (c is Guna2Button btn)
                 {
-                    // Lưu Image ban đầu vào Dictionary
                     if (btn.Image != null)
                     {
                         _originalImages[btn] = btn.Image;
@@ -57,12 +99,14 @@ namespace QuanLyBanDienThoai.GUI
             }
             Form fm = childForm as Form;
             fm.TopLevel = false;
-            // Không sử dụng Dock = Fill để form giữ nguyên kích thước và có thể cuộn
             fm.FormBorderStyle = FormBorderStyle.None;
+            fm.Dock = DockStyle.Fill; // Thêm dòng này để form con lấp đầy container
             guna2Panel_Container.Controls.Add(fm);
             guna2Panel_Container.Tag = fm;
             fm.Show();
         }
+
+        // --- CÁC SỰ KIỆN CLICK ---
 
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
@@ -147,7 +191,6 @@ namespace QuanLyBanDienThoai.GUI
 
         private void btnSideBarOnClick(Guna2Button btn)
         {
-            // Áp dụng trạng thái hover khi button được click
             btn.FillColor = btn.HoverState.FillColor;
             btn.ForeColor = btn.HoverState.ForeColor;
             btn.Image = btn.HoverState.Image;
@@ -160,12 +203,9 @@ namespace QuanLyBanDienThoai.GUI
             {
                 if (c is Guna2Button b)
                 {
-                    // Reset về trạng thái ban đầu
                     b.FillColor = Color.Transparent;
                     b.ForeColor = Color.Black;
                     b.BorderColor = Color.Transparent;
-
-                    // Khôi phục Image ban đầu nếu đã lưu
                     if (_originalImages.ContainsKey(b))
                     {
                         b.Image = _originalImages[b];
@@ -176,10 +216,18 @@ namespace QuanLyBanDienThoai.GUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormDangNhap loginForm = new FormDangNhap();
+            loginForm.ShowDialog();
+            this.Close();
         }
 
         private void guna2Panel_sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label_name_Click(object sender, EventArgs e)
         {
 
         }
